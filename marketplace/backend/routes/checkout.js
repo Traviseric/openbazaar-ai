@@ -27,6 +27,8 @@ const db = require('../database/database');
 const { enrollUserInCourse } = require('./courseRoutes');
 const licenseKeyService = require('../services/licenseKeyService');
 const { trackReferral } = require('./referralRoutes');
+const teneoListingService = require('../services/teneoListingService');
+const teneoProductionClient = require('../services/teneoProductionClient');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -54,7 +56,7 @@ const checkoutLimiter = process.env.NODE_ENV === 'test'
 router.post('/create-session', checkoutLimiter, async (req, res) => {
   try {
     // Do not destructure 'price' from req.body — client-supplied price is untrusted
-    const {
+    let {
       bookId,
       format,
       brandId: rawBrandId,
@@ -73,6 +75,15 @@ router.post('/create-session', checkoutLimiter, async (req, res) => {
     const funnelId = sanitizeMetadataValue(req.body.funnelId, 80);
     const funnelSessionId = sanitizeMetadataValue(req.body.funnelSessionId, 120);
     const courseSlug = sanitizeMetadataValue(req.body.courseSlug, 120);
+
+    let teneoListing = null;
+    if (bookId) {
+      teneoListing = await teneoListingService.getListingById(bookId);
+      if (teneoListing) {
+        bookTitle = bookTitle || teneoListing.title;
+        bookAuthor = bookAuthor || teneoListing.author || 'Teneo Author';
+      }
+    }
 
     if (!bookId || !format || !bookTitle || !bookAuthor || !userEmail) {
       return res.status(400).json({
@@ -98,7 +109,11 @@ router.post('/create-session', checkoutLimiter, async (req, res) => {
     }
 
     // Look up authoritative price from catalog — never use the client-supplied price
-    const catalogPrice = lookupBookPrice(bookId, format, brandId);
+    let catalogPrice = lookupBookPrice(bookId, format, brandId);
+    if (catalogPrice == null && teneoListing) {
+      const requestedFormat = (teneoListing.formats || []).find((item) => item.type === format);
+      catalogPrice = Number(requestedFormat?.priceUSD || teneoListing.formats?.[0]?.priceUSD || 9.99);
+    }
     if (catalogPrice == null) {
       return res.status(400).json({ success: false, error: 'Book not found in catalog' });
     }
@@ -187,7 +202,10 @@ router.post('/create-session', checkoutLimiter, async (req, res) => {
         funnelSessionId: funnelSessionId || '',
         courseSlug: courseSlug || '',
         product_type: courseSlug ? 'course' : '',
-        referralCode: referralCode || ''
+        referralCode: referralCode || '',
+        teneoListingId: teneoListing?.listingId || '',
+        teneoBookId: teneoListing?.bookId || '',
+        teneoAuthorUserId: teneoListing?.authorUserId || ''
       },
       // Save payment method for post-purchase one-click upsells
       payment_intent_data: {
@@ -199,7 +217,10 @@ router.post('/create-session', checkoutLimiter, async (req, res) => {
         }),
         metadata: {
           orderId,
-          bookId
+          bookId,
+          teneoListingId: teneoListing?.listingId || '',
+          teneoBookId: teneoListing?.bookId || '',
+          teneoAuthorUserId: teneoListing?.authorUserId || ''
         }
       },
       billing_address_collection: isProduction ? 'required' : 'auto'
@@ -222,7 +243,10 @@ router.post('/create-session', checkoutLimiter, async (req, res) => {
         couponCode: pricing.couponCode || null,
         discountAmount: pricing.discountAmount || 0,
         brandId: brandId || null,
-        nextReadOffer
+        nextReadOffer,
+        teneoListingId: teneoListing?.listingId || null,
+        teneoBookId: teneoListing?.bookId || null,
+        teneoAuthorUserId: teneoListing?.authorUserId || null
       }
     });
 
@@ -469,6 +493,22 @@ async function handleCheckoutCompleted(session) {
       session.payment_intent
     );
 
+    let teneoDownloadUrl = null;
+    if (session.metadata?.teneoListingId) {
+      const amountUSD = session.amount_total ? session.amount_total / 100 : 0;
+      const paidResult = await teneoProductionClient.orderPaid({
+        orderId,
+        listingId: session.metadata.teneoListingId,
+        buyerEmail: userEmail,
+        buyerUserId: session.customer || null,
+        paymentMethod: session.payment_method_types?.[0] || 'card',
+        amountUSD,
+        paidAt: new Date().toISOString(),
+      });
+      teneoDownloadUrl = paidResult?.downloadUrl || null;
+      await teneoListingService.recordPurchase(session.metadata.teneoListingId, amountUSD);
+    }
+
     // Persist Stripe customer + payment method for post-purchase one-click upsells (non-fatal)
     if (session.customer && session.payment_intent) {
       try {
@@ -505,7 +545,7 @@ async function handleCheckoutCompleted(session) {
     });
 
     // Build download URL from token
-    const downloadUrl = `${process.env.PUBLIC_URL || process.env.FRONTEND_URL || 'http://localhost:3001'}/api/download/${downloadToken}`;
+    const downloadUrl = teneoDownloadUrl || `${process.env.PUBLIC_URL || process.env.FRONTEND_URL || 'http://localhost:3001'}/api/download/${downloadToken}`;
 
     // Send download email
     const emailResult = await emailService.sendDownloadEmail({
@@ -670,6 +710,27 @@ async function handleChargeRefunded(charge) {
     }).catch(err => console.warn('[state-machine] completed→refunded failed (non-fatal):', err.message));
 
     const order = await orderService.getOrder(orderId);
+    let teneoListingId = paymentIntent.metadata?.teneoListingId || null;
+    if (!teneoListingId && order?.metadata) {
+      try {
+        teneoListingId = JSON.parse(order.metadata).teneoListingId || null;
+      } catch {
+        teneoListingId = null;
+      }
+    }
+    if (teneoListingId) {
+      try {
+        await teneoProductionClient.refund({
+          orderId,
+          listingId: teneoListingId,
+          reason: charge.refunds.data[0]?.reason || 'requested_by_customer',
+        });
+        await teneoListingService.recordRefund(teneoListingId, refundAmount);
+      } catch (callbackErr) {
+        console.warn('[teneo-callback] marketplace.refund failed (non-fatal):', callbackErr.message);
+      }
+    }
+
     if (order && order.customer_email) {
       try {
         await emailService.sendRefundConfirmationEmail({

@@ -104,3 +104,5 @@ PRIVATE_DEPLOY_NOTES.md
 
 # Deployment secrets
 RENDER_ENV_VARS.txt
+
+.vercel

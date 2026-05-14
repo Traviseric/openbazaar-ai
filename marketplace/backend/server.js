@@ -116,6 +116,7 @@ const hostingRoutes = require('./routes/hostingRoutes');
 const wellKnownRoutes = require('./routes/wellKnownRoutes');
 const ordersRoutes = require('./routes/ordersRoutes');
 const merchantFulfillmentRoutes = require('./routes/merchantFulfillment');
+const aiInvokeRoutes = require('./routes/aiInvoke');
 
 // Funnel builder routes
 const funnelRoutes = require('../../funnel-module/backend/routes/funnels');
@@ -194,7 +195,7 @@ app.use(cors({
     ],
     credentials: true, // Allow cookies
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'X-CSRF-Token']
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-CSRF-Token', 'X-Service-Key', 'x-service-key']
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -219,6 +220,7 @@ const csrfExcludePaths = [
     '/api/storefront/zap-unlock', // NIP-57 zap receipt — self-authenticated via Schnorr sig
     '/api/l402',                  // L402 Lightning auth — self-authenticated via preimage, not session
     '/api/agent',                 // Agent API — authenticated via NIP-98 or API key, not session cookies
+    '/api/ai-invoke',             // TE ecosystem service-key calls, not browser session cookies
 ]; // Webhook endpoints need to be excluded
 
 app.use((req, res, next) => {
@@ -337,6 +339,9 @@ app.use('/api/machine', machineRoutes);
 
 // Agent API — structured catalog, quoting, and purchasing for AI agents
 app.use('/api/agent', agentRoutes);
+
+// TE ecosystem service-key capability endpoints
+app.use('/api/ai-invoke', aiInvokeRoutes);
 
 // Storefront API (standardized catalog + fulfillment for ArxMint bazaar integration)
 app.use('/api/storefront', storefrontRoutes);

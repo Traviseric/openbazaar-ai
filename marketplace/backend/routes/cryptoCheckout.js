@@ -11,6 +11,8 @@ const btcpayService = require('../services/btcpayService');
 const emailService = require('../services/emailService');
 const downloadService = require('../services/downloadService');
 const { lookupBookPrice } = require('../services/checkoutOfferService');
+const teneoListingService = require('../services/teneoListingService');
+const teneoProductionClient = require('../services/teneoProductionClient');
 
 // Rate limiter for crypto payment verification (3 attempts per 15 min per IP)
 const cryptoVerifyLimiter = rateLimit({
@@ -95,7 +97,7 @@ function getPaymentAddress(method) {
 // Create pending crypto order
 router.post('/create-order', async (req, res) => {
     try {
-        const { bookId, bookTitle, bookAuthor, email, paymentMethod, brandId, format } = req.body;
+        let { bookId, bookTitle, bookAuthor, email, paymentMethod, brandId, format } = req.body;
 
         if (!bookId || !paymentMethod) {
             return res.status(400).json({ success: false, error: 'Missing required fields: bookId and paymentMethod' });
@@ -105,7 +107,17 @@ router.post('/create-order', async (req, res) => {
         }
 
         // Server-side price enforcement — never trust client-supplied price
-        const usdAmount = lookupBookPrice(bookId, format || 'ebook', brandId);
+        let teneoListing = await teneoListingService.getListingById(bookId);
+        if (teneoListing) {
+            bookTitle = bookTitle || teneoListing.title;
+            bookAuthor = bookAuthor || teneoListing.author || 'Teneo Author';
+        }
+
+        let usdAmount = lookupBookPrice(bookId, format || 'ebook', brandId);
+        if (usdAmount == null && teneoListing) {
+            const requestedFormat = (teneoListing.formats || []).find((item) => item.type === (format || 'ebook'));
+            usdAmount = Number(requestedFormat?.priceUSD || teneoListing.formats?.[0]?.priceUSD || 9.99);
+        }
         if (usdAmount == null) {
             return res.status(400).json({ success: false, error: 'Product not found' });
         }
@@ -133,6 +145,9 @@ router.post('/create-order', async (req, res) => {
             brandId: brandId || 'default',
             priceLockedAt: priceLockedAt.toISOString(),
             priceExpiresAt: priceExpiresAt.toISOString(),
+            teneoListingId: teneoListing?.listingId || null,
+            teneoBookId: teneoListing?.bookId || null,
+            teneoAuthorUserId: teneoListing?.authorUserId || null,
             ...(btcpayInvoice && { btcpayInvoiceId: btcpayInvoice.invoiceId }),
         };
 
@@ -346,7 +361,7 @@ router.post('/btcpay/webhook', express.raw({ type: 'application/json' }), async 
 
         // Find order by btcpayInvoiceId in metadata
         const order = await dbGet(
-            `SELECT order_id, customer_email, book_id, book_title, book_author, price FROM orders
+            `SELECT order_id, customer_email, book_id, book_title, book_author, price, metadata FROM orders
              WHERE json_extract(metadata, '$.btcpayInvoiceId') = ?`,
             [invoiceId]
         );
@@ -364,7 +379,25 @@ router.post('/btcpay/webhook', express.raw({ type: 'application/json' }), async 
 
         // Generate download token directly — no HTTP self-call
         try {
-            const { downloadUrl } = await downloadService.generateDownloadToken({ orderId: order.order_id });
+            const metadata = JSON.parse(order.metadata || '{}');
+            let downloadUrl = null;
+            if (metadata.teneoListingId) {
+                const paidResult = await teneoProductionClient.orderPaid({
+                    orderId: order.order_id,
+                    listingId: metadata.teneoListingId,
+                    buyerEmail: order.customer_email,
+                    buyerUserId: null,
+                    paymentMethod: 'btcpay',
+                    amountUSD: order.price,
+                    paidAt: new Date().toISOString(),
+                });
+                downloadUrl = paidResult?.downloadUrl || null;
+                await teneoListingService.recordPurchase(metadata.teneoListingId, order.price);
+            }
+            if (!downloadUrl) {
+                const generated = await downloadService.generateDownloadToken({ orderId: order.order_id });
+                downloadUrl = generated.downloadUrl;
+            }
             await emailService.sendDownloadEmail({
                 userEmail: order.customer_email,
                 bookTitle: order.book_title,

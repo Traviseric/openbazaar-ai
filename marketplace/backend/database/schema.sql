@@ -199,6 +199,44 @@ CREATE INDEX IF NOT EXISTS idx_published_books_created ON published_books(create
 CREATE INDEX IF NOT EXISTS idx_published_books_rank ON published_books(bestseller_rank);
 CREATE INDEX IF NOT EXISTS idx_published_books_rating ON published_books(rating_average);
 
+-- Teneo-generated listings pushed through /api/ai-invoke/marketplace.publish-book.
+-- OpenBazaar is the public commerce source of truth; teneo-production keeps only
+-- a mirror for user dashboards and ownership checks.
+CREATE TABLE IF NOT EXISTS teneo_marketplace_listings (
+    listing_id TEXT PRIMARY KEY,
+    slug TEXT UNIQUE NOT NULL,
+    teneo_book_id TEXT UNIQUE NOT NULL,
+    author_user_id TEXT NOT NULL,
+    brand_id TEXT,
+    niche TEXT,
+    title TEXT NOT NULL,
+    subtitle TEXT,
+    author TEXT,
+    description_md TEXT,
+    cover_url TEXT,
+    formats_json TEXT,
+    amazon_asin TEXT,
+    price_usd DECIMAL(10,2) DEFAULT 9.99,
+    royalty_split_json TEXT,
+    license_terms TEXT DEFAULT 'personal-use',
+    status TEXT NOT NULL DEFAULT 'live',
+    public_url TEXT,
+    views INTEGER DEFAULT 0,
+    add_to_cart INTEGER DEFAULT 0,
+    purchases INTEGER DEFAULT 0,
+    revenue_usd DECIMAL(12,2) DEFAULT 0,
+    refunds INTEGER DEFAULT 0,
+    unpublish_reason TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    published_at DATETIME
+);
+
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_book ON teneo_marketplace_listings(teneo_book_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_author ON teneo_marketplace_listings(author_user_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_status ON teneo_marketplace_listings(status);
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_slug ON teneo_marketplace_listings(slug);
+
 -- Book ranking history table
 CREATE TABLE IF NOT EXISTS book_ranking_history (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -37,6 +37,62 @@ CREATE INDEX IF NOT EXISTS idx_profiles_teneo_id ON profiles(teneo_user_id);
 CREATE INDEX IF NOT EXISTS idx_profiles_nostr_pubkey ON profiles(nostr_pubkey);
 CREATE INDEX IF NOT EXISTS idx_profiles_provider ON profiles(auth_provider);
 
+CREATE TABLE IF NOT EXISTS teneo_marketplace_listings (
+    listing_id TEXT PRIMARY KEY,
+    slug TEXT UNIQUE NOT NULL,
+    teneo_book_id TEXT UNIQUE NOT NULL,
+    author_user_id TEXT NOT NULL,
+    brand_id TEXT,
+    niche TEXT,
+    title TEXT NOT NULL,
+    subtitle TEXT,
+    author TEXT,
+    description_md TEXT,
+    cover_url TEXT,
+    formats_json TEXT,
+    amazon_asin TEXT,
+    price_usd DECIMAL(10,2) DEFAULT 9.99,
+    royalty_split_json TEXT,
+    license_terms TEXT DEFAULT 'personal-use',
+    status TEXT NOT NULL DEFAULT 'live',
+    public_url TEXT,
+    views INTEGER DEFAULT 0,
+    add_to_cart INTEGER DEFAULT 0,
+    purchases INTEGER DEFAULT 0,
+    revenue_usd DECIMAL(12,2) DEFAULT 0,
+    refunds INTEGER DEFAULT 0,
+    unpublish_reason TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW(),
+    published_at TIMESTAMPTZ
+);
+
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_book ON teneo_marketplace_listings(teneo_book_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_author ON teneo_marketplace_listings(author_user_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_status ON teneo_marketplace_listings(status);
+CREATE INDEX IF NOT EXISTS idx_teneo_listings_slug ON teneo_marketplace_listings(slug);
+
+CREATE TABLE IF NOT EXISTS teneo_marketplace_storefronts (
+    storefront_id TEXT PRIMARY KEY,
+    slug TEXT UNIQUE NOT NULL,
+    territory_id TEXT NOT NULL,
+    territory_name TEXT,
+    claim_id TEXT,
+    author_user_id TEXT NOT NULL,
+    archetype TEXT NOT NULL,
+    config_json TEXT NOT NULL,
+    publishing_code_flags_json TEXT,
+    public_url TEXT,
+    status TEXT NOT NULL DEFAULT 'live',
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW(),
+    UNIQUE(territory_id, author_user_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_teneo_storefronts_territory ON teneo_marketplace_storefronts(territory_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_storefronts_author ON teneo_marketplace_storefronts(author_user_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_storefronts_status ON teneo_marketplace_storefronts(status);
+
 CREATE TABLE IF NOT EXISTS magic_links (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     token TEXT UNIQUE NOT NULL,

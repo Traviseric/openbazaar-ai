@@ -171,10 +171,20 @@ function roadmapCollections(territory) {
 
 function normalizeBook(book, territory, slug) {
   if (!book || !book.title) return null;
-  const id = book.bookId || book.id || slugify(book.title);
+  const id = book.plannedBookId || book.id || book.bookId || book.teneoBookId || slugify(book.title);
+  const teneoBookId = book.teneoBookId || book.bookId || null;
+  const rawFormats = book.formatFiles || book.formats || [];
+  const formatFiles = Array.isArray(rawFormats)
+    ? rawFormats.filter((item) => item && typeof item === 'object')
+    : [];
+  const formatNames = Array.isArray(rawFormats)
+    ? rawFormats.map((item) => (typeof item === 'string' ? item : item.type)).filter(Boolean)
+    : ['digital'];
+  const digitalFile = book.digitalFile || formatFiles.find((item) => item.type === 'epub') || formatFiles[0] || null;
   return {
     id,
-    teneoBookId: book.bookId || book.teneoBookId || null,
+    plannedBookId: book.plannedBookId || null,
+    teneoBookId,
     title: book.title,
     subtitle: book.subtitle || '',
     author: book.author || territory.name,
@@ -182,10 +192,11 @@ function normalizeBook(book, territory, slug) {
     longDescription: book.longDescription || book.descriptionMd || book.description || '',
     price: Number(book.priceUSD || book.price || 9.99),
     currency: 'USD',
-    status: book.status || (book.bookId || book.teneoBookId ? 'live' : 'planned'),
-    format: book.formats || ['digital'],
+    status: book.status || (teneoBookId ? 'live' : 'planned'),
+    format: formatNames.length ? formatNames : ['digital'],
+    formats: formatFiles,
     coverImage: book.coverUrl || book.coverImage || `/brands/${slug}/assets/covers/${id}.jpg`,
-    digitalFile: book.digitalFile || null,
+    digitalFile,
     listingId: book.listingId || null,
     tags: [
       territory.territoryId,
@@ -196,14 +207,20 @@ function normalizeBook(book, territory, slug) {
       territoryId: territory.territoryId,
       publishingCodeFlags: territory.publishingCodeFlags,
       roadmapPriority: book.priority || null,
+      plannedBookId: book.plannedBookId || null,
       createdAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
     },
   };
 }
 
 function upsertBook(books, book) {
   if (!book) return books;
-  const index = books.findIndex((existing) => existing.id === book.id || existing.teneoBookId === book.teneoBookId);
+  const index = books.findIndex((existing) => (
+    existing.id === book.id ||
+    (book.plannedBookId && (existing.plannedBookId === book.plannedBookId || existing.id === book.plannedBookId)) ||
+    (book.teneoBookId && existing.teneoBookId === book.teneoBookId)
+  ));
   if (index >= 0) {
     const next = [...books];
     next[index] = { ...next[index], ...book, metadata: { ...(next[index].metadata || {}), ...(book.metadata || {}) } };

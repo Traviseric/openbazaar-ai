@@ -118,8 +118,13 @@ const ordersRoutes = require('./routes/ordersRoutes');
 const merchantFulfillmentRoutes = require('./routes/merchantFulfillment');
 const aiInvokeRoutes = require('./routes/aiInvoke');
 
-// Funnel builder routes
-const funnelRoutes = require('../../funnel-module/backend/routes/funnels');
+// Funnel builder routes are optional in the Vercel marketplace bundle.
+let funnelRoutes = express.Router();
+try {
+    funnelRoutes = require('../../funnel-module/backend/routes/funnels');
+} catch (error) {
+    console.warn('[Funnel] Routes disabled:', error.message);
+}
 
 // Course platform routes
 const courseRoutes = require('./routes/courseRoutes');

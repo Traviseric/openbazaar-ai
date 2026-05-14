@@ -93,6 +93,29 @@ CREATE INDEX IF NOT EXISTS idx_teneo_storefronts_territory ON teneo_marketplace_
 CREATE INDEX IF NOT EXISTS idx_teneo_storefronts_author ON teneo_marketplace_storefronts(author_user_id);
 CREATE INDEX IF NOT EXISTS idx_teneo_storefronts_status ON teneo_marketplace_storefronts(status);
 
+-- Runtime-scaffolded brand storefronts (Capability Restoration Catalog claims).
+-- Mirrors schema.sql for Postgres/Supabase deployments where serverless
+-- functions cannot write brand folders to the read-only app filesystem.
+CREATE TABLE IF NOT EXISTS teneo_marketplace_brands (
+    slug TEXT PRIMARY KEY,
+    territory_id TEXT,
+    archetype TEXT,
+    config_json TEXT NOT NULL,
+    catalog_json TEXT NOT NULL,
+    variables_json TEXT,
+    theme_css TEXT,
+    publishing_code_flags_json TEXT,
+    public_url TEXT,
+    catalog_url TEXT,
+    status TEXT NOT NULL DEFAULT 'live',
+    book_count INTEGER DEFAULT 0,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_teneo_brands_territory ON teneo_marketplace_brands(territory_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_brands_status ON teneo_marketplace_brands(status);
+
 CREATE TABLE IF NOT EXISTS magic_links (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     token TEXT UNIQUE NOT NULL,

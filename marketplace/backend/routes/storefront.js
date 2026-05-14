@@ -27,6 +27,28 @@ const OrderService = require('../services/orderService');
 const emailService = require('../services/emailService');
 const fulfillmentService = require('../services/fulfillmentService');
 const zapService = require('../services/zapService');
+const brandStore = require('../services/brandStore');
+
+// Brand-folder paths for built-in brands (true-earth, teneo, wealth-wise, etc.)
+// Built-in brands ship as files; runtime-scaffolded brands live in DynamoDB
+// (read-only filesystem on @vercel/node). Lookup tries DB first, falls back
+// to FS.
+const BUILTIN_BRANDS_DIR = path.resolve(__dirname, '..', '..', 'frontend', 'brands');
+
+function isValidSlug(value) {
+  return typeof value === 'string' && /^[a-z0-9][a-z0-9-]{0,79}$/.test(value);
+}
+
+async function readBuiltinFile(slug, ...segments) {
+  if (!isValidSlug(slug)) return null;
+  const target = path.resolve(BUILTIN_BRANDS_DIR, slug, ...segments);
+  if (!target.startsWith(BUILTIN_BRANDS_DIR + path.sep)) return null;
+  try {
+    return await fs.readFile(target, 'utf8');
+  } catch {
+    return null;
+  }
+}
 
 const orderService = new OrderService();
 
@@ -260,6 +282,103 @@ function requireStorefrontApiKey(req, res, next) {
 // ---------------------------------------------------------------------------
 // Routes
 // ---------------------------------------------------------------------------
+
+/**
+ * Brand asset endpoints — DB-first with FS fallback for built-in brands.
+ *
+ * Runtime-scaffolded brands (from Capability Restoration Catalog claims) live
+ * in `teneo_marketplace_brands` because @vercel/node serverless has a
+ * read-only filesystem. Built-in brands (true-earth, teneo, wealth-wise…)
+ * still ship as files under `marketplace/frontend/brands/`.
+ *
+ * The frontend `store.html` fetches these endpoints first, falling back to
+ * `/brands/{slug}/*` static files if needed for legacy paths.
+ */
+
+router.get('/brands/:slug/config.json', async (req, res) => {
+  const { slug } = req.params;
+  if (!isValidSlug(slug)) return res.status(404).json({ error: 'Brand not found' });
+  try {
+    const brand = await brandStore.getBySlug(slug);
+    if (brand?.config) {
+      res.set('Cache-Control', 'public, max-age=60');
+      return res.json(brand.config);
+    }
+    const fallback = await readBuiltinFile(slug, 'config.json');
+    if (fallback) {
+      res.set('Cache-Control', 'public, max-age=300');
+      res.set('Content-Type', 'application/json');
+      return res.send(fallback);
+    }
+    return res.status(404).json({ error: 'Brand not found' });
+  } catch {
+    return res.status(500).json({ error: 'Failed to load brand config' });
+  }
+});
+
+router.get('/brands/:slug/catalog.json', async (req, res) => {
+  const { slug } = req.params;
+  if (!isValidSlug(slug)) return res.status(404).json({ error: 'Catalog not found' });
+  try {
+    const brand = await brandStore.getBySlug(slug);
+    if (brand?.catalog) {
+      res.set('Cache-Control', 'public, max-age=60');
+      return res.json(brand.catalog);
+    }
+    const fallback = await readBuiltinFile(slug, 'catalog.json');
+    if (fallback) {
+      res.set('Cache-Control', 'public, max-age=300');
+      res.set('Content-Type', 'application/json');
+      return res.send(fallback);
+    }
+    return res.status(404).json({ error: 'Catalog not found' });
+  } catch {
+    return res.status(500).json({ error: 'Failed to load catalog' });
+  }
+});
+
+router.get('/brands/:slug/variables.json', async (req, res) => {
+  const { slug } = req.params;
+  if (!isValidSlug(slug)) return res.status(404).json({ error: 'Variables not found' });
+  try {
+    const brand = await brandStore.getBySlug(slug);
+    if (brand?.variables) {
+      res.set('Cache-Control', 'public, max-age=60');
+      return res.json(brand.variables);
+    }
+    const fallback = await readBuiltinFile(slug, 'variables.json');
+    if (fallback) {
+      res.set('Cache-Control', 'public, max-age=300');
+      res.set('Content-Type', 'application/json');
+      return res.send(fallback);
+    }
+    return res.status(404).json({ error: 'Variables not found' });
+  } catch {
+    return res.status(500).json({ error: 'Failed to load variables' });
+  }
+});
+
+router.get('/brands/:slug/css/theme.css', async (req, res) => {
+  const { slug } = req.params;
+  if (!isValidSlug(slug)) return res.status(404).send('/* Brand not found */');
+  try {
+    const brand = await brandStore.getBySlug(slug);
+    if (brand?.themeCss) {
+      res.set('Content-Type', 'text/css');
+      res.set('Cache-Control', 'public, max-age=300');
+      return res.send(brand.themeCss);
+    }
+    const fallback = await readBuiltinFile(slug, 'css', 'theme.css');
+    if (fallback) {
+      res.set('Content-Type', 'text/css');
+      res.set('Cache-Control', 'public, max-age=600');
+      return res.send(fallback);
+    }
+    return res.status(404).send('/* Brand theme not found */');
+  } catch {
+    return res.status(500).send('/* Failed to load theme */');
+  }
+});
 
 /**
  * GET /api/storefront/catalog

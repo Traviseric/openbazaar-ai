@@ -532,20 +532,83 @@
             'wealth-wise': '💰'
         };
 
+        // Fetch a brand asset from the DB-backed API first (where runtime-
+        // scaffolded brands live, since @vercel/node has a read-only FS),
+        // then fall back to the static FS path for built-in brands.
+        async function fetchBrandAsset(slug, suffix) {
+            const apiPath = `/api/storefront/brands/${slug}/${suffix}`;
+            const fsPath = `/brands/${slug}/${suffix}`;
+            try {
+                const resp = await fetch(apiPath);
+                if (resp.ok) return resp;
+            } catch (e) {
+                // Network issue — try FS path
+            }
+            return fetch(fsPath);
+        }
+
         async function loadBrandConfig() {
             try {
-                const response = await fetch(`/brands/${BRAND_ID}/config.json`);
+                const response = await fetchBrandAsset(BRAND_ID, 'config.json');
+                if (!response.ok) throw new Error(`config ${response.status}`);
                 brandConfig = await response.json();
+                applyBrandTheme(BRAND_ID, brandConfig);
                 updateBrandInfo(brandConfig);
+                updateBrandCopy(brandConfig);
             } catch (error) {
                 console.error('Error loading brand config:', error);
             }
         }
 
+        // Apply theme via per-brand CSS file + CSS custom properties.
+        // Tries the DB-backed API first (for runtime-scaffolded brands on
+        // serverless), falls back to the static path for built-in brands.
+        function applyBrandTheme(brandId, config) {
+            if (!config) return;
+            document.body.classList.add(`${brandId}-theme`);
+            const existing = document.querySelector(`link[data-brand="${brandId}"]`);
+            if (!existing) {
+                const apiLink = document.createElement('link');
+                apiLink.rel = 'stylesheet';
+                apiLink.href = `/api/storefront/brands/${brandId}/css/theme.css`;
+                apiLink.dataset.brand = brandId;
+                // If the API serves a 404 (built-in brand without a DB row),
+                // browsers ignore the response body. We add a FS fallback
+                // link that will load successfully for built-in brands.
+                apiLink.onerror = () => {
+                    const fsLink = document.createElement('link');
+                    fsLink.rel = 'stylesheet';
+                    fsLink.href = `/brands/${brandId}/css/theme.css`;
+                    fsLink.dataset.brand = `${brandId}-fs`;
+                    document.head.appendChild(fsLink);
+                };
+                document.head.appendChild(apiLink);
+            }
+            const theme = config.theme || {};
+            const root = document.documentElement;
+            const propMap = {
+                primaryColor: '--brand-primary-color',
+                secondaryColor: '--brand-secondary-color',
+                accentColor: '--brand-accent-color',
+                backgroundColor: '--brand-background-color',
+                surfaceColor: '--brand-surface-color',
+                textColor: '--brand-text-color',
+                textSecondary: '--brand-text-secondary',
+                borderColor: '--brand-border-color',
+                fontFamily: '--brand-font-family',
+                font: '--brand-font-family',
+                headingFont: '--brand-heading-font',
+            };
+            Object.entries(theme).forEach(([k, v]) => {
+                if (typeof v === 'string' && propMap[k]) root.style.setProperty(propMap[k], v);
+            });
+        }
+
         function updateBrandInfo(config) {
             const brandName = config.name || config.brandName || BRAND_ID;
+            const emoji = config.logo || BRAND_EMOJIS[BRAND_ID] || '📚';
 
-            document.getElementById('brand-emoji').textContent = BRAND_EMOJIS[BRAND_ID] || '📚';
+            document.getElementById('brand-emoji').textContent = emoji;
             document.getElementById('brand-logo').textContent = brandName;
             document.getElementById('brand-name').textContent = brandName;
             document.getElementById('brand-tagline').textContent = config.tagline || '';
@@ -554,9 +617,23 @@
             document.title = `${brandName} - Book Catalog`;
         }
 
+        // Apply archetype-specific copy (hero title/subtitle, CTA labels) when
+        // the storefront ships them from the scaffolder.
+        function updateBrandCopy(config) {
+            const copy = config.copy || {};
+            const heroH1 = document.querySelector('.hero h1, .hero-title');
+            const heroSub = document.querySelector('.hero .tagline, .hero-subtitle');
+            if (copy.heroTitle && heroH1) heroH1.textContent = copy.heroTitle;
+            if (copy.heroSubtitle && heroSub) heroSub.textContent = copy.heroSubtitle;
+            document.querySelectorAll('.cta-button, .btn-primary').forEach((btn) => {
+                if (copy.ctaButton) btn.textContent = copy.ctaButton;
+            });
+        }
+
         async function loadCatalog() {
             try {
-                const response = await fetch(`/brands/${BRAND_ID}/catalog.json`);
+                const response = await fetchBrandAsset(BRAND_ID, 'catalog.json');
+                if (!response.ok) throw new Error(`catalog ${response.status}`);
                 catalogData = await response.json();
 
                 displayBooks(catalogData.books || []);

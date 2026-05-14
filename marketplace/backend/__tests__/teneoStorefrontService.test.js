@@ -31,18 +31,38 @@ const baseClaim = {
   authorUserId: 'us-west-2:user-abc',
 };
 
+// Mock brandStore globally — every scaffoldStorefront() call writes to the
+// DB-backed brand store first (authoritative), then best-effort to FS. Tests
+// inspect both: brandStoreMock for the canonical write, tempDir for FS.
+// Variable name must start with `mock` for jest.mock to allow referencing it.
+const mockBrandStoreUpsert = jest.fn(async (record) => ({ ...record, createdAt: '2026-05-14T00:00:00Z', updatedAt: '2026-05-14T00:00:00Z' }));
+const mockBrandStoreGetBySlug = jest.fn(async () => null);
+
+jest.mock('../services/brandStore', () => ({
+  upsert: (...args) => mockBrandStoreUpsert(...args),
+  getBySlug: (...args) => mockBrandStoreGetBySlug(...args),
+  listByTerritory: jest.fn(async () => []),
+  setStatus: jest.fn(),
+}));
+
 describe('teneoStorefrontService', () => {
   let tempDir;
+  let originalFetch;
 
   beforeEach(async () => {
     jest.resetModules();
     tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'ob-storefront-'));
     process.env.MARKETPLACE_BRANDS_DIR = tempDir;
     process.env.PUBLIC_URL = 'https://openbazaar.test';
+    originalFetch = global.fetch;
+    mockBrandStoreUpsert.mockClear();
+    mockBrandStoreGetBySlug.mockClear();
+    mockBrandStoreGetBySlug.mockResolvedValue(null);
   });
 
   afterEach(async () => {
     await fs.rm(tempDir, { recursive: true, force: true });
+    global.fetch = originalFetch;
     delete process.env.MARKETPLACE_BRANDS_DIR;
     delete process.env.PUBLIC_URL;
   });
@@ -82,7 +102,7 @@ describe('teneoStorefrontService', () => {
     const catalog = await readBrand('medical', 'catalog.json');
 
     expect(result.slug).toBe('medical');
-    expect(result.publicUrl).toBe('https://openbazaar.test/store.html?brand=medical');
+    expect(result.publicUrl).toBe('https://openbazaar.test/store/store.html?brand=medical');
     expect(config.territory.territoryId).toBe('medical');
     expect(config.territory.publishingCodeFlags).toEqual(['health-uncertainty']);
     expect(catalog.books).toHaveLength(1);
@@ -122,6 +142,117 @@ describe('teneoStorefrontService', () => {
     const config = await readBrand('medical', 'config.json');
     expect(config.legal.disclaimer).toMatch(/medical advice/i);
     expect(config.legal.disclaimer).toMatch(/legal advice/i);
+  });
+
+  test('writes css/theme.css that scopes archetype theme to body.{slug}-theme', async () => {
+    const service = require('../services/teneoStorefrontService');
+    await service.scaffoldStorefront({ territory: medicalTerritory, claim: baseClaim });
+    const css = await fs.readFile(path.join(tempDir, 'medical', 'css', 'theme.css'), 'utf8');
+    const template = getTemplate('AUTHORITY_BRAND');
+    expect(css).toContain('body.medical-theme');
+    expect(css).toContain('--brand-primary-color');
+    expect(css).toContain(template.theme.primaryColor);
+    expect(css).toContain(template.theme.headingFont);
+  });
+
+  // -------------------------------------------------------------------------
+  // DB-backed authoritative write — survives serverless read-only FS
+  // -------------------------------------------------------------------------
+
+  test('writes brand record to DB-backed brandStore as authoritative source', async () => {
+    const service = require('../services/teneoStorefrontService');
+    await service.scaffoldStorefront({
+      territory: medicalTerritory,
+      claim: baseClaim,
+      firstBook: { bookId: 'book-1', title: 'First Book', priceUSD: 9.99 },
+    });
+
+    expect(mockBrandStoreUpsert).toHaveBeenCalledTimes(1);
+    const written = mockBrandStoreUpsert.mock.calls[0][0];
+    expect(written.slug).toBe('medical');
+    expect(written.territoryId).toBe('medical');
+    expect(written.archetype).toBe('AUTHORITY_BRAND');
+    expect(written.config.brand).toBe('medical');
+    expect(written.config.name).toBe('Medical Sovereignty');
+    expect(written.catalog.books).toHaveLength(1);
+    expect(written.themeCss).toContain('body.medical-theme');
+    expect(written.publishingCodeFlags).toEqual(medicalTerritory.publishingCodeFlags);
+    expect(written.publicUrl).toContain('/store/store.html?brand=medical');
+    expect(written.catalogUrl).toContain('/api/storefront/brands/medical/catalog.json');
+    expect(written.status).toBe('live');
+  });
+
+  test('public URL points at /store/store.html (matches Vercel routes), not legacy /store.html', async () => {
+    const service = require('../services/teneoStorefrontService');
+    const result = await service.scaffoldStorefront({ territory: medicalTerritory, claim: baseClaim });
+    expect(result.publicUrl).toMatch(/\/store\/store\.html\?brand=medical/);
+    expect(result.publicUrl).not.toMatch(/openbazaar\.test\/store\.html/);
+  });
+
+  test('catalog URL points at /api/storefront/brands (DB-served, not FS)', async () => {
+    const service = require('../services/teneoStorefrontService');
+    const result = await service.scaffoldStorefront({ territory: medicalTerritory, claim: baseClaim });
+    expect(result.catalogUrl).toMatch(/\/api\/storefront\/brands\/medical\/catalog\.json/);
+  });
+
+  test('normalizes public base URL from environment before returning URLs', async () => {
+    process.env.PUBLIC_URL = ' https://openbazaar.test/\r\n';
+    jest.resetModules();
+    const service = require('../services/teneoStorefrontService');
+
+    const result = await service.scaffoldStorefront({ territory: medicalTerritory, claim: baseClaim });
+
+    expect(result.publicUrl).toBe('https://openbazaar.test/store/store.html?brand=medical');
+    expect(result.catalogUrl).toBe('https://openbazaar.test/api/storefront/brands/medical/catalog.json');
+  });
+
+  test('scaffold succeeds even when filesystem is read-only (EROFS)', async () => {
+    // Simulate @vercel/node read-only FS by pointing the brand dir at a
+    // path the process cannot write to. The scaffolder should swallow the
+    // EROFS/EACCES error from the best-effort FS writes and return success.
+    process.env.MARKETPLACE_BRANDS_DIR = '/proc/1/root/__readonly_brands__';
+    jest.resetModules();
+    const service = require('../services/teneoStorefrontService');
+
+    const result = await service.scaffoldStorefront({
+      territory: medicalTerritory,
+      claim: baseClaim,
+    });
+
+    expect(result.slug).toBe('medical');
+    expect(result.status).toBe('live');
+    // DB write still happened — that's the authoritative path
+    expect(mockBrandStoreUpsert).toHaveBeenCalledTimes(1);
+  });
+
+  test('re-running uses existing DB row as base when FS is empty', async () => {
+    // First call writes to DB (mocked) — capture what was written
+    const service = require('../services/teneoStorefrontService');
+    await service.scaffoldStorefront({
+      territory: medicalTerritory,
+      claim: baseClaim,
+      firstBook: { bookId: 'book-1', title: 'First Book', priceUSD: 9.99 },
+    });
+    const firstCall = mockBrandStoreUpsert.mock.calls[0][0];
+
+    // Second call: simulate DB returning the first record (as it would
+    // in prod with a real Postgres). FS is fresh tempDir with no folder.
+    mockBrandStoreGetBySlug.mockResolvedValueOnce({
+      slug: firstCall.slug,
+      config: firstCall.config,
+      catalog: firstCall.catalog,
+    });
+
+    const result = await service.scaffoldStorefront({
+      territory: medicalTerritory,
+      claim: baseClaim,
+      firstBook: { bookId: 'book-2', title: 'Second Book', priceUSD: 14.99 },
+    });
+
+    expect(result.bookCount).toBe(2);
+    const secondWrite = mockBrandStoreUpsert.mock.calls[1][0];
+    const titles = secondWrite.catalog.books.map((b) => b.title);
+    expect(titles).toEqual(expect.arrayContaining(['First Book', 'Second Book']));
   });
 
   test('unknown archetype falls through to AUTHORITY_BRAND defaults', async () => {
@@ -185,6 +316,18 @@ describe('teneoStorefrontService', () => {
   });
 
   test('finalized planned book upgrades the roadmap entry in place', async () => {
+    global.fetch = jest.fn(async (url) => ({
+      ok: true,
+      headers: {
+        get: (name) => {
+          if (name === 'content-type' && url.endsWith('.epub')) return 'application/epub+zip';
+          if (name === 'content-type' && url.endsWith('.pdf')) return 'application/pdf';
+          if (name === 'content-length') return '12';
+          return null;
+        },
+      },
+      arrayBuffer: async () => Buffer.from(`asset:${url}`).buffer,
+    }));
     const service = require('../services/teneoStorefrontService');
     await service.scaffoldStorefront({
       territory: medicalTerritory,
@@ -217,6 +360,10 @@ describe('teneoStorefrontService', () => {
     expect(catalog.books[0].status).toBe('live');
     expect(catalog.books[0].formats.map((format) => format.type)).toEqual(['epub', 'pdf']);
     expect(catalog.books[0].digitalFile.type).toBe('epub');
+    expect(catalog.books[0].formats[0].url).toBe('/brands/medical/books/med-1/epub.epub');
+    expect(catalog.books[0].formats[1].url).toBe('/brands/medical/books/med-1/pdf.pdf');
+    await expect(fs.readFile(path.join(tempDir, 'medical', 'books', 'med-1', 'epub.epub'))).resolves.toBeTruthy();
+    await expect(fs.readFile(path.join(tempDir, 'medical', 'books', 'med-1', 'pdf.pdf'))).resolves.toBeTruthy();
   });
 
   // -------------------------------------------------------------------------

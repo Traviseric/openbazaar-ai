@@ -237,6 +237,31 @@ CREATE INDEX IF NOT EXISTS idx_teneo_listings_author ON teneo_marketplace_listin
 CREATE INDEX IF NOT EXISTS idx_teneo_listings_status ON teneo_marketplace_listings(status);
 CREATE INDEX IF NOT EXISTS idx_teneo_listings_slug ON teneo_marketplace_listings(slug);
 
+-- Runtime-scaffolded brand storefronts (Capability Restoration Catalog claims).
+-- Built-in brands like true-earth ship as files under marketplace/frontend/brands/;
+-- scaffolded brands live here because @vercel/node serverless has a read-only
+-- filesystem at runtime. Routes in storefront.js serve config/catalog/theme from
+-- this table, falling back to FS for built-in brands.
+CREATE TABLE IF NOT EXISTS teneo_marketplace_brands (
+    slug TEXT PRIMARY KEY,
+    territory_id TEXT,
+    archetype TEXT,
+    config_json TEXT NOT NULL,
+    catalog_json TEXT NOT NULL,
+    variables_json TEXT,
+    theme_css TEXT,
+    publishing_code_flags_json TEXT,
+    public_url TEXT,
+    catalog_url TEXT,
+    status TEXT NOT NULL DEFAULT 'live',
+    book_count INTEGER DEFAULT 0,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_teneo_brands_territory ON teneo_marketplace_brands(territory_id);
+CREATE INDEX IF NOT EXISTS idx_teneo_brands_status ON teneo_marketplace_brands(status);
+
 -- Book ranking history table
 CREATE TABLE IF NOT EXISTS book_ranking_history (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

@@ -2,7 +2,10 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const { getTemplate } = require('./archetypeTemplates');
+const { getTemplate, buildThemeCss } = require('./archetypeTemplates');
+const brandStore = require('./brandStore');
+
+const MAX_ASSET_BYTES = Number(process.env.MARKETPLACE_ASSET_MAX_BYTES || 75 * 1024 * 1024);
 
 function brandsDir() {
   return path.resolve(
@@ -47,6 +50,137 @@ async function readJson(filePath, fallback) {
 
 async function writeJson(filePath, value) {
   await fs.writeFile(filePath, JSON.stringify(value, null, 2) + '\n');
+}
+
+function safeAssetId(value, fallback = 'book') {
+  return slugify(value, fallback).slice(0, 96);
+}
+
+function isHttpUrl(value) {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
+function extensionFromContentType(contentType) {
+  const normalized = String(contentType || '').toLowerCase().split(';')[0].trim();
+  if (normalized === 'application/epub+zip') return 'epub';
+  if (normalized === 'application/pdf') return 'pdf';
+  if (normalized === 'image/jpeg') return 'jpg';
+  if (normalized === 'image/png') return 'png';
+  if (normalized === 'image/webp') return 'webp';
+  return null;
+}
+
+function extensionFromUrl(url) {
+  try {
+    const ext = path.extname(new URL(url).pathname).replace(/^\./, '').toLowerCase();
+    return /^[a-z0-9]{1,8}$/.test(ext) ? ext : null;
+  } catch {
+    return null;
+  }
+}
+
+function formatExtension(format, sourceUrl, contentType) {
+  return extensionFromContentType(contentType) || extensionFromUrl(sourceUrl) || {
+    epub: 'epub',
+    pdf: 'pdf',
+  }[format] || 'bin';
+}
+
+async function downloadRemoteAsset(sourceUrl, destinationPath) {
+  if (!isHttpUrl(sourceUrl) || typeof fetch !== 'function') {
+    return { stored: false, reason: 'unsupported-source' };
+  }
+
+  const response = await fetch(sourceUrl);
+  if (!response.ok) {
+    return { stored: false, reason: `download-${response.status}` };
+  }
+
+  const contentLength = Number(response.headers?.get?.('content-length') || 0);
+  if (contentLength > MAX_ASSET_BYTES) {
+    return { stored: false, reason: 'asset-too-large' };
+  }
+
+  const buffer = Buffer.from(await response.arrayBuffer());
+  if (buffer.length > MAX_ASSET_BYTES) {
+    return { stored: false, reason: 'asset-too-large' };
+  }
+
+  await fs.mkdir(path.dirname(destinationPath), { recursive: true });
+  await fs.writeFile(destinationPath, buffer);
+  return {
+    stored: true,
+    bytes: buffer.length,
+    contentType: response.headers?.get?.('content-type') || null,
+  };
+}
+
+async function custodyFormatFile(formatFile, slug, bookAssetId, brandDir) {
+  const sourceUrl = formatFile.url || formatFile.downloadUrl;
+  if (!sourceUrl) return formatFile;
+
+  const next = { ...formatFile, sourceUrl };
+  if (!isHttpUrl(sourceUrl)) {
+    return next;
+  }
+
+  const provisionalExt = formatExtension(formatFile.type, sourceUrl);
+  const provisionalPath = path.join(brandDir, 'books', bookAssetId, `${safeAssetId(formatFile.type, 'file')}.${provisionalExt}`);
+  try {
+    const result = await downloadRemoteAsset(sourceUrl, provisionalPath);
+    if (!result.stored) {
+      return { ...next, custody: { status: 'external', reason: result.reason } };
+    }
+
+    const finalExt = formatExtension(formatFile.type, sourceUrl, result.contentType);
+    const finalName = `${safeAssetId(formatFile.type, 'file')}.${finalExt}`;
+    const finalPath = path.join(brandDir, 'books', bookAssetId, finalName);
+    if (finalPath !== provisionalPath) {
+      await fs.rename(provisionalPath, finalPath);
+    }
+    const localUrl = `/brands/${slug}/books/${bookAssetId}/${finalName}`;
+    return {
+      ...next,
+      url: localUrl,
+      storedPath: localUrl,
+      custody: {
+        status: 'stored',
+        bytes: result.bytes,
+        sourceUrl,
+        storedAt: new Date().toISOString(),
+      },
+    };
+  } catch (error) {
+    return { ...next, custody: { status: 'failed', error: error.message } };
+  }
+}
+
+async function custodyCover(book, slug, bookAssetId, brandDir) {
+  const sourceUrl = book.coverUrl || book.coverImage;
+  if (!isHttpUrl(sourceUrl)) {
+    return sourceUrl || `/brands/${slug}/assets/covers/${bookAssetId}.jpg`;
+  }
+
+  const provisionalExt = extensionFromUrl(sourceUrl) || 'jpg';
+  const provisionalPath = path.join(brandDir, 'assets', 'covers', `${bookAssetId}.${provisionalExt}`);
+  try {
+    const result = await downloadRemoteAsset(sourceUrl, provisionalPath);
+    if (!result.stored) return sourceUrl;
+
+    const finalExt = extensionFromContentType(result.contentType) || provisionalExt;
+    const finalPath = path.join(brandDir, 'assets', 'covers', `${bookAssetId}.${finalExt}`);
+    if (finalPath !== provisionalPath) {
+      await fs.rename(provisionalPath, finalPath);
+    }
+    return `/brands/${slug}/assets/covers/${bookAssetId}.${finalExt}`;
+  } catch {
+    return sourceUrl;
+  }
 }
 
 function normalizeTerritory(payload) {
@@ -169,18 +303,24 @@ function roadmapCollections(territory) {
   }];
 }
 
-function normalizeBook(book, territory, slug) {
+async function normalizeBook(book, territory, slug, brandDir) {
   if (!book || !book.title) return null;
   const id = book.plannedBookId || book.id || book.bookId || book.teneoBookId || slugify(book.title);
+  const bookAssetId = safeAssetId(id);
   const teneoBookId = book.teneoBookId || book.bookId || null;
   const rawFormats = book.formatFiles || book.formats || [];
-  const formatFiles = Array.isArray(rawFormats)
+  const externalFormatFiles = Array.isArray(rawFormats)
     ? rawFormats.filter((item) => item && typeof item === 'object')
     : [];
+  const formatFiles = [];
+  for (const formatFile of externalFormatFiles) {
+    formatFiles.push(await custodyFormatFile(formatFile, slug, bookAssetId, brandDir));
+  }
   const formatNames = Array.isArray(rawFormats)
     ? rawFormats.map((item) => (typeof item === 'string' ? item : item.type)).filter(Boolean)
     : ['digital'];
-  const digitalFile = book.digitalFile || formatFiles.find((item) => item.type === 'epub') || formatFiles[0] || null;
+  const digitalFile = formatFiles.find((item) => item.type === 'epub') || formatFiles[0] || book.digitalFile || null;
+  const coverImage = await custodyCover(book, slug, bookAssetId, brandDir);
   return {
     id,
     plannedBookId: book.plannedBookId || null,
@@ -195,7 +335,7 @@ function normalizeBook(book, territory, slug) {
     status: book.status || (teneoBookId ? 'live' : 'planned'),
     format: formatNames.length ? formatNames : ['digital'],
     formats: formatFiles,
-    coverImage: book.coverUrl || book.coverImage || `/brands/${slug}/assets/covers/${id}.jpg`,
+    coverImage,
     digitalFile,
     listingId: book.listingId || null,
     tags: [
@@ -229,22 +369,38 @@ function upsertBook(books, book) {
   return [book, ...books];
 }
 
+async function tryFsWrite(fn, label) {
+  try {
+    await fn();
+    return true;
+  } catch (err) {
+    // @vercel/node serverless: marketplace/frontend/brands/ is read-only at
+    // runtime. DB write is authoritative; FS writes are best-effort for
+    // local dev where the brand folder is browsable directly.
+    if (err && (err.code === 'EROFS' || err.code === 'EACCES' || err.code === 'EPERM')) {
+      // Expected in production. Silent skip.
+      return false;
+    }
+    // eslint-disable-next-line no-console
+    console.warn(`[scaffoldStorefront] FS write skipped (${label}): ${err.message}`);
+    return false;
+  }
+}
+
 async function scaffoldStorefront(payload) {
   const territory = normalizeTerritory(payload);
   const slug = slugify(payload.slug || territory.slug || territory.territoryId || territory.name);
   const brandDir = assertSafeBrandSlug(slug);
 
-  await fs.mkdir(path.join(brandDir, 'assets', 'covers'), { recursive: true });
-  await fs.mkdir(path.join(brandDir, 'books'), { recursive: true });
-  await fs.mkdir(path.join(brandDir, 'blog'), { recursive: true });
+  // Load any existing brand row from DB (authoritative source) and merge.
+  // Falls back to FS for built-in brands that pre-date this table.
+  const existingBrand = await brandStore.getBySlug(slug);
+  const existingConfig = existingBrand?.config
+    || await readJson(path.join(brandDir, 'config.json'), {}).catch(() => ({}));
+  const existingCatalog = existingBrand?.catalog
+    || await readJson(path.join(brandDir, 'catalog.json'), {}).catch(() => ({}));
 
-  const configPath = path.join(brandDir, 'config.json');
-  const catalogPath = path.join(brandDir, 'catalog.json');
-  const variablesPath = path.join(brandDir, 'variables.json');
-  const existingConfig = await readJson(configPath, {});
-  const existingCatalog = await readJson(catalogPath, {});
-
-  const firstBook = normalizeBook(payload.firstBook, territory, slug);
+  const firstBook = await normalizeBook(payload.firstBook, territory, slug, brandDir);
   const catalog = {
     ...existingCatalog,
     brand: slug,
@@ -265,18 +421,50 @@ async function scaffoldStorefront(payload) {
     PRIMARY_ARCHETYPE: config.territory.primaryArchetype,
     FIRST_BOOK_TITLE: firstBook?.title || '',
   };
+  const themeCss = buildThemeCss(slug, config);
 
-  await writeJson(configPath, config);
-  await writeJson(catalogPath, catalog);
-  await writeJson(variablesPath, variables);
+  const publicBase = (process.env.PUBLIC_URL || process.env.FRONTEND_URL || 'https://openbazaar.ai')
+    .trim()
+    .replace(/\/$/, '');
+  const publicUrl = `${publicBase}/store/store.html?brand=${encodeURIComponent(slug)}`;
+  const catalogUrl = `${publicBase}/api/storefront/brands/${encodeURIComponent(slug)}/catalog.json`;
 
-  const publicBase = process.env.PUBLIC_URL || process.env.FRONTEND_URL || 'https://openbazaar.ai';
+  // 1) Authoritative DB write — must succeed in any environment.
+  await brandStore.upsert({
+    slug,
+    territoryId: territory.territoryId,
+    archetype: config.territory.primaryArchetype,
+    config,
+    catalog,
+    variables,
+    themeCss,
+    publishingCodeFlags: territory.publishingCodeFlags || [],
+    publicUrl,
+    catalogUrl,
+    status: 'live',
+    bookCount: (catalog.books || []).length,
+  });
+
+  // 2) Best-effort FS writes — only succeed where the filesystem is writable
+  // (local dev, persistent-disk hosts). In production serverless (Vercel,
+  // @vercel/node) these silently no-op and the DB row is the only artifact.
+  await tryFsWrite(async () => {
+    await fs.mkdir(path.join(brandDir, 'assets', 'covers'), { recursive: true });
+    await fs.mkdir(path.join(brandDir, 'books'), { recursive: true });
+    await fs.mkdir(path.join(brandDir, 'blog'), { recursive: true });
+    await fs.mkdir(path.join(brandDir, 'css'), { recursive: true });
+    await writeJson(path.join(brandDir, 'config.json'), config);
+    await writeJson(path.join(brandDir, 'catalog.json'), catalog);
+    await writeJson(path.join(brandDir, 'variables.json'), variables);
+    await fs.writeFile(path.join(brandDir, 'css', 'theme.css'), themeCss);
+  }, 'brand folder');
+
   return {
     storefrontId: slug,
     slug,
     brandId: slug,
-    publicUrl: `${publicBase.replace(/\/$/, '')}/store.html?brand=${encodeURIComponent(slug)}`,
-    catalogUrl: `${publicBase.replace(/\/$/, '')}/brands/${encodeURIComponent(slug)}/catalog.json`,
+    publicUrl,
+    catalogUrl,
     status: 'live',
     bookCount: catalog.books.length,
     primaryArchetype: config.territory.primaryArchetype,

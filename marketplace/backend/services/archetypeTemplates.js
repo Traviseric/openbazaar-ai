@@ -186,4 +186,98 @@ function listArchetypes() {
   return Object.keys(TEMPLATES);
 }
 
-module.exports = { getTemplate, listArchetypes, TEMPLATES };
+/**
+ * Render a `:root` + `body.{slug}-theme` CSS file from a brand config.
+ * Matches the convention used by `true-earth/css/theme.css` and is consumed by
+ * `marketplace/frontend/js/brand-manager.js` (and an inline applier added to
+ * `store.html`) so scaffolded storefronts actually look themed instead of
+ * defaulting to the generic page styling.
+ */
+function buildThemeCss(slug, brandConfig) {
+  const theme = (brandConfig && brandConfig.theme) || {};
+  const safeSlug = String(slug || '').replace(/[^a-z0-9-]/g, '');
+  const primary = theme.primaryColor || '#1a365d';
+  const secondary = theme.secondaryColor || '#c89b3c';
+  const accent = theme.accentColor || primary;
+  const bg = theme.backgroundColor || '#FFFFFF';
+  const surface = theme.surfaceColor || '#F9FAFB';
+  const text = theme.textColor || '#111827';
+  const textSecondary = theme.textSecondary || '#4B5563';
+  const border = theme.borderColor || '#E5E7EB';
+  const font = theme.fontFamily || theme.font || "'Inter', -apple-system, sans-serif";
+  const headingFont = theme.headingFont || font;
+
+  return `/* Auto-generated theme for ${brandConfig?.name || safeSlug} */
+:root {
+  --brand-primary-color: ${primary};
+  --brand-secondary-color: ${secondary};
+  --brand-accent-color: ${accent};
+  --brand-background-color: ${bg};
+  --brand-surface-color: ${surface};
+  --brand-text-color: ${text};
+  --brand-text-secondary: ${textSecondary};
+  --brand-border-color: ${border};
+  --brand-font-family: ${font};
+  --brand-heading-font: ${headingFont};
+}
+
+body.${safeSlug}-theme {
+  background-color: ${bg};
+  color: ${text};
+  font-family: ${font};
+}
+
+body.${safeSlug}-theme .hero,
+body.${safeSlug}-theme header {
+  background-color: ${surface};
+  border-color: ${border};
+}
+
+body.${safeSlug}-theme .hero h1,
+body.${safeSlug}-theme h1,
+body.${safeSlug}-theme h2,
+body.${safeSlug}-theme h3 {
+  color: ${primary};
+  font-family: ${headingFont};
+}
+
+body.${safeSlug}-theme .hero .tagline,
+body.${safeSlug}-theme .nav a:hover {
+  color: ${accent};
+}
+
+body.${safeSlug}-theme .cta-button,
+body.${safeSlug}-theme button.primary,
+body.${safeSlug}-theme .btn-primary {
+  background-color: ${primary};
+  color: ${bg};
+  border: 1px solid ${primary};
+}
+
+body.${safeSlug}-theme .cta-button:hover,
+body.${safeSlug}-theme button.primary:hover,
+body.${safeSlug}-theme .btn-primary:hover {
+  background-color: ${accent};
+  border-color: ${accent};
+}
+
+body.${safeSlug}-theme .book-card,
+body.${safeSlug}-theme .card {
+  background-color: ${bg};
+  border: 1px solid ${border};
+}
+
+body.${safeSlug}-theme .book-title,
+body.${safeSlug}-theme .card-title {
+  color: ${primary};
+  font-family: ${headingFont};
+}
+
+body.${safeSlug}-theme .book-description,
+body.${safeSlug}-theme .text-muted {
+  color: ${textSecondary};
+}
+`;
+}
+
+module.exports = { getTemplate, listArchetypes, TEMPLATES, buildThemeCss };

@@ -1,0 +1,320 @@
+{
+  "schemaVersion": "openbazaar.ai/native-funnel-import/v0.1",
+  "sourceManifest": {
+    "schemaVersion": "openbazaar.ai/funnel-export/v0.1",
+    "system": "teneo",
+    "client": "teneo-production",
+    "runtimeVersion": "2026-05-14-preview-1",
+    "sourceDoc": "docs/marketing/funnels/HUMAN-CAPABILITY-RESTORATION-FUNNEL-BLUEPRINT.md",
+    "definitionPath": "React/book-generator/src/data/funnelDefinitions.js"
+  },
+  "funnel": {
+    "id": "human-capability-restoration",
+    "slug": "human-capability-restoration",
+    "name": "Human Capability Restoration",
+    "status": "published",
+    "template": "teneo-runtime:human-capability-restoration",
+    "sourceRoute": "/territories",
+    "previewRoute": "/funnels/human-capability-restoration/preview",
+    "runtimeModules": [
+      "Hero",
+      "ProofRail",
+      "OfferStack",
+      "CourseOutline",
+      "OpenBazaarListingPreview",
+      "FAQ",
+      "RiskReversal"
+    ],
+    "theme": {
+      "accent": "restoration",
+      "image": "/examples/never-again-cover.png"
+    },
+    "blocks": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "eyebrow": "Human Capability Restoration",
+        "headline": "Claim a knowledge territory and turn it into a public catalog, course, and business surface.",
+        "body": "This is the native Teneo test client for OpenBazaar territory storefronts, claim packages, and post-generation marketplace proof.",
+        "primaryCta": {
+          "id": "claim-territory",
+          "label": "Claim a territory",
+          "to": "/territories/medical"
+        },
+        "secondaryCta": {
+          "id": "view-catalog",
+          "label": "Open live catalog",
+          "to": "/territories"
+        },
+        "proofPoints": [
+          "Territory catalog",
+          "Claim checkout",
+          "Storefront scaffold",
+          "First book roadmap"
+        ]
+      },
+      {
+        "id": "proof-rail",
+        "type": "proofRail",
+        "items": [
+          {
+            "label": "Claim package",
+            "value": "$197",
+            "detail": "territory commitment test"
+          },
+          {
+            "label": "Catalog seed",
+            "value": "Book 1",
+            "detail": "first OpenBazaar listing candidate"
+          },
+          {
+            "label": "Fulfillment",
+            "value": "Teneo",
+            "detail": "launch kit and generation workflow"
+          }
+        ]
+      },
+      {
+        "id": "offer-stack",
+        "type": "offerStack",
+        "title": "Claim package components",
+        "offers": [
+          {
+            "id": "territory-package",
+            "name": "Territory Claim Package",
+            "price": "$197",
+            "description": "A protected claim intent, territory roadmap, and launch kit path.",
+            "features": [
+              "Claim checkout",
+              "Launch kit",
+              "First catalog plan"
+            ],
+            "cta": {
+              "id": "checkout-claim-package",
+              "label": "Start claim checkout",
+              "to": "/territories/medical"
+            }
+          },
+          {
+            "id": "territory-storefront",
+            "name": "OpenBazaar Storefront Scaffold",
+            "price": "Fulfillment target",
+            "description": "The claimed territory should become a public catalog surface as OpenBazaar wiring matures.",
+            "features": [
+              "Storefront metadata",
+              "Catalog proof rail",
+              "Fulfillment callback"
+            ],
+            "cta": {
+              "id": "view-catalog-proof",
+              "label": "View territories",
+              "to": "/territories"
+            }
+          }
+        ]
+      },
+      {
+        "id": "course-outline",
+        "type": "courseOutline",
+        "title": "Course and catalog path",
+        "modules": [
+          {
+            "title": "Pick the territory",
+            "detail": "Filter, inspect, save, and choose a knowledge territory."
+          },
+          {
+            "title": "Claim the package",
+            "detail": "Checkout preserves funnel, territory, and attribution metadata."
+          },
+          {
+            "title": "Build the public surface",
+            "detail": "Generate launch kit, first book plan, and OpenBazaar storefront payload."
+          }
+        ]
+      },
+      {
+        "id": "listing-preview",
+        "type": "openBazaarListingPreview",
+        "title": "OpenBazaar territory payload",
+        "subtitle": "This is the storefront/course/catalog shape the next client should be able to reuse.",
+        "fields": [
+          [
+            "funnelId",
+            "human-capability-restoration"
+          ],
+          [
+            "productType",
+            "territory_storefront_and_catalog_seed"
+          ],
+          [
+            "checkoutMetadata",
+            "territoryId, funnel, source, utm, ref, affiliateId"
+          ],
+          [
+            "fulfillmentCallback",
+            "Teneo launch kit, first book roadmap, listing scaffold"
+          ]
+        ]
+      },
+      {
+        "id": "faq",
+        "type": "faq",
+        "items": [
+          {
+            "question": "Why start here?",
+            "answer": "It exercises every high-value path: claim intent, checkout, launch kit, course shape, catalog proof, and OpenBazaar storefront handoff."
+          },
+          {
+            "question": "What should OpenBazaar own later?",
+            "answer": "The reusable funnel page, course enrollment, public storefront, checkout metadata, and fulfillment callback display."
+          }
+        ]
+      },
+      {
+        "id": "risk-reversal",
+        "type": "riskReversal",
+        "title": "Launch rule",
+        "body": "The claim funnel should not be advertised as automatic until checkout, launch kit creation, and OpenBazaar storefront/listing handoff are verified end to end."
+      }
+    ]
+  },
+  "course": {
+    "slug": "human-capability-restoration-course",
+    "title": "Course and catalog path",
+    "description": "This is the native Teneo test client for OpenBazaar territory storefronts, claim packages, and post-generation marketplace proof.",
+    "price_cents": 19700,
+    "is_published": 1,
+    "modules": [
+      {
+        "title": "Pick the territory",
+        "order_index": 0,
+        "lessons": [
+          {
+            "title": "Pick the territory",
+            "content_type": "text",
+            "content_body": "Filter, inspect, save, and choose a knowledge territory.",
+            "order_index": 0,
+            "is_free_preview": 1
+          }
+        ]
+      },
+      {
+        "title": "Claim the package",
+        "order_index": 1,
+        "lessons": [
+          {
+            "title": "Claim the package",
+            "content_type": "text",
+            "content_body": "Checkout preserves funnel, territory, and attribution metadata.",
+            "order_index": 0,
+            "is_free_preview": 0
+          }
+        ]
+      },
+      {
+        "title": "Build the public surface",
+        "order_index": 2,
+        "lessons": [
+          {
+            "title": "Build the public surface",
+            "content_type": "text",
+            "content_body": "Generate launch kit, first book plan, and OpenBazaar storefront payload.",
+            "order_index": 0,
+            "is_free_preview": 0
+          }
+        ]
+      }
+    ]
+  },
+  "storefront": {
+    "slug": "human-capability-restoration",
+    "surface": "marketplace.create-storefront",
+    "type": "territory_storefront",
+    "listingSeed": null,
+    "catalogSeed": "claimed_territory_first_book",
+    "proofCounters": [
+      "territories_claimed",
+      "catalog_books",
+      "launch_kits_generated"
+    ],
+    "fulfillmentCallback": {
+      "owner": "teneo",
+      "action": "territory_launch_kit_then_storefront_scaffold"
+    }
+  },
+  "checkout": {
+    "productId": "territory-claim-package",
+    "productName": "$197 Claim Package",
+    "productType": "territory_storefront_and_catalog_seed",
+    "price": "$197",
+    "price_cents": 19700,
+    "checkoutRoute": "/territories/medical",
+    "successRoute": "/territories/claim-success",
+    "preserveParams": [
+      "territoryId",
+      "funnel",
+      "source",
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_term",
+      "utm_content",
+      "gclid",
+      "ref",
+      "affiliateId"
+    ],
+    "metadataKeys": [
+      "territoryId",
+      "funnelId",
+      "source",
+      "utm",
+      "ref",
+      "affiliateId",
+      "teneoSessionId"
+    ]
+  },
+  "observability": {
+    "eventFamily": "funnel_observability",
+    "events": [
+      "funnel_page_viewed",
+      "funnel_scroll_depth_reached",
+      "funnel_button_clicked",
+      "territory_detail_view",
+      "territory_claim_click",
+      "claim_package_checkout_started",
+      "territory_launch_kit_generated"
+    ],
+    "requiredBeforePaidTraffic": [
+      "page_view",
+      "territory_detail_view",
+      "claim_cta_click",
+      "checkout_started",
+      "success_route_viewed",
+      "launch_kit_created"
+    ]
+  },
+  "attribution": {
+    "preserveParams": [
+      "territoryId",
+      "funnel",
+      "source",
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_term",
+      "utm_content",
+      "gclid",
+      "ref",
+      "affiliateId"
+    ],
+    "checkoutMetadata": [
+      "territoryId",
+      "funnelId",
+      "source",
+      "utm",
+      "ref",
+      "affiliateId",
+      "teneoSessionId"
+    ]
+  }
+}

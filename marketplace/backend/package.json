@@ -13,6 +13,7 @@
     "compile:contracts": "npx hardhat compile",
     "init:db": "node database/init.js",
     "init:ai": "node scripts/init-ai-discovery.js",
+    "import:teneo-funnel": "node scripts/import-teneo-funnel.js",
     "generate:password": "node scripts/generate-password-hash.js",
     "test:adapter": "node scripts/test-adapter-parity.js",
     "test:stripe-flow": "node scripts/test-stripe-flow.js",

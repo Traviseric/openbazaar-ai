@@ -1,0 +1,308 @@
+{
+  "schemaVersion": "openbazaar.ai/native-funnel-import/v0.1",
+  "sourceManifest": {
+    "schemaVersion": "openbazaar.ai/funnel-export/v0.1",
+    "system": "teneo",
+    "client": "teneo-production",
+    "runtimeVersion": "2026-05-14-preview-1",
+    "sourceDoc": "docs/marketing/funnels/TENEO-CLICKFUNNELS-FUNNEL-BLUEPRINT.md",
+    "definitionPath": "React/book-generator/src/data/funnelDefinitions.js"
+  },
+  "funnel": {
+    "id": "ten-minute-author",
+    "slug": "ten-minute-author",
+    "name": "10-Minute Author",
+    "status": "published",
+    "template": "teneo-runtime:ten-minute-author",
+    "sourceRoute": "/10-minute-author",
+    "previewRoute": "/funnels/ten-minute-author/preview",
+    "runtimeModules": [
+      "Hero",
+      "ProofRail",
+      "OfferStack",
+      "CourseOutline",
+      "OpenBazaarListingPreview",
+      "FAQ",
+      "RiskReversal"
+    ],
+    "theme": {
+      "accent": "author",
+      "image": "/examples/authority-in-45-minutes-cover.png"
+    },
+    "blocks": [
+      {
+        "id": "hero",
+        "type": "hero",
+        "eyebrow": "10-Minute Author",
+        "headline": "Turn a book idea into a publishable asset before the day gets away from you.",
+        "body": "A focused first-book funnel for publishers who need momentum, proof, and a clean path into Teneo generation.",
+        "primaryCta": {
+          "id": "start-checkout",
+          "label": "Start the first book",
+          "to": "/signup/ten-dollar-offer?funnel=ten-minute-author"
+        },
+        "secondaryCta": {
+          "id": "inspect-builder",
+          "label": "View funnel builder",
+          "to": "/funnels"
+        },
+        "proofPoints": [
+          "First book starter offer",
+          "Generation handoff",
+          "OpenBazaar listing prompt"
+        ]
+      },
+      {
+        "id": "proof-rail",
+        "type": "proofRail",
+        "items": [
+          {
+            "label": "Entry offer",
+            "value": "$10",
+            "detail": "low-friction buyer creation"
+          },
+          {
+            "label": "Runtime blocks",
+            "value": "7",
+            "detail": "portable to OpenBazaar"
+          },
+          {
+            "label": "Next asset",
+            "value": "1 book",
+            "detail": "ready for listing and proof"
+          }
+        ]
+      },
+      {
+        "id": "offer-stack",
+        "type": "offerStack",
+        "title": "What the buyer gets",
+        "offers": [
+          {
+            "id": "book-credit",
+            "name": "First Book Generation",
+            "price": "$10",
+            "description": "A guided path into a Teneo book build with attribution preserved from the funnel.",
+            "features": [
+              "Book workflow entry",
+              "Welcome route",
+              "Upgrade path to Pro"
+            ],
+            "cta": {
+              "id": "checkout-book-credit",
+              "label": "Start first book",
+              "to": "/signup/ten-dollar-offer?funnel=ten-minute-author"
+            }
+          },
+          {
+            "id": "openbazaar-listing",
+            "name": "OpenBazaar Listing Prompt",
+            "price": "Included after generation",
+            "description": "The generated book can become a public marketplace listing once the handoff is live.",
+            "features": [
+              "Listing metadata",
+              "Author storefront path",
+              "Proof counter candidate"
+            ],
+            "cta": {
+              "id": "view-openbazaar-handoff",
+              "label": "Inspect handoff",
+              "to": "/funnels"
+            }
+          }
+        ]
+      },
+      {
+        "id": "course-outline",
+        "type": "courseOutline",
+        "title": "Course replacement path",
+        "modules": [
+          {
+            "title": "Choose the angle",
+            "detail": "Lock the promise, reader, and first book outcome."
+          },
+          {
+            "title": "Generate the asset",
+            "detail": "Move into Teneo with source and funnel attribution intact."
+          },
+          {
+            "title": "Publish the proof",
+            "detail": "Prompt the buyer to list the output through OpenBazaar."
+          }
+        ]
+      },
+      {
+        "id": "listing-preview",
+        "type": "openBazaarListingPreview",
+        "title": "OpenBazaar export shape",
+        "subtitle": "This funnel should export cleanly into the public runtime when OpenBazaar owns rendering.",
+        "fields": [
+          [
+            "funnelId",
+            "ten-minute-author"
+          ],
+          [
+            "productType",
+            "course_plus_generation_credit"
+          ],
+          [
+            "checkoutMetadata",
+            "funnel, source, utm, ref, affiliateId"
+          ],
+          [
+            "fulfillmentCallback",
+            "Teneo book generation and listing prompt"
+          ]
+        ]
+      },
+      {
+        "id": "faq",
+        "type": "faq",
+        "items": [
+          {
+            "question": "Does this replace ClickFunnels?",
+            "answer": "This preview is the first reusable funnel runtime slice. The live page can migrate block by block once the runtime is proven."
+          },
+          {
+            "question": "Does this replace Teachable?",
+            "answer": "The course outline block is the first course-delivery shape. OpenBazaar should own enrollment, lessons, and progress when that module is ready."
+          }
+        ]
+      },
+      {
+        "id": "risk-reversal",
+        "type": "riskReversal",
+        "title": "Launch rule",
+        "body": "Do not send paid traffic until GA4 and PostHog both show page view, scroll, CTA, checkout, and success-route coverage."
+      }
+    ]
+  },
+  "course": {
+    "slug": "ten-minute-author-course",
+    "title": "Course replacement path",
+    "description": "A focused first-book funnel for publishers who need momentum, proof, and a clean path into Teneo generation.",
+    "price_cents": 1000,
+    "is_published": 1,
+    "modules": [
+      {
+        "title": "Choose the angle",
+        "order_index": 0,
+        "lessons": [
+          {
+            "title": "Choose the angle",
+            "content_type": "text",
+            "content_body": "Lock the promise, reader, and first book outcome.",
+            "order_index": 0,
+            "is_free_preview": 1
+          }
+        ]
+      },
+      {
+        "title": "Generate the asset",
+        "order_index": 1,
+        "lessons": [
+          {
+            "title": "Generate the asset",
+            "content_type": "text",
+            "content_body": "Move into Teneo with source and funnel attribution intact.",
+            "order_index": 0,
+            "is_free_preview": 0
+          }
+        ]
+      },
+      {
+        "title": "Publish the proof",
+        "order_index": 2,
+        "lessons": [
+          {
+            "title": "Publish the proof",
+            "content_type": "text",
+            "content_body": "Prompt the buyer to list the output through OpenBazaar.",
+            "order_index": 0,
+            "is_free_preview": 0
+          }
+        ]
+      }
+    ]
+  },
+  "storefront": {
+    "slug": "ten-minute-author",
+    "surface": "marketplace.publish-book",
+    "type": "author_storefront",
+    "listingSeed": "first_generated_book",
+    "catalogSeed": null,
+    "proofCounters": [],
+    "fulfillmentCallback": {
+      "owner": "teneo",
+      "action": "book_generation_then_listing_prompt"
+    }
+  },
+  "checkout": {
+    "productId": "first-book-starter",
+    "productName": "$10 First Book Starter",
+    "productType": "course_plus_generation_credit",
+    "price": "$10",
+    "price_cents": 1000,
+    "checkoutRoute": "/signup/ten-dollar-offer?funnel=ten-minute-author",
+    "successRoute": "/welcome-author",
+    "preserveParams": [
+      "funnel",
+      "source",
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_term",
+      "utm_content",
+      "gclid",
+      "ref",
+      "affiliateId"
+    ],
+    "metadataKeys": [
+      "funnelId",
+      "source",
+      "utm",
+      "ref",
+      "affiliateId",
+      "teneoSessionId"
+    ]
+  },
+  "observability": {
+    "eventFamily": "funnel_observability",
+    "events": [
+      "funnel_page_viewed",
+      "funnel_scroll_depth_reached",
+      "funnel_button_clicked",
+      "funnel_form_submitted",
+      "funnel_outbound_link_clicked"
+    ],
+    "requiredBeforePaidTraffic": [
+      "page_view",
+      "50_percent_scroll",
+      "primary_cta_click",
+      "checkout_started",
+      "success_route_viewed"
+    ]
+  },
+  "attribution": {
+    "preserveParams": [
+      "funnel",
+      "source",
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "utm_term",
+      "utm_content",
+      "gclid",
+      "ref",
+      "affiliateId"
+    ],
+    "checkoutMetadata": [
+      "funnelId",
+      "source",
+      "utm",
+      "ref",
+      "affiliateId",
+      "teneoSessionId"
+    ]
+  }
+}

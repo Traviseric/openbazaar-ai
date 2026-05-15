@@ -299,7 +299,13 @@ router.get('/brands/:slug/config.json', async (req, res) => {
   const { slug } = req.params;
   if (!isValidSlug(slug)) return res.status(404).json({ error: 'Brand not found' });
   try {
-    const brand = await brandStore.getBySlug(slug);
+    let brand = null;
+    try {
+      brand = await brandStore.getBySlug(slug);
+    } catch (dbErr) {
+      // DB unreachable — fall through to FS. Surface error so we know.
+      console.error(`[brandStore.getBySlug] ${slug}: ${dbErr.code || ''} ${dbErr.message}`);
+    }
     if (brand?.config) {
       res.set('Cache-Control', 'public, max-age=60');
       return res.json(brand.config);
@@ -311,9 +317,41 @@ router.get('/brands/:slug/config.json', async (req, res) => {
       return res.send(fallback);
     }
     return res.status(404).json({ error: 'Brand not found' });
-  } catch {
-    return res.status(500).json({ error: 'Failed to load brand config' });
+  } catch (err) {
+    return res.status(500).json({
+      error: 'Failed to load brand config',
+      detail: err.message,
+      code: err.code,
+    });
   }
+});
+
+// Diagnostic endpoint for deployment debugging. Keep disabled unless an
+// operator explicitly enables it for a short troubleshooting window.
+router.get('/_db_check', async (_req, res) => {
+  if (process.env.OPENBAZAAR_ENABLE_DB_DIAGNOSTICS !== 'true') {
+    return res.status(404).json({ error: 'Not found' });
+  }
+
+  const out = {
+    hasDatabaseUrl: Boolean(process.env.DATABASE_URL),
+    hasSupabaseDbUrl: Boolean(process.env.SUPABASE_DB_URL),
+    nodeEnv: process.env.NODE_ENV,
+  };
+  try {
+    const db = require('../database/database');
+    const r = await db.get('SELECT 1 AS ok');
+    out.dbQuery = r;
+    out.dbMode = 'connected';
+  } catch (err) {
+    out.dbMode = 'error';
+    out.error = err.message;
+    out.code = err.code;
+    if (process.env.NODE_ENV !== 'production') {
+      out.stack = (err.stack || '').split('\n').slice(0, 3).join(' | ');
+    }
+  }
+  res.json(out);
 });
 
 router.get('/brands/:slug/catalog.json', async (req, res) => {

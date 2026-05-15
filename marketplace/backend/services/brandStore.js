@@ -5,27 +5,52 @@
  *
  * Built-in brands (true-earth, teneo, wealth-wise…) ship as files under
  * marketplace/frontend/brands/ and are read from disk. Brands scaffolded at
- * runtime via the Capability Restoration Catalog Claim Package path live
- * here, because @vercel/node serverless functions have a read-only
- * filesystem (everything outside /tmp).
+ * runtime via the Capability Restoration Catalog Claim Package path live in
+ * Supabase, because @vercel/node serverless functions have a read-only
+ * filesystem (everything outside /tmp) and direct Postgres connections to
+ * Supabase free tier require the IPv4 add-on.
+ *
+ * This module uses the Supabase JS SDK over HTTPS (no Postgres pooler / IPv6
+ * dependency). Schema for `teneo_marketplace_brands` must be applied to the
+ * Supabase project via the SQL editor — see database/supabase-migration.sql.
+ *
+ * Required env vars (set on Vercel + locally):
+ *   SUPABASE_URL              — e.g. https://ncddvxglmnnfagyyupeu.supabase.co
+ *   SUPABASE_SERVICE_ROLE_KEY — service-role JWT (bypasses RLS, server-side only)
  *
  * Routes in `routes/storefront.js` serve config/catalog/theme.css from this
- * table, falling back to FS for built-in brands. The scaffolder writes here
+ * store, falling back to FS for built-in brands. The scaffolder writes here
  * as the authoritative source and best-effort to FS for local dev.
  */
 
-const db = require('../database/database');
+const { createClient } = require('@supabase/supabase-js');
 
-function safeJson(value, fallback) {
-  if (value == null) return fallback;
-  if (typeof value === 'string') {
-    try {
-      return JSON.parse(value);
-    } catch {
-      return fallback;
-    }
+const TABLE = 'teneo_marketplace_brands';
+let _client = null;
+let _clientError = null;
+
+function getClient() {
+  if (_client) return _client;
+  if (_clientError) throw _clientError;
+  const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY
+    || process.env.SUPABASE_KEY
+    || process.env.SUPABASE_ANON_KEY
+    || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !key) {
+    _clientError = new Error(
+      'brandStore: SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are required '
+      + '(set on Vercel + .env). Service role recommended; anon will fail '
+      + 'writes under RLS.'
+    );
+    _clientError.code = 'SUPABASE_NOT_CONFIGURED';
+    throw _clientError;
   }
-  return value;
+  _client = createClient(url, key, {
+    auth: { persistSession: false, autoRefreshToken: false },
+    global: { headers: { 'x-application-name': 'openbazaar-ai/brandStore' } },
+  });
+  return _client;
 }
 
 function deserialize(row) {
@@ -34,11 +59,11 @@ function deserialize(row) {
     slug: row.slug,
     territoryId: row.territory_id,
     archetype: row.archetype,
-    config: safeJson(row.config_json, {}),
-    catalog: safeJson(row.catalog_json, { books: [] }),
-    variables: safeJson(row.variables_json, {}),
+    config: row.config_json || {},
+    catalog: row.catalog_json || { books: [] },
+    variables: row.variables_json || {},
     themeCss: row.theme_css || '',
-    publishingCodeFlags: safeJson(row.publishing_code_flags_json, []),
+    publishingCodeFlags: row.publishing_code_flags_json || [],
     publicUrl: row.public_url,
     catalogUrl: row.catalog_url,
     status: row.status,
@@ -49,26 +74,36 @@ function deserialize(row) {
 }
 
 async function getBySlug(slug) {
-  const row = await db.get(
-    'SELECT * FROM teneo_marketplace_brands WHERE slug = ?',
-    [slug]
-  );
-  return deserialize(row);
+  const client = getClient();
+  const { data, error } = await client
+    .from(TABLE)
+    .select('*')
+    .eq('slug', slug)
+    .maybeSingle();
+  if (error && error.code !== 'PGRST116') {
+    // PGRST116 = "Results contain 0 rows" — treat as null, not error.
+    const err = new Error(`brandStore.getBySlug(${slug}): ${error.message}`);
+    err.code = error.code;
+    throw err;
+  }
+  return deserialize(data);
 }
 
 async function listByTerritory(territoryId) {
-  const rows = await db.all(
-    'SELECT * FROM teneo_marketplace_brands WHERE territory_id = ? ORDER BY created_at DESC',
-    [territoryId]
-  );
-  return (rows || []).map(deserialize);
+  const client = getClient();
+  const { data, error } = await client
+    .from(TABLE)
+    .select('*')
+    .eq('territory_id', territoryId)
+    .order('created_at', { ascending: false });
+  if (error) {
+    const err = new Error(`brandStore.listByTerritory(${territoryId}): ${error.message}`);
+    err.code = error.code;
+    throw err;
+  }
+  return (data || []).map(deserialize);
 }
 
-/**
- * Upsert a brand record. Idempotent on slug.
- * `config`, `catalog`, `variables` are plain objects; `themeCss` is a string;
- * `publishingCodeFlags` is an array.
- */
 async function upsert({
   slug,
   territoryId = null,
@@ -99,50 +134,52 @@ async function upsert({
     throw err;
   }
 
-  await db.run(
-    `INSERT INTO teneo_marketplace_brands (
-       slug, territory_id, archetype, config_json, catalog_json, variables_json,
-       theme_css, publishing_code_flags_json, public_url, catalog_url, status,
-       book_count, created_at, updated_at
-     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
-     ON CONFLICT(slug) DO UPDATE SET
-       territory_id = excluded.territory_id,
-       archetype = excluded.archetype,
-       config_json = excluded.config_json,
-       catalog_json = excluded.catalog_json,
-       variables_json = excluded.variables_json,
-       theme_css = excluded.theme_css,
-       publishing_code_flags_json = excluded.publishing_code_flags_json,
-       public_url = excluded.public_url,
-       catalog_url = excluded.catalog_url,
-       status = excluded.status,
-       book_count = excluded.book_count,
-       updated_at = CURRENT_TIMESTAMP`,
-    [
-      slug,
-      territoryId,
-      archetype,
-      JSON.stringify(config),
-      JSON.stringify(catalog),
-      JSON.stringify(variables),
-      themeCss,
-      JSON.stringify(publishingCodeFlags),
-      publicUrl,
-      catalogUrl,
-      status,
-      bookCount,
-    ]
-  );
+  const client = getClient();
+  const now = new Date().toISOString();
+  const row = {
+    slug,
+    territory_id: territoryId,
+    archetype,
+    config_json: config,
+    catalog_json: catalog,
+    variables_json: variables,
+    theme_css: themeCss,
+    publishing_code_flags_json: publishingCodeFlags,
+    public_url: publicUrl,
+    catalog_url: catalogUrl,
+    status,
+    book_count: bookCount,
+    updated_at: now,
+  };
 
-  return getBySlug(slug);
+  const { data, error } = await client
+    .from(TABLE)
+    .upsert(row, { onConflict: 'slug' })
+    .select()
+    .single();
+
+  if (error) {
+    const err = new Error(`brandStore.upsert(${slug}): ${error.message}`);
+    err.code = error.code;
+    throw err;
+  }
+  return deserialize(data);
 }
 
 async function setStatus(slug, status) {
-  await db.run(
-    'UPDATE teneo_marketplace_brands SET status = ?, updated_at = CURRENT_TIMESTAMP WHERE slug = ?',
-    [status, slug]
-  );
-  return getBySlug(slug);
+  const client = getClient();
+  const { data, error } = await client
+    .from(TABLE)
+    .update({ status, updated_at: new Date().toISOString() })
+    .eq('slug', slug)
+    .select()
+    .single();
+  if (error) {
+    const err = new Error(`brandStore.setStatus(${slug}): ${error.message}`);
+    err.code = error.code;
+    throw err;
+  }
+  return deserialize(data);
 }
 
 module.exports = { upsert, getBySlug, listByTerritory, setStatus };

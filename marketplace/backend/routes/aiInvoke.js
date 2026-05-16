@@ -73,4 +73,33 @@ router.get('/marketplace.get-stats', async (req, res) => {
   }
 });
 
+router.post('/marketplace.update-storefront', async (req, res) => {
+  try {
+    const { slug, patch, bookCount, status } = req.body || {};
+    if (!slug) {
+      return res.status(400).json({ success: false, error: 'slug is required' });
+    }
+    if (!patch || typeof patch !== 'object') {
+      return res.status(400).json({ success: false, error: 'patch (object) is required' });
+    }
+    const brandStore = require('../services/brandStore');
+    const opts = {};
+    if (typeof bookCount === 'number') opts.bookCount = bookCount;
+    if (status) opts.status = status;
+    const brand = await brandStore.applyPatch(slug, patch, opts);
+    res.json({
+      slug: brand.slug,
+      publicUrl: brand.publicUrl,
+      catalogUrl: brand.catalogUrl,
+      status: brand.status,
+      updatedAt: brand.updatedAt,
+    });
+  } catch (error) {
+    res.status(error.statusCode || 500).json({
+      success: false,
+      error: error.statusCode ? error.message : 'Failed to update storefront',
+    });
+  }
+});
+
 module.exports = router;

@@ -166,6 +166,77 @@ async function upsert({
   return deserialize(data);
 }
 
+/**
+ * Apply a deep-merged patch to an existing brand's config_json. Used by the
+ * Brand Enhance flow — each enhancement (Brand Kit, Hero, About, etc.) updates
+ * specific fields without re-running the whole scaffold.
+ *
+ * `patch` is a partial config object; keys present are deep-merged into the
+ * existing config. Top-level fields like `assets`, `copy`, `theme`, `legal`
+ * are merged at the nested level (not replaced).
+ *
+ * Optionally accepts `bookCount` to update the row's book_count column.
+ */
+function isPlainObject(value) {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+
+function deepMerge(target, source) {
+  if (!isPlainObject(source)) return target;
+  const out = isPlainObject(target) ? { ...target } : {};
+  for (const [key, value] of Object.entries(source)) {
+    if (isPlainObject(value) && isPlainObject(out[key])) {
+      out[key] = deepMerge(out[key], value);
+    } else if (value !== undefined) {
+      out[key] = value;
+    }
+  }
+  return out;
+}
+
+async function applyPatch(slug, patch, opts = {}) {
+  if (!slug) {
+    const err = new Error('brand slug is required');
+    err.statusCode = 400;
+    throw err;
+  }
+  if (!patch || typeof patch !== 'object') {
+    const err = new Error('patch object is required');
+    err.statusCode = 400;
+    throw err;
+  }
+
+  const existing = await getBySlug(slug);
+  if (!existing) {
+    const err = new Error(`Brand not found: ${slug}`);
+    err.statusCode = 404;
+    throw err;
+  }
+
+  const mergedConfig = deepMerge(existing.config || {}, patch);
+  const client = getClient();
+  const update = {
+    config_json: mergedConfig,
+    updated_at: new Date().toISOString(),
+  };
+  if (typeof opts.bookCount === 'number') update.book_count = opts.bookCount;
+  if (opts.status) update.status = opts.status;
+
+  const { data, error } = await client
+    .from(TABLE)
+    .update(update)
+    .eq('slug', slug)
+    .select()
+    .single();
+
+  if (error) {
+    const err = new Error(`brandStore.applyPatch(${slug}): ${error.message}`);
+    err.code = error.code;
+    throw err;
+  }
+  return deserialize(data);
+}
+
 async function setStatus(slug, status) {
   const client = getClient();
   const { data, error } = await client
@@ -182,4 +253,4 @@ async function setStatus(slug, status) {
   return deserialize(data);
 }
 
-module.exports = { upsert, getBySlug, listByTerritory, setStatus };
+module.exports = { upsert, getBySlug, listByTerritory, setStatus, applyPatch };

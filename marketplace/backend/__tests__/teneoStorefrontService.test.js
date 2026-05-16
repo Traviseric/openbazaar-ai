@@ -37,10 +37,12 @@ const baseClaim = {
 // Variable name must start with `mock` for jest.mock to allow referencing it.
 const mockBrandStoreUpsert = jest.fn(async (record) => ({ ...record, createdAt: '2026-05-14T00:00:00Z', updatedAt: '2026-05-14T00:00:00Z' }));
 const mockBrandStoreGetBySlug = jest.fn(async () => null);
+const mockBrandStoreApplyPatch = jest.fn(async (slug, patch) => ({ slug, config: patch, status: 'live', publicUrl: `https://openbazaar.test/store/store.html?brand=${slug}`, catalogUrl: `https://openbazaar.test/api/storefront/brands/${slug}/catalog.json`, updatedAt: '2026-05-16T00:00:00Z' }));
 
 jest.mock('../services/brandStore', () => ({
   upsert: (...args) => mockBrandStoreUpsert(...args),
   getBySlug: (...args) => mockBrandStoreGetBySlug(...args),
+  applyPatch: (...args) => mockBrandStoreApplyPatch(...args),
   listByTerritory: jest.fn(async () => []),
   setStatus: jest.fn(),
 }));
@@ -447,5 +449,86 @@ describe('POST /api/ai-invoke/marketplace.create-storefront', () => {
       .set('x-service-key', 'test-service-key')
       .send({ territory: { name: 'no id' } });
     expect(res.status).toBe(400);
+  });
+});
+
+// ---------------------------------------------------------------------------
+// POST /api/ai-invoke/marketplace.update-storefront (Brand Enhance pipeline)
+// ---------------------------------------------------------------------------
+
+describe('POST /api/ai-invoke/marketplace.update-storefront', () => {
+  let app;
+
+  beforeEach(() => {
+    process.env.TENEO_SERVICE_KEYS = 'test-service-key';
+    jest.resetModules();
+    mockBrandStoreApplyPatch.mockClear();
+    const aiInvokeRouter = require('../routes/aiInvoke');
+    app = express();
+    app.use(express.json());
+    app.use('/api/ai-invoke', aiInvokeRouter);
+  });
+
+  afterEach(() => {
+    delete process.env.TENEO_SERVICE_KEYS;
+  });
+
+  test('rejects requests without a valid service key', async () => {
+    const res = await request(app)
+      .post('/api/ai-invoke/marketplace.update-storefront')
+      .send({ slug: 'medical', patch: { copy: { heroTitle: 'New' } } });
+    expect(res.status).toBe(401);
+  });
+
+  test('returns 400 when slug is missing', async () => {
+    const res = await request(app)
+      .post('/api/ai-invoke/marketplace.update-storefront')
+      .set('x-service-key', 'test-service-key')
+      .send({ patch: { copy: { heroTitle: 'New' } } });
+    expect(res.status).toBe(400);
+  });
+
+  test('returns 400 when patch is missing or not an object', async () => {
+    const res = await request(app)
+      .post('/api/ai-invoke/marketplace.update-storefront')
+      .set('x-service-key', 'test-service-key')
+      .send({ slug: 'medical' });
+    expect(res.status).toBe(400);
+  });
+
+  test('forwards patch to brandStore.applyPatch and returns updated storefront descriptor', async () => {
+    const res = await request(app)
+      .post('/api/ai-invoke/marketplace.update-storefront')
+      .set('x-service-key', 'test-service-key')
+      .send({
+        slug: 'medical',
+        patch: {
+          copy: { heroTitle: 'Restored Headline' },
+          assets: { heroImage: 'https://cdn.example.com/medical/hero.jpg' },
+        },
+      });
+
+    expect(res.status).toBe(200);
+    expect(res.body.slug).toBe('medical');
+    expect(res.body.publicUrl).toContain('brand=medical');
+
+    expect(mockBrandStoreApplyPatch).toHaveBeenCalledTimes(1);
+    const [calledSlug, calledPatch] = mockBrandStoreApplyPatch.mock.calls[0];
+    expect(calledSlug).toBe('medical');
+    expect(calledPatch.copy.heroTitle).toBe('Restored Headline');
+    expect(calledPatch.assets.heroImage).toMatch(/^https:\/\//);
+  });
+
+  test('propagates 404 when brand not found', async () => {
+    mockBrandStoreApplyPatch.mockImplementationOnce(async () => {
+      const err = new Error('Brand not found: missing-brand');
+      err.statusCode = 404;
+      throw err;
+    });
+    const res = await request(app)
+      .post('/api/ai-invoke/marketplace.update-storefront')
+      .set('x-service-key', 'test-service-key')
+      .send({ slug: 'missing-brand', patch: { copy: { heroTitle: 'X' } } });
+    expect(res.status).toBe(404);
   });
 });

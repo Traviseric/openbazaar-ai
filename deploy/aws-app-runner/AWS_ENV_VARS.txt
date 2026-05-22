@@ -1,0 +1,169 @@
+# ============================================================
+# AWS APP RUNNER ENVIRONMENT VARIABLES
+# Target: marketplace.teneo.io
+# Companion file: RENDER_ENV_VARS.txt (repo root)
+# Playbook: README-DEPLOY.md (this directory)
+# ============================================================
+#
+# How to use this file:
+# - PLAIN values: set directly in App Runner Console under
+#   "Environment variables" with the literal value.
+# - SECRET values: store in AWS Secrets Manager first, then
+#   reference via Secrets Manager ARN in App Runner config.
+# - Do NOT commit real secret values to git. Use placeholders
+#   like <REPLACE-ME> in this file and fill in only during deploy.
+# ============================================================
+
+
+# === REQUIRED — Core Configuration ===
+
+NODE_ENV=production
+PORT=3001                       # App Runner expects this; Dockerfile EXPOSEs 3001
+BASE_URL=https://marketplace.teneo.io
+
+
+# === REQUIRED — Secrets (store in Secrets Manager) ===
+
+# Generate locally: openssl rand -hex 32
+# Save as: aws secretsmanager create-secret --name openbazaar-ai/session-secret
+SESSION_SECRET=<from-secrets-manager:openbazaar-ai/session-secret>
+
+# Generate locally: node marketplace/backend/scripts/generate-password-hash.js --generate
+# Save as: aws secretsmanager create-secret --name openbazaar-ai/admin-password-hash
+ADMIN_PASSWORD_HASH=<from-secrets-manager:openbazaar-ai/admin-password-hash>
+
+
+# === REQUIRED — Database (Supabase Postgres) ===
+
+# Supabase Dashboard → Settings → Database → Connection Pooling URI
+# Note: pooler URL on port 6543, NOT direct connection on 5432
+DATABASE_URL=<from-secrets-manager:openbazaar-ai/database-url>
+
+# Optional alias (some code paths check this)
+SUPABASE_DB_URL=<same-as-DATABASE_URL>
+
+
+# === REQUIRED — Stripe (restricted key from Teneo's account) ===
+
+# Stripe Dashboard → Developers → API keys → Create restricted key
+# Permissions: charges:write, customers:write, payment_intents:write,
+#              checkout_sessions:write, webhook_endpoints:read
+# Save as: aws secretsmanager create-secret --name openbazaar-ai/stripe-secret-key
+STRIPE_SECRET_KEY=<from-secrets-manager:openbazaar-ai/stripe-secret-key>
+
+# Publishable key — public, no restrictions needed
+# Same Stripe account as teneo.io (pk_live_*)
+STRIPE_PUBLISHABLE_KEY=pk_live_<TENEO_STRIPE_PUBLISHABLE_KEY>
+
+# Webhook signing secret — created in step 3.3 of README-DEPLOY.md
+# Stripe Dashboard → Developers → Webhooks → marketplace.teneo.io endpoint → Signing secret
+STRIPE_WEBHOOK_SECRET=<from-secrets-manager:openbazaar-ai/stripe-webhook-secret>
+
+
+# === REQUIRED — Service-key chain (mutual auth with teneo.io) ===
+
+# Pre-shared secret between marketplace.teneo.io ↔ teneo.io Lambdas
+# Generate ONCE: openssl rand -hex 32
+# Same value lives in:
+#   - This file as TENEO_SERVICE_KEYS (used to validate INCOMING calls from teneo.io)
+#   - teneo-production marketplace-api Lambda as OPENBAZAAR_SERVICE_KEY (used in OUTGOING calls to here)
+TENEO_SERVICE_KEYS=<from-secrets-manager:teneo-marketplace/service-key>
+
+# The same secret, used as the OUTGOING service key when marketplace.teneo.io
+# calls BACK to teneo.io (order-paid, credit-author, validate-license callbacks)
+TENEO_FULFILLMENT_SERVICE_KEY=<from-secrets-manager:teneo-marketplace/service-key>
+
+# Where marketplace.teneo.io sends callbacks
+TENEO_FULFILLMENT_BASE_URL=https://api.teneo.io
+
+
+# === OPTIONAL — AI features ===
+
+# Without this, AI Discovery falls back to keyword search (still works)
+# Use Teneo's existing OpenAI key — same account
+OPENAI_API_KEY=<from-secrets-manager:openbazaar-ai/openai-api-key>
+
+
+# === OPTIONAL — Email (transactional) ===
+
+# Used for: download-link delivery, order receipts, admin notifications
+# Recommended: SES via Teneo's existing AWS SES setup
+EMAIL_ENABLED=true
+EMAIL_PROVIDER=ses                # ses | smtp
+EMAIL_FROM=marketplace@teneo.io   # must be verified in SES
+EMAIL_REPLY_TO=support@teneo.io
+
+# If using SMTP fallback:
+# EMAIL_HOST=smtp.gmail.com
+# EMAIL_PORT=587
+# EMAIL_USER=<from-secrets-manager:openbazaar-ai/smtp-user>
+# EMAIL_PASS=<from-secrets-manager:openbazaar-ai/smtp-app-password>
+
+
+# === OPTIONAL — Branding ===
+
+MARKETPLACE_NAME=Teneo Marketplace
+MARKETPLACE_TAGLINE=Knowledge Beyond Boundaries
+SUPPORT_EMAIL=support@teneo.io
+SITE_URL=https://marketplace.teneo.io       # back-compat with code expecting this name
+
+
+# === OPTIONAL — Federation (V3+ work, set to inert defaults now) ===
+
+# When other openbazaar-ai instances come online, register them here
+FEDERATION_PEERS=                          # comma-separated peer URLs, empty for V0
+FEDERATION_NODE_ID=teneo-marketplace-canonical    # this instance's id in the federation
+FEDERATION_DISCOVERY_ENABLED=false         # turn on when V3 ships
+
+
+# === OPTIONAL — Observability ===
+
+# CloudWatch Logs is automatic via App Runner — no env vars needed
+# Sentry integration optional:
+# SENTRY_DSN=<from-secrets-manager:openbazaar-ai/sentry-dsn>
+
+# Structured logging level
+LOG_LEVEL=info                              # debug | info | warn | error
+
+
+# === OPTIONAL — Print-on-demand (Lulu integration) ===
+
+# Already wired in code via routes/luluAdmin.js + routes/luluWebhooks.js
+# Defer to V2 — set inert for MVP
+LULU_API_BASE_URL=https://api.lulu.com
+LULU_API_KEY=                              # empty disables Lulu
+LULU_WEBHOOK_SECRET=                       # empty disables webhook validation
+
+
+# === OPTIONAL — ArxMint Lightning checkout (V3+) ===
+
+# Crypto checkout deferred to V3. The code paths exist (routes/cryptoCheckout.js)
+# but require live ArxMint VPS to function. Set inert for MVP.
+ARXMINT_API_BASE_URL=
+ARXMINT_API_KEY=
+ARXMINT_WEBHOOK_SECRET=
+
+
+# ============================================================
+# DEPLOYMENT CHECKLIST
+# ============================================================
+#
+# Before clicking "Deploy" in App Runner Console:
+#
+# [ ] All REQUIRED secrets stored in Secrets Manager
+# [ ] DATABASE_URL connects (test via psql or Supabase Studio)
+# [ ] STRIPE_SECRET_KEY is RESTRICTED (not full sk_live_)
+# [ ] TENEO_SERVICE_KEYS is unique to this deployment (not reused)
+# [ ] BASE_URL matches the custom domain you'll attach
+# [ ] FEDERATION_DISCOVERY_ENABLED=false (V3 work, not V0)
+#
+# After first successful deploy:
+#
+# [ ] curl https://marketplace.teneo.io/api/health returns 200
+# [ ] curl https://marketplace.teneo.io/api/published/books returns 200 (even if empty)
+# [ ] Stripe webhook test fires successfully
+# [ ] teneo-production marketplace-api Lambda has updated MARKETPLACE_API_URL
+# [ ] teneo-production marketplace-fulfillment-callback has new service key in TENEO_SERVICE_KEYS list
+# [ ] First test book listed and visible at marketplace.teneo.io
+#
+# ============================================================

@@ -1,0 +1,62 @@
+# AWS App Runner configuration
+#
+# IMPORTANT: This file is for App Runner SOURCE-BASED deployments (where App
+# Runner builds the image from a Git repo). The recommended path per
+# README-DEPLOY.md is ECR IMAGE-BASED deployment — push the existing Dockerfile
+# image to ECR and point App Runner at the image.
+#
+# Keep this file as a fallback if/when you want App Runner to build from
+# source instead of from ECR.
+#
+# Docs: https://docs.aws.amazon.com/apprunner/latest/dg/config-file-ref.html
+
+version: 1.0
+runtime: nodejs18
+
+build:
+  commands:
+    pre-build:
+      # The marketplace code lives in marketplace/backend, not at repo root.
+      # Move into it before running install.
+      - cd marketplace/backend && npm ci
+    build:
+      # Most of the codebase is already built; only the marketplace backend
+      # needs install. No transpile/bundle step required for Express.
+      - echo "No build step required for Express server."
+
+run:
+  runtime-version: 18
+  # Working dir is repo root; backend entrypoint is relative.
+  command: node marketplace/backend/server.js
+  network:
+    port: 3001
+    env: PORT
+  env:
+    # Plain env vars only — secrets go through Secrets Manager via console.
+    # See AWS_ENV_VARS.txt for the full env-var manifest.
+    - name: NODE_ENV
+      value: production
+    - name: PORT
+      value: "3001"
+    - name: LOG_LEVEL
+      value: info
+    - name: MARKETPLACE_NAME
+      value: Teneo Marketplace
+    - name: MARKETPLACE_TAGLINE
+      value: Knowledge Beyond Boundaries
+    - name: SUPPORT_EMAIL
+      value: support@teneo.io
+    - name: BASE_URL
+      value: https://marketplace.teneo.io
+    - name: SITE_URL
+      value: https://marketplace.teneo.io
+    - name: TENEO_FULFILLMENT_BASE_URL
+      value: https://api.teneo.io
+    - name: FEDERATION_NODE_ID
+      value: teneo-marketplace-canonical
+    - name: FEDERATION_DISCOVERY_ENABLED
+      value: "false"
+
+# Health check matches the Dockerfile HEALTHCHECK directive.
+# App Runner pings /api/health every 10s; 3 consecutive failures triggers replace.
+# health-check config goes in the App Runner service, not in this file.

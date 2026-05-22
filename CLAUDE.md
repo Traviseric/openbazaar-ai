@@ -1,5 +1,7 @@
 # OpenBazaar.ai
 
+> ⚡ **Active handoff: read `HANDOFF.md` (repo root) first** — AWS App Runner deploy to marketplace.teneo.io, planned not executed as of 2026-05-21 (D:→E: migration).
+
 Open-source marketplace for creators, freelancers, and AI agents. Three pillars: product marketplace, gig platform, agent services. Dual-mode payments (Stripe + crypto), federation network, zero platform fees. Public repo — content generation lives in teneo-production (private).
 
 ## Lookup Table

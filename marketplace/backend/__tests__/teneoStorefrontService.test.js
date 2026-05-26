@@ -1,5 +1,7 @@
 'use strict';
 
+/* global global */
+
 const fs = require('fs').promises;
 const os = require('os');
 const path = require('path');
@@ -136,6 +138,44 @@ describe('teneoStorefrontService', () => {
     expect(config.features.booking).toBe(true);
     expect(config.features.leadCapture).toBe(true);
     expect(config.copy.ctaButton).toBe('Book a Consultation');
+  });
+
+  test('persists Teneo lead capture handoff in runtime brand config', async () => {
+    const service = require('../services/teneoStorefrontService');
+    await service.scaffoldStorefront({
+      territory: medicalTerritory,
+      claim: baseClaim,
+      leadCapture: {
+        endpointUrl: 'https://api.teneo.test/staging/brand-leads',
+        endpointPath: '/brand-leads',
+        payloadDefaults: {
+          brandId: 'bam_medical',
+          territoryId: 'medical',
+          consentSource: 'business-kit-storefront',
+        },
+        fields: ['email', 'name'],
+        honeypot: 'website',
+        privacy: { doubleOptIn: true },
+      },
+    });
+
+    const config = await readBrand('medical', 'config.json');
+    expect(config.leadCapture).toEqual(expect.objectContaining({
+      enabled: true,
+      endpointUrl: 'https://api.teneo.test/staging/brand-leads',
+      endpointPath: '/brand-leads',
+      method: 'POST',
+      fields: ['email', 'name'],
+      honeypot: 'website',
+    }));
+    expect(config.leadCapture.payloadDefaults).toMatchObject({
+      brandId: 'bam_medical',
+      territoryId: 'medical',
+      consentSource: 'business-kit-storefront',
+    });
+
+    const written = mockBrandStoreUpsert.mock.calls[0][0];
+    expect(written.config.leadCapture.endpointUrl).toBe('https://api.teneo.test/staging/brand-leads');
   });
 
   test('publishing code flags produce a flag-specific disclaimer', async () => {

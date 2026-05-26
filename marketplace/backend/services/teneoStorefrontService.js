@@ -226,6 +226,31 @@ function buildDisclaimer(territory) {
   return parts.join(' ');
 }
 
+function normalizeLeadCapture(payload) {
+  const source = payload.leadCapture || payload.landingPage?.leadCapture;
+  if (!source || typeof source !== 'object') return null;
+
+  const endpointUrl = source.endpointUrl || source.url || source.action;
+  if (!isHttpUrl(endpointUrl)) return null;
+  const method = String(source.method || 'POST').toUpperCase();
+
+  return {
+    enabled: source.enabled !== false,
+    endpointUrl,
+    endpointPath: source.endpointPath || source.path || '/brand-leads',
+    method: ['POST', 'PUT', 'PATCH'].includes(method) ? method : 'POST',
+    payloadDefaults: source.payloadDefaults && typeof source.payloadDefaults === 'object'
+      ? { ...source.payloadDefaults }
+      : {},
+    fields: Array.isArray(source.fields) ? source.fields : ['email', 'name'],
+    honeypot: source.honeypot || 'company',
+    privacy: source.privacy && typeof source.privacy === 'object'
+      ? { ...source.privacy }
+      : {},
+    source: source.source || 'teneo-production',
+  };
+}
+
 function buildConfig(slug, territory, payload, existing = {}) {
   const archetype = primaryArchetype(territory);
   const template = getTemplate(archetype);
@@ -284,6 +309,7 @@ function buildConfig(slug, territory, payload, existing = {}) {
       ...(existing.branding || {}),
       aboutText: existing.branding?.aboutText || positioning.promise || territory.mission.solution || '',
     },
+    leadCapture: normalizeLeadCapture(payload) || existing.leadCapture || null,
     source: {
       system: 'teneo-production',
       claim: payload.claim || {},
@@ -381,7 +407,6 @@ async function tryFsWrite(fn, label) {
       // Expected in production. Silent skip.
       return false;
     }
-    // eslint-disable-next-line no-console
     console.warn(`[scaffoldStorefront] FS write skipped (${label}): ${err.message}`);
     return false;
   }

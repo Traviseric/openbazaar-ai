@@ -103,6 +103,90 @@
             color: #6B7280;
         }
 
+        /* Lead Capture */
+        .lead-capture-section {
+            display: none;
+            background: #FFFFFF;
+            border-bottom: 1px solid #E5E7EB;
+            padding: 3rem 0;
+        }
+
+        .lead-capture-section.active {
+            display: block;
+        }
+
+        .lead-capture-panel {
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .lead-capture-panel h2 {
+            font-size: 1.875rem;
+            font-weight: 300;
+            color: #111827;
+            margin-bottom: 0.75rem;
+        }
+
+        .lead-capture-panel p {
+            color: #4B5563;
+            margin-bottom: 1.5rem;
+        }
+
+        .lead-capture-form {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+            gap: 0.75rem;
+            align-items: start;
+        }
+
+        .lead-capture-form input {
+            width: 100%;
+            border: 1px solid #D1D5DB;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            font: inherit;
+            color: #111827;
+            background: #FFFFFF;
+        }
+
+        .lead-capture-form input:focus {
+            outline: 2px solid transparent;
+            border-color: #111827;
+            box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.12);
+        }
+
+        .lead-capture-form button {
+            background: #111827;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            font: inherit;
+            font-weight: 500;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .lead-capture-form button:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .lead-capture-honeypot {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        .lead-capture-message {
+            min-height: 1.5rem;
+            margin-top: 0.875rem;
+            font-size: 0.9375rem;
+        }
+
         /* Books Section */
         .books-section {
             padding: 4rem 0;
@@ -377,6 +461,10 @@
             nav {
                 gap: 1rem;
             }
+
+            .lead-capture-form {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Mobile hamburger nav */
@@ -468,6 +556,23 @@
         </div>
     </section>
 
+    <!-- Lead Capture Section -->
+    <section class="lead-capture-section" id="lead-capture-section" data-lead-capture hidden>
+        <div class="container">
+            <div class="lead-capture-panel">
+                <h2 id="lead-capture-title">Stay in the loop</h2>
+                <p id="lead-capture-description">Get launch updates and new releases from this brand.</p>
+                <form class="lead-capture-form" id="lead-capture-form" novalidate>
+                    <input type="email" id="lead-capture-email" name="email" autocomplete="email" placeholder="Email address" required>
+                    <input type="text" id="lead-capture-name" name="name" autocomplete="name" placeholder="Name">
+                    <input type="text" id="lead-capture-honeypot" class="lead-capture-honeypot" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <button type="submit" id="lead-capture-submit">Join list</button>
+                </form>
+                <div class="lead-capture-message" id="lead-capture-message" role="status" aria-live="polite"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Books Section -->
     <section class="books-section">
         <div class="container">
@@ -555,6 +660,7 @@
                 applyBrandTheme(BRAND_ID, brandConfig);
                 updateBrandInfo(brandConfig);
                 updateBrandCopy(brandConfig);
+                renderLeadCapture(brandConfig);
             } catch (error) {
                 console.error('Error loading brand config:', error);
             }
@@ -602,6 +708,103 @@
             Object.entries(theme).forEach(([k, v]) => {
                 if (typeof v === 'string' && propMap[k]) root.style.setProperty(propMap[k], v);
             });
+        }
+
+        function validLeadCapture(config) {
+            const leadCapture = config?.leadCapture || null;
+            if (!leadCapture || leadCapture.enabled === false || !leadCapture.endpointUrl) return null;
+            try {
+                const url = new URL(leadCapture.endpointUrl);
+                if (url.protocol !== 'https:' && url.protocol !== 'http:') return null;
+            } catch (_) {
+                return null;
+            }
+            return leadCapture;
+        }
+
+        function setLeadCaptureMessage(message, color) {
+            const el = document.getElementById('lead-capture-message');
+            if (!el) return;
+            el.textContent = message || '';
+            el.style.color = color || '#4B5563';
+        }
+
+        function renderLeadCapture(config) {
+            const leadCapture = validLeadCapture(config);
+            const section = document.getElementById('lead-capture-section');
+            const form = document.getElementById('lead-capture-form');
+            if (!section || !form) return;
+
+            if (!leadCapture) {
+                section.classList.remove('active');
+                section.hidden = true;
+                form.onsubmit = null;
+                return;
+            }
+
+            const copy = config.copy || {};
+            document.getElementById('lead-capture-title').textContent =
+                leadCapture.title || copy.leadCaptureTitle || 'Get launch updates';
+            document.getElementById('lead-capture-description').textContent =
+                leadCapture.description || copy.leadCaptureDescription || 'Join the list for new releases and subscriber-only updates.';
+            document.getElementById('lead-capture-submit').textContent =
+                leadCapture.buttonText || copy.leadCaptureButton || 'Join list';
+
+            const nameInput = document.getElementById('lead-capture-name');
+            const fields = Array.isArray(leadCapture.fields) ? leadCapture.fields : ['email', 'name'];
+            nameInput.hidden = !fields.includes('name');
+            nameInput.disabled = !fields.includes('name');
+
+            const honeypot = document.getElementById('lead-capture-honeypot');
+            honeypot.name = leadCapture.honeypot || 'company';
+
+            form.onsubmit = async (event) => {
+                event.preventDefault();
+                const submit = document.getElementById('lead-capture-submit');
+                const email = document.getElementById('lead-capture-email').value.trim();
+                const name = nameInput.value.trim();
+                const spamTrap = honeypot.value.trim();
+
+                if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    setLeadCaptureMessage('Enter a valid email address.', '#DC2626');
+                    return;
+                }
+                if (spamTrap) {
+                    setLeadCaptureMessage('Thanks.', '#059669');
+                    return;
+                }
+
+                const payload = {
+                    ...(leadCapture.payloadDefaults || {}),
+                    brandSlug: BRAND_ID,
+                    storefrontSlug: BRAND_ID,
+                    email,
+                };
+                if (!payload.source) payload.source = leadCapture.source || 'openbazaar-storefront';
+                if (name) payload.name = name;
+                payload[leadCapture.honeypot || 'company'] = '';
+
+                submit.disabled = true;
+                setLeadCaptureMessage('Submitting...', '#4B5563');
+                try {
+                    const response = await fetch(leadCapture.endpointUrl, {
+                        method: leadCapture.method || 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload),
+                    });
+                    if (!response.ok) throw new Error(`Lead capture ${response.status}`);
+                    form.reset();
+                    setLeadCaptureMessage('Check your inbox to confirm your subscription.', '#059669');
+                } catch (error) {
+                    console.error('[lead-capture]', error);
+                    setLeadCaptureMessage('Unable to subscribe right now. Please try again later.', '#DC2626');
+                } finally {
+                    submit.disabled = false;
+                }
+            };
+
+            section.hidden = false;
+            section.classList.add('active');
         }
 
         function updateBrandInfo(config) {

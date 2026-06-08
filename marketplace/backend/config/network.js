@@ -8,6 +8,10 @@ const fs = require('fs').promises;
 class NetworkConfig {
     constructor() {
         this.configPath = path.join(__dirname, '../../frontend/brands/teneo/config.json');
+        // SECURITY: the private key is stored OUTSIDE the committed config — in a
+        // gitignored sidecar PEM or the NETWORK_PRIVATE_KEY env var — so it can never
+        // be written into config.json and committed to the (public) repo.
+        this.privateKeyPath = path.join(__dirname, '../../frontend/brands/teneo/.network-private-key.pem');
         this.networkEnabled = false;
         this.shareCatalog = false;
         this.acceptReferrals = false;
@@ -22,7 +26,7 @@ class NetworkConfig {
             timeout: 30000, // 30 seconds
             retryAttempts: 3
         };
-        
+
         this.init();
     }
 
@@ -39,21 +43,43 @@ class NetworkConfig {
         try {
             const configData = await fs.readFile(this.configPath, 'utf8');
             const config = JSON.parse(configData);
-            
+
             // Load network settings from brand config
             this.networkEnabled = config.network_enabled || false;
             this.shareCatalog = config.share_catalog || false;
             this.acceptReferrals = config.accept_referrals || false;
             this.referralPercentage = config.referral_percentage || 0;
             this.publicKey = config.public_key || null;
-            this.privateKey = config.private_key || null;
             this.networkPeers = config.network_peers || [];
             this.trustedStores = config.trusted_stores || [];
-            
+
+            // SECURITY: never load the private key from the committed config.json —
+            // it comes from env or the gitignored sidecar only.
+            this.privateKey = await this.loadPrivateKey();
+
             console.log('Network config loaded successfully');
         } catch (error) {
             console.log('No existing network config found, using defaults');
         }
+    }
+
+    // Private key source of truth: NETWORK_PRIVATE_KEY env first, then the
+    // gitignored sidecar PEM. Returns null if neither exists.
+    async loadPrivateKey() {
+        if (process.env.NETWORK_PRIVATE_KEY) {
+            return process.env.NETWORK_PRIVATE_KEY;
+        }
+        try {
+            return await fs.readFile(this.privateKeyPath, 'utf8');
+        } catch (error) {
+            return null;
+        }
+    }
+
+    // Persist the private key to the gitignored sidecar with owner-only perms.
+    async savePrivateKey() {
+        if (!this.privateKey) return;
+        await fs.writeFile(this.privateKeyPath, this.privateKey, { mode: 0o600 });
     }
 
     async saveConfig() {
@@ -66,17 +92,19 @@ class NetworkConfig {
             } catch (error) {
                 // Create new config if doesn't exist
             }
-            
+
             // Update network settings
             config.network_enabled = this.networkEnabled;
             config.share_catalog = this.shareCatalog;
             config.accept_referrals = this.acceptReferrals;
             config.referral_percentage = this.referralPercentage;
             config.public_key = this.publicKey;
-            config.private_key = this.privateKey;
+            // SECURITY: never write the private key into the committed config.json.
+            // It lives in the gitignored sidecar / env (see savePrivateKey).
+            delete config.private_key;
             config.network_peers = this.networkPeers;
             config.trusted_stores = this.trustedStores;
-            
+
             await fs.writeFile(this.configPath, JSON.stringify(config, null, 2));
             console.log('Network config saved successfully');
         } catch (error) {
@@ -98,10 +126,11 @@ class NetworkConfig {
                     format: 'pem'
                 }
             });
-            
+
             this.publicKey = publicKey;
             this.privateKey = privateKey;
-            
+
+            await this.savePrivateKey();
             await this.saveConfig();
         }
     }
@@ -148,7 +177,7 @@ class NetworkConfig {
             addedAt: new Date().toISOString(),
             verified: false
         };
-        
+
         this.trustedStores.push(store);
         await this.saveConfig();
         return store;
@@ -169,7 +198,7 @@ class NetworkConfig {
             lastSeen: null,
             status: 'pending'
         };
-        
+
         this.networkPeers.push(peer);
         await this.saveConfig();
         return peer;
@@ -186,7 +215,7 @@ class NetworkConfig {
         if (!this.privateKey) {
             throw new Error('Private key not available');
         }
-        
+
         const sign = crypto.createSign('RSA-SHA256');
         sign.update(message);
         return sign.sign(this.privateKey, 'base64');
@@ -209,7 +238,7 @@ class NetworkConfig {
         if (!this.networkEnabled) {
             return null;
         }
-        
+
         return {
             storeId: process.env.STORE_ID || 'marketplace',
             name: process.env.MARKETPLACE_NAME || 'Book Marketplace',
@@ -232,18 +261,18 @@ class NetworkConfig {
             healthy: true,
             issues: []
         };
-        
+
         // Check key pair
         if (!this.publicKey || !this.privateKey) {
             status.healthy = false;
             status.issues.push('Missing cryptographic keys');
         }
-        
+
         // Check network connectivity (placeholder)
         if (this.networkEnabled && this.networkPeers.length === 0) {
             status.issues.push('No network peers configured');
         }
-        
+
         return status;
     }
 

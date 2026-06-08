@@ -106,3 +106,8 @@ PRIVATE_DEPLOY_NOTES.md
 RENDER_ENV_VARS.txt
 
 .vercel
+
+# Network identity private keys — NEVER commit (see config/network.js)
+.network-private-key.pem
+**/.network-private-key.pem
+frontend/brands/*/.network-private-key.pem

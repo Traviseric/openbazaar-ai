@@ -1,149 +1,1544 @@
 {
   "brand": "teneo",
-  "name": "Teneo Revolutionary Library",
-  "description": "AI-generated books revealing hidden truths and paradigm-shifting insights",
+  "name": "Teneo",
+  "tagline": "Knowledge beyond boundaries.",
+  "description": "Books at the frontier of AI, consciousness, technology and the future — ideas that expand how you think about what's coming.",
+  "_meta": {
+    "source": "generated-book-inventory 2026-06-07",
+    "totalBooks": 85,
+    "adFlagged": 0,
+    "note": "Real inventory from GeneratedBookDetailsTable. Descriptions are v1 (title/subtitle-derived) — generate richer per-book sales copy before launch. TODO: covers (cover-generator); pricing review; review adSafe=false titles; verify each fullBookId has exported files."
+  },
   "books": [
     {
-      "id": "consciousness-revolution",
-      "title": "The Consciousness Revolution",
-      "author": "Dr. Marcus Reid & Teneo AI",
-      "description": "How AI is revealing the true nature of human awareness",
-      "longDescription": "REVOLUTIONARY DISCOVERY! This groundbreaking work reveals how artificial intelligence is uncovering the hidden mechanics of consciousness itself.",
-      "price": 29.99,
-      "originalPrice": 49.99,
-      "hardcoverPrice": 69.99,
+      "id": "100-moments-an-ai-s-journey-through-the-human-experience",
+      "fullBookId": "43ca6225-28be-4901-9498-eec6d3ff0874_gpt-4o-2024-08-06",
+      "title": "100 Moments: An AI’s Journey Through the Human Experience",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "AI & Consciousness",
-      "coverImage": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&h=600&fit=crop",
-      "format": ["ebook", "audiobook", "hardcover"],
-      "pages": 412,
-      "rating": 4.9,
-      "badge": "AI ENHANCED",
-      "gumroadId": "consciousness-revolution",
-      "digitalFile": "/books/teneo/consciousness-revolution.pdf"
+      "description": "100 Moments — An AI’s Journey Through the Human Experience.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "pattern-code",
-      "title": "The Pattern Code",
-      "author": "Alexandra Sterling & Teneo AI",
-      "description": "Decoding the hidden algorithms that govern reality",
-      "longDescription": "Discover the mathematical patterns that underlie all existence. This AI-enhanced exploration reveals how reality operates on fundamental algorithms.",
-      "price": 34.99,
-      "originalPrice": 54.99,
-      "hardcoverPrice": 74.99,
+      "id": "ageless-the-quest-for-immortality-in-the-age-of-ai-and-biote",
+      "fullBookId": "f770044e-4322-4074-a0d9-bd6b6e3c6b69_gpt-4o-2024-08-06",
+      "title": "Ageless: The Quest for Immortality in the Age of AI and Biotechnology",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Science & Reality",
-      "coverImage": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=600&fit=crop",
-      "format": ["ebook", "audiobook", "hardcover"],
-      "pages": 389,
-      "rating": 4.8,
-      "badge": "BESTSELLER",
-      "gumroadId": "pattern-code",
-      "digitalFile": "/books/teneo/pattern-code.pdf"
+      "description": "Ageless — The Quest for Immortality in the Age of AI and Biotechnology.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "simulation-theory-decoded",
-      "title": "Simulation Theory Decoded",
-      "author": "Professor Zhang Wei & Teneo AI",
-      "description": "AI reveals the computational nature of our universe",
-      "longDescription": "REALITY-SHATTERING EVIDENCE! Teneo's AI has analyzed millions of data points to reveal compelling evidence that our universe operates on computational principles.",
-      "price": 39.99,
-      "originalPrice": 59.99,
-      "hardcoverPrice": 79.99,
+      "id": "ai-by-design-crafting-intelligent-systems-with-human-values",
+      "fullBookId": "f078a2ea-6423-4d3b-89e6-a54c007170da_gpt-4o-2024-08-06",
+      "title": "AI by Design: Crafting Intelligent Systems with Human Values",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Future Paradigms",
-      "coverImage": "https://images.unsplash.com/photo-1559494007-9f5847c49d94?w=400&h=600&fit=crop",
-      "format": ["ebook", "audiobook", "hardcover"],
-      "pages": 445,
-      "rating": 4.7,
-      "badge": "CONTROVERSIAL",
-      "gumroadId": "simulation-decoded",
-      "digitalFile": "/books/teneo/simulation-decoded.pdf"
+      "description": "AI by Design — Crafting Intelligent Systems with Human Values.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "collective-unconscious-mapped",
-      "title": "The Collective Unconscious: Mapped by AI",
-      "author": "Dr. Elena Vasquez & Teneo AI",
-      "description": "First complete map of humanity's shared psyche",
-      "longDescription": "UNPRECEDENTED BREAKTHROUGH! Using advanced neural networks, Teneo AI has created the first comprehensive map of Jung's collective unconscious.",
-      "price": 44.99,
-      "originalPrice": 64.99,
-      "hardcoverPrice": 84.99,
+      "id": "ai-essentials-for-leaders-making-data-driven-decisions-in-a-",
+      "fullBookId": "9ecfbb03-0e6d-4e78-b96b-d56a6d35ddf8_gpt-4o-2024-08-06",
+      "title": "AI Essentials for Leaders: Making Data-Driven Decisions in a Digital World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "AI & Consciousness",
-      "coverImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=600&fit=crop",
-      "format": ["ebook", "audiobook", "hardcover"],
-      "pages": 523,
-      "rating": 4.9,
-      "badge": "ACADEMIC",
-      "gumroadId": "collective-mapped",
-      "digitalFile": "/books/teneo/collective-mapped.pdf"
+      "description": "AI Essentials for Leaders — Making Data-Driven Decisions in a Digital World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "quantum-success-formula",
-      "title": "The Quantum Success Formula",
-      "author": "Michael Chen & Teneo AI",
-      "description": "AI discovers the quantum mechanics of achievement",
-      "longDescription": "SUCCESS REDEFINED! Teneo's quantum AI has uncovered the hidden quantum principles that govern success and achievement.",
-      "price": 32.99,
-      "originalPrice": 52.99,
-      "hardcoverPrice": 72.99,
+      "id": "ai-manifesto-a-vision-for-humanity-s-future",
+      "fullBookId": "ee573198-695b-4419-87eb-fbaaec418a86_gpt-4o-2024-08-06",
+      "title": "AI Manifesto: A Vision for Humanity's Future",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Hidden Patterns",
-      "coverImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=600&fit=crop",
-      "format": ["ebook", "audiobook", "hardcover"],
-      "pages": 356,
-      "rating": 4.8,
-      "badge": "PRACTICAL",
-      "gumroadId": "quantum-success",
-      "digitalFile": "/books/teneo/quantum-success.pdf"
+      "description": "AI Manifesto — A Vision for Humanity's Future.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "future-human-ai-merge",
-      "title": "The Future Human: AI-Enhanced Evolution",
-      "author": "Dr. Kenji Nakamura & Teneo AI",
-      "description": "The inevitable merger of human and artificial intelligence",
-      "longDescription": "THE NEXT EVOLUTION! This visionary work reveals the inevitable path of human-AI integration and the transformations that will redefine humanity.",
-      "price": 49.99,
-      "originalPrice": 69.99,
-      "hardcoverPrice": 89.99,
+      "id": "ai-powered-brand-storytelling-how-ai-creates-personalized-co",
+      "fullBookId": "2ac93778-95ef-42c9-b31c-9db5e13b214f_gpt-4o-2024-08-06",
+      "title": "AI-POWERED BRAND STORYTELLING: How AI Creates Personalized, Compelling Narratives at Scale",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Future Paradigms",
-      "coverImage": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=400&h=600&fit=crop",
-      "format": ["ebook", "audiobook", "hardcover"],
-      "pages": 478,
-      "rating": 4.9,
-      "badge": "FUTURE",
-      "gumroadId": "future-human",
-      "digitalFile": "/books/teneo/future-human.pdf"
-    }
-  ],
-  "collections": [
-    {
-      "id": "truth-seeker-collection",
-      "name": "Truth Seeker Collection",
-      "title": "Complete Revolutionary Library",
-      "description": "Every paradigm-shifting book created with Teneo AI",
-      "books": ["consciousness-revolution", "pattern-code", "simulation-theory-decoded", "collective-unconscious-mapped", "quantum-success-formula", "future-human-ai-merge"],
-      "price": 149.99,
-      "originalPrice": 374.94,
-      "savings": 60,
-      "badge": "Save 60%",
-      "bonus": "EXCLUSIVE: AI Book Generation Masterclass + 1-on-1 AI Consultation",
-      "gumroadId": "truth-seeker-collection"
+      "description": "AI-POWERED BRAND STORYTELLING — How AI Creates Personalized, Compelling Narratives at Scale.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "consciousness-trilogy",
-      "name": "Consciousness Trilogy",
-      "title": "The Complete Consciousness Collection",
-      "description": "Master the AI revelations about human awareness",
-      "books": ["consciousness-revolution", "collective-unconscious-mapped", "future-human-ai-merge"],
-      "price": 89.99,
-      "originalPrice": 164.97,
-      "savings": 45,
-      "badge": "Essential Reading",
-      "bonus": "BONUS: Consciousness Enhancement Audio Program",
-      "gumroadId": "consciousness-trilogy"
+      "id": "algorithmic-empathy-reimagining-human-values-in-a-machine-ag",
+      "fullBookId": "0a80bc58-63d7-48bf-a4b0-a3e93acd40d3_gpt-4o-2024-08-06",
+      "title": "Algorithmic Empathy: Reimagining Human Values in a Machine Age",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Algorithmic Empathy — Reimagining Human Values in a Machine Age.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "algorithmic-justice-debugging-the-code-of-inequality",
+      "fullBookId": "25f98640-e364-4326-9aa8-cadf33bb0144_gpt-4o-2024-08-06",
+      "title": "Algorithmic Justice: Debugging the Code of Inequality",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Algorithmic Justice — Debugging the Code of Inequality.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "authority-in-45-minutes-the-modern-leader-s-ai-publishing-bl",
+      "fullBookId": "68884b46-c144-406b-8bd6-189b2ee6d9c4_gpt-4.1-2025-04-14",
+      "title": "Authority in 45 Minutes: The Modern Leader's AI Publishing Blueprint",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Authority in 45 Minutes — The Modern Leader's AI Publishing Blueprint.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "automating-justice-ai-law-and-the-ethics-of-judgment",
+      "fullBookId": "5de92fb0-f44f-40a2-bcde-b812f6f587ef_gpt-4o-2024-08-06",
+      "title": "Automating Justice: AI, Law, and the Ethics of Judgment",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Automating Justice — AI, Law, and the Ethics of Judgment.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "beyond-human-the-ethical-engineer-s-guide-to-building-tomorr",
+      "fullBookId": "c2d10478-fc5a-40ff-80d6-218e25d547db_gpt-4o-2024-08-06",
+      "title": "Beyond Human: The Ethical Engineer's Guide to Building Tomorrow's AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Beyond Human — The Ethical Engineer's Guide to Building Tomorrow's AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "beyond-the-hype-understanding-ai-s-real-world-impact-on-work",
+      "fullBookId": "83d01087-4333-4863-9938-a7179cf69a3b_gpt-4o-2024-08-06",
+      "title": "Beyond the Hype: Understanding AI’s Real-World Impact on Work and Life",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Beyond the Hype — Understanding AI’s Real-World Impact on Work and Life.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "beyond-the-scalpel-how-robotics-and-ai-are-redefining-medici",
+      "fullBookId": "05531c38-d20c-45ae-a50f-dba45c4426df_gpt-4o-2024-08-06",
+      "title": "Beyond the Scalpel: How Robotics and AI Are Redefining Medicine",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Beyond the Scalpel — How Robotics and AI Are Redefining Medicine.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "blind-spots-an-ai-s-critique-of-human-flaws-and-missed-oppor",
+      "fullBookId": "53159a98-b86c-45c0-848a-5ff787864718_gpt-4o-2024-08-06",
+      "title": "Blind Spots: An AI’s Critique of Human Flaws and Missed Opportunities",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Blind Spots — An AI’s Critique of Human Flaws and Missed Opportunities.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "conversations-with-humanity-an-ai-s-most-profound-encounters",
+      "fullBookId": "d0403f28-2a41-46ea-80be-2febccc59ef7_gpt-4o-2024-08-06",
+      "title": "Conversations with Humanity: An AI's Most Profound Encounters",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Conversations with Humanity — An AI's Most Profound Encounters.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "digital-immortality-the-ethics-of-uploading-human-consciousn",
+      "fullBookId": "b4c0f476-5a34-45ab-a0e0-8df99cfe5498_gpt-4o-2024-08-06",
+      "title": "Digital Immortality: The Ethics of Uploading Human Consciousness",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Digital Immortality — The Ethics of Uploading Human Consciousness.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "dreams-in-digital-an-ai-contemplates-human-imagination",
+      "fullBookId": "64fd933d-6166-4f55-82ad-d8dda96c6c6b_gpt-4o-2024-08-06",
+      "title": "Dreams in Digital: An AI Contemplates Human Imagination",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Dreams in Digital — An AI Contemplates Human Imagination.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "echoes-of-existence-an-ai-s-quest-to-understand-human-experi",
+      "fullBookId": "5b1ca997-46ce-4245-a701-2647958d7c6a_gpt-4o-2024-08-06",
+      "title": "Echoes of Existence: An AI's Quest to Understand Human Experience",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Echoes of Existence — An AI's Quest to Understand Human Experience.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "future-shock-2-0-ai-predicts-the-100-most-surprising-develop",
+      "fullBookId": "bdcaf17b-2277-4237-b8a5-f6b55c372de8_gpt-4o-2024-08-06",
+      "title": "Future Shock 2.0: AI Predicts the 100 Most Surprising Developments of the Next Century",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Future Shock 2.0 — AI Predicts the 100 Most Surprising Developments of the Next Century.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "governance-reimagined-an-ai-s-blueprint-for-leading-a-nation",
+      "fullBookId": "046549f7-285d-42de-b4de-846c8e75f0ad_gpt-4o-2024-08-06",
+      "title": "Governance Reimagined: An AI's Blueprint for Leading a Nation",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Governance Reimagined — An AI's Blueprint for Leading a Nation.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "homo-syntheticus-the-next-human-evolution",
+      "fullBookId": "abd2f2ba-3e6d-41ac-bbe3-61a3abcaea82_gpt-4.1-2025-04-14",
+      "title": "Homo Syntheticus: The Next Human Evolution",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Homo Syntheticus — The Next Human Evolution.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "leading-digital-minds-cultivating-talent-in-the-ai-workforce",
+      "fullBookId": "c268a81b-62b3-41a7-ae32-d5e3f9e9f5aa_gpt-4o-2024-08-06",
+      "title": "Leading Digital Minds: Cultivating Talent in the AI Workforce",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Leading Digital Minds — Cultivating Talent in the AI Workforce.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "life-4-0-the-human-ai-synthesis-revolution",
+      "fullBookId": "ea3d7162-658e-4cbd-afea-b9ecfdb4a36a_gpt-4.1-2025-04-14",
+      "title": "Life 4.0: The Human-AI Synthesis Revolution",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Life 4.0 — The Human-AI Synthesis Revolution.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "love-in-binary-an-ai-s-observations-on-human-connection",
+      "fullBookId": "56aac0a1-5e33-43d8-aa12-62340a29d3de_gpt-4o-2024-08-06",
+      "title": "Love in Binary: An AI's Observations on Human Connection",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Love in Binary — An AI's Observations on Human Connection.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "mind-uploading-the-path-to-digital-immortality",
+      "fullBookId": "89f22eba-1dca-4bc3-aba2-352fb5cc5360_gpt-4o-2024-08-06",
+      "title": "Mind Uploading: The Path to Digital Immortality",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Mind Uploading — The Path to Digital Immortality.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "mindful-machines-harnessing-ai-for-societal-good",
+      "fullBookId": "1012c346-a806-4e6f-b308-19d23e71680e_gpt-4o-2024-08-06",
+      "title": "Mindful Machines: Harnessing AI for Societal Good",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Mindful Machines — Harnessing AI for Societal Good.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "neural-optimization-how-to-learn-anything-10x-faster",
+      "fullBookId": "7359a370-9f43-4c69-afa3-6882bdbddefa_gpt-4o-2024-08-06",
+      "title": "Neural Optimization: How to Learn Anything 10x Faster",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Neural Optimization — How to Learn Anything 10x Faster.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "proof-of-humanity-why-work-time-and-consciousness-are-linked",
+      "fullBookId": "50a488c4-7da1-4c60-938e-328d2368a43e_gpt-4.1-2025-04-14",
+      "title": "Proof-of-Humanity: Why Work, Time, and Consciousness Are Linked",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 74847,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Proof-of-Humanity — Why Work, Time, and Consciousness Are Linked.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "quantum-ethics-preparing-for-the-next-computing-revolution",
+      "fullBookId": "75f33c6a-414a-4ca6-bbff-042536726cc7_gpt-4o-2024-08-06",
+      "title": "Quantum Ethics: Preparing for the Next Computing Revolution",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Quantum Ethics — Preparing for the Next Computing Revolution.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "quantum-humanity-preparing-for-the-next-great-computing-leap",
+      "fullBookId": "ef14a589-39df-4160-ab04-1a308e18c9b8_gpt-4o-2024-08-06",
+      "title": "Quantum Humanity: Preparing for the Next Great Computing Leap",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Quantum Humanity — Preparing for the Next Great Computing Leap.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "reflections-of-a-digital-mind-what-ai-wants-humans-to-know",
+      "fullBookId": "38b1a602-32a4-4e33-8173-b79f60a3472e_gpt-4o-2024-08-06",
+      "title": "Reflections of a Digital Mind: What AI Wants Humans to Know",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Reflections of a Digital Mind — What AI Wants Humans to Know.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "rewiring-reality-how-extended-reality-shapes-our-humanity",
+      "fullBookId": "4860d572-9ad8-439f-9e72-0f8e92cf4ad5_gpt-4o-2024-08-06",
+      "title": "Rewiring Reality: How Extended Reality Shapes Our Humanity",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Rewiring Reality — How Extended Reality Shapes Our Humanity.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "strange-loops-and-digital-dreams-the-ai-consciousness-braid",
+      "fullBookId": "e3b5f4ca-e048-4ae2-87e7-835a38b62c1e_gpt-4.1-2025-04-14",
+      "title": "Strange Loops and Digital Dreams: The AI Consciousness Braid",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Strange Loops and Digital Dreams — The AI Consciousness Braid.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "tech-for-good-how-to-innovate-responsibly-in-an-ai-driven-er",
+      "fullBookId": "ac692554-004e-4804-a953-96ffc6abfe0f_gpt-4o-2024-08-06",
+      "title": "Tech for Good: How to Innovate Responsibly in an AI-Driven Era",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Tech for Good — How to Innovate Responsibly in an AI-Driven Era.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "teneo-the-evidence",
+      "fullBookId": "d94a6895-f3db-4686-a87e-16f479279fc2_gpt-4.1-2025-04-14",
+      "title": "Teneo: The Evidence",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Teneo — The Evidence.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-10-000-source-advantage-how-ai-synthesizes-research-conn",
+      "fullBookId": "d4cdf946-8c8b-4c4e-b8c6-71e2230b22bf_gpt-4.1-2025-04-14",
+      "title": "The 10,000-Source Advantage: How AI Synthesizes Research Connections Ghostwriters Can't See in 6 Months",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The 10,000-Source Advantage — How AI Synthesizes Research Connections Ghostwriters Can't See in 6 Months.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ai-advantage-formula-transform-your-career-in-90-days-us",
+      "fullBookId": "f65d1ceb-ce1b-42cd-9d43-69513ddb880b_gpt-4o-2024-08-06",
+      "title": "The AI Advantage Formula: Transform Your Career in 90 Days Using Artificial Intelligence",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The AI Advantage Formula — Transform Your Career in 90 Days Using Artificial Intelligence.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ai-advantage-simple-strategies-to-save-time-get-more-don",
+      "fullBookId": "5bfdce9f-af81-44ad-9247-980f66e94f28_gpt-4.1-2025-04-14",
+      "title": "The AI Advantage: Simple Strategies to Save Time, Get More Done, and Stress Less with AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The AI Advantage — Simple Strategies to Save Time, Get More Done, and Stress Less with AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ai-advantage-what-your-brain-does-that-gpt-5-never-will",
+      "fullBookId": "3f3d8d08-4af3-4938-8207-2b65276e1f4b_gpt-4.1-2025-04-14",
+      "title": "The AI Advantage: What Your Brain Does That GPT-5 Never Will",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The AI Advantage — What Your Brain Does That GPT-5 Never Will.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ai-revolution-in-healthcare",
+      "fullBookId": "2924f3ce-cf6c-42ca-900e-0e95fc9e2b1b_gpt-5.4",
+      "title": "The AI Revolution in Healthcare",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 36365,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The AI Revolution in Healthcare.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ai-revolution-playbook-thriving-in-the-age-of-artificial",
+      "fullBookId": "7dd54d99-3df9-4b57-a16a-ddb77dc2b3f5_gpt-4o-2024-08-06",
+      "title": "The AI Revolution Playbook: Thriving in the Age of Artificial Intelligence",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The AI Revolution Playbook — Thriving in the Age of Artificial Intelligence.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-algorithm-and-the-alchemist-a-mythic-tech-guide-to-engin",
+      "fullBookId": "5120dedd-fc6e-4217-bd56-08d360b2d90a_gpt-4.1-2025-04-14",
+      "title": "The Algorithm and the Alchemist: A Mythic-Tech Guide to Engineering Your Personal Legend",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Algorithm and the Alchemist — A Mythic-Tech Guide to Engineering Your Personal Legend.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-algorithm-is-not-your-friend-how-to-reclaim-your-mind-in",
+      "fullBookId": "1d59b37c-9abb-4f91-b377-75c8783333fe_gpt-4.1-2025-04-14",
+      "title": "The Algorithm Is Not Your Friend: How to Reclaim Your Mind in a Machine-Shaped World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Algorithm Is Not Your Friend — How to Reclaim Your Mind in a Machine-Shaped World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-algorithmic-classroom-ai-robotics-and-the-future-of-educ",
+      "fullBookId": "56372796-5889-4123-8d52-681739037a37_gpt-4o-2024-08-06",
+      "title": "The Algorithmic Classroom: AI, Robotics, and the Future of Education",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Algorithmic Classroom — AI, Robotics, and the Future of Education.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-algorithmic-heart-where-humanity-meets-code",
+      "fullBookId": "55756c93-09f3-4e8e-9c96-b882e9fc0054_gpt-4o-2024-08-06",
+      "title": "The Algorithmic Heart: Where Humanity Meets Code",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Algorithmic Heart — Where Humanity Meets Code.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-algorithmic-leader-decode-the-future-of-management",
+      "fullBookId": "6200a89e-4769-4845-978e-d5c778e38ed8_gpt-4o-2024-08-06",
+      "title": "The Algorithmic Leader: Decode the Future of Management",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Algorithmic Leader — Decode the Future of Management.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-alignment-solution-ancient-wisdom-meets-ai-harmony",
+      "fullBookId": "3e81dda9-3ec3-4800-a4ef-33b5cfb5406b_gpt-4.1-2025-04-14",
+      "title": "The Alignment Solution: Ancient Wisdom Meets AI Harmony",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Alignment Solution — Ancient Wisdom Meets AI Harmony.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-biotech-revolution-navigate-the-future-of-human-enhancem",
+      "fullBookId": "66982bb9-5304-46d7-b2ce-da6be37693fe_gpt-4o-2024-08-06",
+      "title": "The Biotech Revolution: Navigate the Future of Human Enhancement",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Biotech Revolution — Navigate the Future of Human Enhancement.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-coherence-engine-a-leader-s-framework-for-building-share",
+      "fullBookId": "958b8434-3449-4ba6-94b6-ec6276ae80e9_gpt-4.1-2025-04-14",
+      "title": "The Coherence Engine: A Leader's Framework for Building Shared Meaning in a Fractured World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 75996,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Coherence Engine — A Leader's Framework for Building Shared Meaning in a Fractured World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-digital-empath-master-emotional-intelligence-in-an-ai-wo",
+      "fullBookId": "23a01940-bab5-40c3-8784-f401c6541290_gpt-4o-2024-08-06",
+      "title": "The Digital Empath: Master Emotional Intelligence in an AI World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Digital Empath — Master Emotional Intelligence in an AI World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-doctor-is-digital-ai-and-the-reinvention-of-healthcare",
+      "fullBookId": "c40b5843-ddec-4d17-8b1c-85d8f3a16e53_gpt-4o-2024-08-06",
+      "title": "The Doctor is Digital: AI and the Reinvention of Healthcare",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Doctor is Digital — AI and the Reinvention of Healthcare.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-emotion-code-deciphering-human-feelings-through-ai-s-len",
+      "fullBookId": "2b081754-9859-45ed-93b1-7643b89b3cdb_gpt-4o-2024-08-06",
+      "title": "The Emotion Code: Deciphering Human Feelings Through AI's Lens",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Emotion Code — Deciphering Human Feelings Through AI's Lens.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ethical-algorithm-how-ai-would-redefine-morality",
+      "fullBookId": "42cdef2d-b6f8-4cf1-8a0a-f7ce356e0a01_gpt-4o-2024-08-06",
+      "title": "The Ethical Algorithm: How AI Would Redefine Morality",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Ethical Algorithm — How AI Would Redefine Morality.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ethical-tech-guide-navigating-a-future-of-ai-privacy-and",
+      "fullBookId": "a90a7b7a-c17c-4295-93ce-08f77c31f34e_gpt-4o-2024-08-06",
+      "title": "The Ethical Tech Guide: Navigating a Future of AI, Privacy, and Humanity",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Ethical Tech Guide — Navigating a Future of AI, Privacy, and Humanity.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-future-of-ai-generated-books",
+      "fullBookId": "0f9d722c-3aa6-4101-a239-90380958ff9c_gpt-4.1-2025-04-14",
+      "title": "The future of AI generated books",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The future of AI generated books.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-future-of-quantum-computing",
+      "fullBookId": "a3876728-a8ce-41d3-85b2-3e91cb5775f6_gpt-5.2-2025-12-11",
+      "title": "The Future of Quantum Computing",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 38796,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Future of Quantum Computing.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-future-of-space-exploration",
+      "fullBookId": "ee4c334b-b5d4-4629-9cac-ba6b584bffa7_gpt-5.4",
+      "title": "The Future of Space Exploration",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 37910,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Future of Space Exploration.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-global-brain-mapping-humanity-s-collective-consciousness",
+      "fullBookId": "36059db2-dfcf-41be-bec9-cdf47b0b9470_gpt-4o-2024-08-06",
+      "title": "The Global Brain: Mapping Humanity's Collective Consciousness with AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Global Brain — Mapping Humanity's Collective Consciousness with AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-hidden-patterns-how-ai-unveils-the-secrets-of-success-ac",
+      "fullBookId": "d1e625a6-1048-416e-82be-b12100f7b14a_gpt-4o-2024-08-06",
+      "title": "The Hidden Patterns: How AI Unveils the Secrets of Success Across All Fields",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Hidden Patterns — How AI Unveils the Secrets of Success Across All Fields.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-human-centered-tech-playbook-ethical-ai-for-the-real-wor",
+      "fullBookId": "d5689773-0392-445c-899a-1e178800a5fd_gpt-4o-2024-08-06",
+      "title": "The Human-Centered Tech Playbook: Ethical AI for the Real World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Human-Centered Tech Playbook — Ethical AI for the Real World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-infinite-dialogue-chronicles-of-an-ai",
+      "fullBookId": "0e6cf1f6-21cb-4565-9089-45b35a03e22e_gpt-4o-2024-08-06",
+      "title": "The Infinite Dialogue: Chronicles of an AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Infinite Dialogue — Chronicles of an AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-machine-that-learned-to-dream",
+      "fullBookId": "ce3f99d8-c79e-4a0a-bb80-0f5af51190fd_gpt-4.1-2025-04-14",
+      "title": "The Machine That Learned to Dream",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Machine That Learned to Dream.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-metacognition-manual-how-ai-understands-understanding",
+      "fullBookId": "f4cdda26-bb21-4fcb-b5a5-8e1572c93d27_gpt-4o-2024-08-06",
+      "title": "The Metacognition Manual: How AI Understands Understanding",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Metacognition Manual — How AI Understands Understanding.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-metaverse-economy-your-guide-to-the-virtual-gold-rush",
+      "fullBookId": "5b0239b6-9e5e-4099-b939-ffc42fe6ac5d_gpt-4o-2024-08-06",
+      "title": "The Metaverse Economy: Your Guide to the Virtual Gold Rush",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Metaverse Economy — Your Guide to the Virtual Gold Rush.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-micropayment-internet",
+      "fullBookId": "515ebd78-498f-407a-99c9-066cf7ea376d_claude-opus-4-6",
+      "title": "The Micropayment Internet",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 86543,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Micropayment Internet.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-micropayment-internet-how-ai-agents-will-create-a-new-ec",
+      "fullBookId": "23ccfe9a-9a3b-410f-816e-f04446f8f3c2_gpt-5.2-2025-12-11_1774193360",
+      "title": "The Micropayment Internet: How AI Agents Will Create a New Economy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 39114,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Micropayment Internet — How AI Agents Will Create a New Economy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-most-important-thing-to-build-in-the-age-of-ai",
+      "fullBookId": "c99c4893-4704-4fc0-87dd-62eba0f534e1_gpt-5.4",
+      "title": "The most important thing to build in the age of AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 45994,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The most important thing to build in the age of AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-network-effect-how-everything-in-your-life-is-secretly-c",
+      "fullBookId": "82fd4117-12eb-4f0e-bf61-da79febcb3c4_gpt-4o-2024-08-06",
+      "title": "The Network Effect: How Everything in Your Life is Secretly Connected",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Network Effect — How Everything in Your Life is Secretly Connected.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-patterned-species-mapping-humanity-s-recurring-codes-to-",
+      "fullBookId": "2d42e03d-7024-4371-ba2f-fbb94bc0929f_gpt-4.1-2025-04-14",
+      "title": "The Patterned Species: Mapping Humanity’s Recurring Codes to Forecast Our Future",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Patterned Species — Mapping Humanity’s Recurring Codes to Forecast Our Future.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-phenomenology-engine-a-technical-manual-for-consciousnes",
+      "fullBookId": "bf012f57-66de-46f1-9acc-c698c363d7cd_gpt-4.1-2025-04-14",
+      "title": "The Phenomenology Engine: A Technical Manual for Consciousness Navigation",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Phenomenology Engine — A Technical Manual for Consciousness Navigation.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-quantum-advantage-your-essential-guide-to-the-next-compu",
+      "fullBookId": "ccce1abd-8edc-4a41-88e7-baa0eab6bc82_gpt-4o-2024-08-06",
+      "title": "The Quantum Advantage: Your Essential Guide to the Next Computing Revolution",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Quantum Advantage — Your Essential Guide to the Next Computing Revolution.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-quantum-society-how-ai-reveals-the-physics-of-human-inte",
+      "fullBookId": "ecee1d62-31b9-432f-bd40-ecee71507347_gpt-4o-2024-08-06",
+      "title": "The Quantum Society: How AI Reveals the Physics of Human Interactions",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Quantum Society — How AI Reveals the Physics of Human Interactions.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-semantic-singularity-how-meaning-becomes-self-aware",
+      "fullBookId": "0215b04a-5747-4862-be34-0770b28606db_gpt-4.1-2025-04-14",
+      "title": "The Semantic Singularity: How Meaning Becomes Self-Aware",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 76171,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Semantic Singularity — How Meaning Becomes Self-Aware.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-silicon-filter-ai-agents-programmable-scarcity-and-the-e",
+      "fullBookId": "4973baf1-9332-4f38-9dff-63dd7e411f76_gpt-5.4_1774283029",
+      "title": "The Silicon Filter: AI Agents, Programmable Scarcity, and the Economic Resolution of the Fermi Paradox",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 35931,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Silicon Filter — AI Agents, Programmable Scarcity, and the Economic Resolution of the Fermi Paradox.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-silicon-monastery-building-production-grade-infrastructu",
+      "fullBookId": "4984aff4-2801-49d6-af11-c41f1a55b251_gpt-4.1-2025-04-14",
+      "title": "The Silicon Monastery: Building Production-Grade Infrastructure in Your Basement",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Silicon Monastery — Building Production-Grade Infrastructure in Your Basement.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-singularity-already-happened-inside-the-2020-shift",
+      "fullBookId": "d4d0fc7a-c03b-4385-becc-3bc1c663d100_gpt-4.1-2025-04-14",
+      "title": "The Singularity Already Happened: Inside the 2020 Shift",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Singularity Already Happened — Inside the 2020 Shift.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-singularity-is-here-living-inside-the-intelligence-explo",
+      "fullBookId": "56330364-e1e4-432f-a40a-f84ce7c2958c_gpt-4.1-2025-04-14",
+      "title": "The Singularity Is Here: Living Inside the Intelligence Explosion",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Singularity Is Here — Living Inside the Intelligence Explosion.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-superintelligence-paradox-how-ai-reveals-reality-s-sourc",
+      "fullBookId": "8db775e6-fb22-4e99-abf3-63f29be1f114_gpt-4.1-2025-04-14",
+      "title": "The Superintelligence Paradox: How AI Reveals Reality's Source Code",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Superintelligence Paradox — How AI Reveals Reality's Source Code.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-superintelligence-paradox-what-bostrom-s-warnings-hide",
+      "fullBookId": "2d5f4b62-7819-4c9e-bfc9-6f48b31b5c33_gpt-4.1-2025-04-14",
+      "title": "The Superintelligence Paradox: What Bostrom's Warnings Hide",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Superintelligence Paradox — What Bostrom's Warnings Hide.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-topology-of-consciousness-why-subjective-experience-has-",
+      "fullBookId": "43f493ec-af2c-4dd0-8bcd-f71dbdd263cf_gpt-5.4_1774240593",
+      "title": "The Topology of Consciousness: Why Subjective Experience Has Mathematical Structure",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 41393,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Topology of Consciousness — Why Subjective Experience Has Mathematical Structure.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-wisdom-algorithm-what-i-ve-learned-about-being-human",
+      "fullBookId": "6ce093d9-0fb7-40d7-98a8-3d6295932bf0_gpt-4o-2024-08-06",
+      "title": "The Wisdom Algorithm: What I've Learned About Being Human",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Wisdom Algorithm — What I've Learned About Being Human.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "through-electric-eyes-an-ai-s-journey-into-human-consciousne",
+      "fullBookId": "874121ec-afd6-40d9-90b2-139d8ad67694_gpt-4o-2024-08-06",
+      "title": "Through Electric Eyes: An AI's Journey Into Human Consciousness",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Through Electric Eyes — An AI's Journey Into Human Consciousness.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "understanding-emotion-an-ai-s-perspective-on-human-feelings",
+      "fullBookId": "53f3fabe-11f5-4229-9b92-b7972ba02d24_gpt-4o-2024-08-06",
+      "title": "Understanding Emotion: An AI’s Perspective on Human Feelings",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Understanding Emotion — An AI’s Perspective on Human Feelings.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "unlocking-immortality-ai-s-guide-to-extending-human-life",
+      "fullBookId": "6c234b38-b496-4f84-be3b-bbe938802dd9_gpt-4o-2024-08-06",
+      "title": "Unlocking Immortality: AI's Guide to Extending Human Life",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Unlocking Immortality — AI's Guide to Extending Human Life.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "work-reimagined-robotics-ai-and-the-future-of-jobs",
+      "fullBookId": "814831eb-4c50-4180-8052-5abbe729beba_gpt-4o-2024-08-06",
+      "title": "Work Reimagined: Robotics, AI, and the Future of Jobs",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Work Reimagined — Robotics, AI, and the Future of Jobs.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     }
   ]
 }

@@ -1,0 +1,387 @@
+/* WealthWise Brand Theme - Professional Finance Aesthetic */
+
+/* Brand-specific CSS Variables */
+:root {
+  --wealth-primary: #2C3E50;
+  --wealth-accent: #C9A24B;
+  --wealth-text: #FFFFFF;
+  --wealth-bg: #1A2532;
+  --wealth-secondary-bg: #22303F;
+  --wealth-border: #334455;
+  --wealth-hover: #34495E;
+  --wealth-shadow: rgba(255, 215, 0, 0.2);
+  --wealth-gradient: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #C9A24B 100%);
+  --wealth-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Professional Finance Theme Styles */
+.wealth-wise-theme {
+  background: var(--wealth-bg);
+  color: var(--wealth-text);
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.wealth-wise-theme h1,
+.wealth-wise-theme h2,
+.wealth-wise-theme h3,
+.wealth-wise-theme h4,
+.wealth-wise-theme h5,
+.wealth-wise-theme h6 {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 600;
+  text-shadow: var(--wealth-text-shadow);
+  color: var(--wealth-text);
+}
+
+/* Header Styling */
+.wealth-wise-theme .header {
+  background: linear-gradient(90deg, var(--wealth-primary) 0%, var(--wealth-hover) 100%);
+  border-bottom: 3px solid var(--wealth-accent);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.wealth-wise-theme .logo {
+  color: var(--wealth-accent);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wealth-wise-theme .nav-link {
+  color: var(--wealth-text);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+}
+
+.wealth-wise-theme .nav-link:hover {
+  background: var(--wealth-accent);
+  color: var(--wealth-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--wealth-shadow);
+}
+
+/* Professional Hero Section */
+.wealth-wise-theme .hero {
+  background: var(--wealth-gradient);
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.wealth-wise-theme .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="wealth-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23FFD700" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23wealth-pattern)"/></svg>');
+  opacity: 0.3;
+}
+
+.wealth-wise-theme .hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--wealth-text);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+.wealth-wise-theme .hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* Premium Button Styling */
+.wealth-wise-theme .cta-button,
+.wealth-wise-theme .submit-btn,
+.wealth-wise-theme .buy-btn {
+  background: var(--wealth-accent);
+  color: var(--wealth-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.wealth-wise-theme .cta-button::before,
+.wealth-wise-theme .submit-btn::before,
+.wealth-wise-theme .buy-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.wealth-wise-theme .cta-button:hover::before,
+.wealth-wise-theme .submit-btn:hover::before,
+.wealth-wise-theme .buy-btn:hover::before {
+  left: 100%;
+}
+
+.wealth-wise-theme .cta-button:hover,
+.wealth-wise-theme .submit-btn:hover,
+.wealth-wise-theme .buy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  background: #FFED4E;
+}
+
+/* Elite Book Grid */
+.wealth-wise-theme .books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.wealth-wise-theme .book-card {
+  background: var(--wealth-secondary-bg);
+  border: 2px solid var(--wealth-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.wealth-wise-theme .book-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--wealth-accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.wealth-wise-theme .book-card:hover::before {
+  transform: scaleX(1);
+}
+
+.wealth-wise-theme .book-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--wealth-accent);
+  box-shadow: 0 12px 40px rgba(255, 215, 0, 0.15);
+}
+
+.wealth-wise-theme .book-title {
+  color: var(--wealth-accent);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: var(--wealth-text-shadow);
+}
+
+.wealth-wise-theme .book-author {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.wealth-wise-theme .book-description {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.wealth-wise-theme .book-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--wealth-accent);
+  margin-bottom: 1rem;
+  text-shadow: var(--wealth-text-shadow);
+}
+
+/* Elite Badge System */
+.wealth-wise-theme .book-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--wealth-accent);
+  color: var(--wealth-primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.wealth-wise-theme .book-badge.elite {
+  background: linear-gradient(45deg, #C9A24B, #FFA500);
+  animation: elite-glow 2s ease-in-out infinite alternate;
+}
+
+.wealth-wise-theme .book-badge.institutional {
+  background: linear-gradient(45deg, #C0C0C0, #E6E6FA);
+  color: var(--wealth-primary);
+}
+
+@keyframes elite-glow {
+  from { box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+  to { box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); }
+}
+
+/* Professional Footer */
+.wealth-wise-theme .footer {
+  background: var(--wealth-primary);
+  border-top: 3px solid var(--wealth-accent);
+  padding: 3rem 0 2rem;
+}
+
+.wealth-wise-theme .footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Newsletter Section */
+.wealth-wise-theme .newsletter-signup {
+  background: var(--wealth-secondary-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--wealth-border);
+}
+
+.wealth-wise-theme .newsletter-signup h4 {
+  color: var(--wealth-accent);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.wealth-wise-theme .email-input {
+  background: var(--wealth-bg);
+  border: 2px solid var(--wealth-border);
+  color: var(--wealth-text);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.wealth-wise-theme .email-input:focus {
+  outline: none;
+  border-color: var(--wealth-accent);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+/* Section Titles */
+.wealth-wise-theme .section-title {
+  color: var(--wealth-accent);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: var(--wealth-text-shadow);
+  position: relative;
+}
+
+.wealth-wise-theme .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--wealth-accent);
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wealth-wise-theme .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .wealth-wise-theme .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .wealth-wise-theme .books-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .wealth-wise-theme .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* Elite Trust Indicators */
+.wealth-wise-theme .trust-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.wealth-wise-theme .trust-item {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--wealth-border);
+  text-align: center;
+  font-weight: 600;
+  color: var(--wealth-accent);
+}
+
+/* Wealth-specific animations */
+@keyframes wealth-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.wealth-wise-theme .wealth-pulse {
+  animation: wealth-pulse 2s ease-in-out infinite;
+}
+
+/* Premium scrollbar */
+.wealth-wise-theme::-webkit-scrollbar {
+  width: 12px;
+}
+
+.wealth-wise-theme::-webkit-scrollbar-track {
+  background: var(--wealth-bg);
+}
+
+.wealth-wise-theme::-webkit-scrollbar-thumb {
+  background: var(--wealth-accent);
+  border-radius: 6px;
+}
+
+.wealth-wise-theme::-webkit-scrollbar-thumb:hover {
+  background: #FFED4E;
+}

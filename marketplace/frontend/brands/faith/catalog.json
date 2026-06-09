@@ -1,0 +1,644 @@
+{
+  "brand": "faith",
+  "name": "Cornerstone",
+  "tagline": "Faith for everyday life.",
+  "description": "Christian books on faith, hope, prayer and everyday discipleship — encouragement for walking with Christ in ordinary days.",
+  "_meta": {
+    "source": "generated-book-inventory 2026-06-07",
+    "totalBooks": 35,
+    "adFlagged": 0,
+    "note": "Real inventory from GeneratedBookDetailsTable. Descriptions are v1 (title/subtitle-derived) — generate richer per-book sales copy before launch. TODO: covers (cover-generator); pricing review; review adSafe=false titles; verify each fullBookId has exported files."
+  },
+  "books": [
+    {
+      "id": "anchored-in-christ-finding-stability-in-an-unstable-world",
+      "fullBookId": "8088d843-32f5-43f0-9b4d-f977f1fa67f4_gpt-4o-2024-08-06",
+      "title": "Anchored in Christ: Finding Stability in an Unstable World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Anchored in Christ — Finding Stability in an Unstable World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "attached-to-the-divine-the-spiritual-blueprint-behind-your-b",
+      "fullBookId": "d64164dc-1088-469c-92c5-206c73397519_gpt-4.1-2025-04-14",
+      "title": "Attached to the Divine: The Spiritual Blueprint Behind Your Bonding Patterns",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Attached to the Divine — The Spiritual Blueprint Behind Your Bonding Patterns.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "balancing-life-finding-intimacy-with-god-amidst-busyness",
+      "fullBookId": "ccba374d-d54a-4858-82af-6b4c176e1193_gpt-4o-2024-08-06",
+      "title": "Balancing Life: Finding Intimacy with God Amidst Busyness",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Balancing Life — Finding Intimacy with God Amidst Busyness.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "breath-of-heaven-overcoming-anxiety-with-spiritual-practices",
+      "fullBookId": "bfd5fbae-ed56-4bfa-b3ab-298c31cb99f4_gpt-4o-2024-08-06",
+      "title": "Breath of Heaven: Overcoming Anxiety with Spiritual Practices",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Breath of Heaven — Overcoming Anxiety with Spiritual Practices.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "courageous-faith-overcoming-fear-and-embracing-god-s-promise",
+      "fullBookId": "ce65f5e8-f0e3-4c71-bb59-de7e64e340e1_gpt-4o-2024-08-06",
+      "title": "Courageous Faith: Overcoming Fear and Embracing God's Promises",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Courageous Faith — Overcoming Fear and Embracing God's Promises.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "divine-guidance-trusting-god-s-plan-for-your-life",
+      "fullBookId": "959e46d3-4af8-4c66-94c2-15d670e2f49e_gpt-4o-2024-08-06",
+      "title": "Divine Guidance: Trusting God's Plan for Your Life",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Divine Guidance — Trusting God's Plan for Your Life.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "embracing-grace-finding-peace-and-purpose-in-god-s-love",
+      "fullBookId": "664c5bb3-9fb5-446d-9951-6a2450d04d9f_gpt-4o-2024-08-06",
+      "title": "Embracing Grace: Finding Peace and Purpose in God's Love",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Embracing Grace — Finding Peace and Purpose in God's Love.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "faithful-families-building-strong-christian-homes",
+      "fullBookId": "31bfa2f5-1451-4230-b57c-cce5028e122c_gpt-4o-2024-08-06",
+      "title": "Faithful Families: Building Strong Christian Homes",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Faithful Families — Building Strong Christian Homes.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "finding-god-in-the-ordinary-embracing-the-sacred-in-everyday",
+      "fullBookId": "6bf45f10-cfdd-405c-b202-363dc3a57341_gpt-4o-2024-08-06",
+      "title": "Finding God in the Ordinary: Embracing the Sacred in Everyday Life",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Finding God in the Ordinary — Embracing the Sacred in Everyday Life.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "forgiveness-unleashed-healing-and-moving-forward-in-christ",
+      "fullBookId": "4e262ec2-01af-422f-8c1a-fdbb9b467016_claude-3-5-sonnet-20240620",
+      "title": "Forgiveness Unleashed: Healing and Moving Forward in Christ",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Forgiveness Unleashed — Healing and Moving Forward in Christ.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "god-s-goodness-finding-purpose-in-life-s-challenges",
+      "fullBookId": "a799e54f-590b-4d74-bd0f-6a45feb00434_claude-3-5-sonnet-20240620",
+      "title": "God's Goodness: Finding Purpose in Life's Challenges",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "God's Goodness — Finding Purpose in Life's Challenges.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "grace-for-today-daily-devotions-to-start-your-day-right",
+      "fullBookId": "bfc25679-ae6b-44e1-90df-f5949f824d52_gpt-4o-2024-08-06",
+      "title": "Grace for Today: Daily Devotions to Start Your Day Right",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Grace for Today — Daily Devotions to Start Your Day Right.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "guarding-your-mind-winning-spiritual-battles-with-faith",
+      "fullBookId": "10c22efe-6a3c-4fc0-8eea-9e96e5b74e35_gpt-4o-2024-08-06",
+      "title": "Guarding Your Mind: Winning Spiritual Battles with Faith",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Guarding Your Mind — Winning Spiritual Battles with Faith.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "hearing-god-s-voice-discernment-and-direction-for-modern-bel",
+      "fullBookId": "6b0fc819-ea69-4b00-950f-290c4c443975_claude-3-5-sonnet-20240620",
+      "title": "Hearing God's Voice: Discernment and Direction for Modern Believers",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Hearing God's Voice — Discernment and Direction for Modern Believers.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "holy-habits-developing-spiritual-disciplines-for-a-deeper-fa",
+      "fullBookId": "56ff833b-5429-44b7-afc2-56069a6b1717_claude-3-5-sonnet-20240620",
+      "title": "Holy Habits: Developing Spiritual Disciplines for a Deeper Faith",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Holy Habits — Developing Spiritual Disciplines for a Deeper Faith.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "joyful-surrender-embracing-god-s-will-with-a-willing-heart",
+      "fullBookId": "07bdba30-7f0a-4b94-a2d7-9fe25a123804_gpt-4o-2024-08-06",
+      "title": "Joyful Surrender: Embracing God's Will with a Willing Heart",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Joyful Surrender — Embracing God's Will with a Willing Heart.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "living-faithfully-practical-steps-for-daily-devotion",
+      "fullBookId": "0d3157bc-99ef-4fff-8134-84f30b8d0ea9_gpt-4o-2024-08-06",
+      "title": "Living Faithfully: Practical Steps for Daily Devotion",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Living Faithfully — Practical Steps for Daily Devotion.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "purpose-unveiled-discovering-your-god-given-mission",
+      "fullBookId": "7f8a5138-c251-430a-831e-d30122a0f5bb_gpt-4o-2024-08-06",
+      "title": "Purpose Unveiled: Discovering Your God-Given Mission",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Purpose Unveiled — Discovering Your God-Given Mission.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "rooted-in-faith-growing-spiritually-in-every-season",
+      "fullBookId": "8933aa42-065f-4a48-8513-2f2f7f888fda_gpt-4o-2024-08-06",
+      "title": "Rooted in Faith: Growing Spiritually in Every Season",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Rooted in Faith — Growing Spiritually in Every Season.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "scars-that-speak-how-god-uses-our-wounds-to-reveal-his-glory",
+      "fullBookId": "27158801-3ec0-46b8-9587-907383cd8ca1_gpt-5.4-mini_1780366014",
+      "title": "Scars That Speak: How God Uses Our Wounds to Reveal His Glory",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 40417,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "Scars That Speak — How God Uses Our Wounds to Reveal His Glory.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "scripture-insights-the-art-of-reading-and-understanding-the-",
+      "fullBookId": "83591cd9-674e-44ee-9cd5-db8b623202b7_gpt-4o-2024-08-06",
+      "title": "Scripture Insights: The Art of Reading and Understanding the Bible",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Scripture Insights — The Art of Reading and Understanding the Bible.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "soul-refresh-spiritual-practices-for-renewed-vitality",
+      "fullBookId": "cb8e62c8-0f4b-4c3c-ac2e-1c2f8b24062b_gpt-4o-2024-08-06",
+      "title": "Soul Refresh: Spiritual Practices for Renewed Vitality",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Soul Refresh — Spiritual Practices for Renewed Vitality.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "soulmates-and-twin-flames-understanding-and-nurturing-spirit",
+      "fullBookId": "3654bc0a-157d-4b4c-9458-b9ea3b4a25ee_gpt-4o-2024-08-06",
+      "title": "Soulmates and Twin Flames: Understanding and Nurturing Spiritual Connections",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Soulmates and Twin Flames — Understanding and Nurturing Spiritual Connections.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "spiritual-resilience-thriving-in-the-midst-of-adversity",
+      "fullBookId": "a7007054-9fb2-4602-9e22-153ce7d08365_gpt-4o-2024-08-06",
+      "title": "Spiritual Resilience: Thriving in the Midst of Adversity",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Spiritual Resilience — Thriving in the Midst of Adversity.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-battlefield-of-the-mind-strategies-for-spiritual-victory",
+      "fullBookId": "6d216a04-7276-4ff1-ad47-94b08481bf8d_gpt-4o-2024-08-06",
+      "title": "The Battlefield of the Mind: Strategies for Spiritual Victory",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Battlefield of the Mind — Strategies for Spiritual Victory.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "the-embodied-soul-a-woman-s-path-from-spiritual-bypassing-to",
+      "fullBookId": "4c0e4dc9-ec76-47d0-ba84-9285de3234b1_gpt-4.1-2025-04-14",
+      "title": "The Embodied Soul: A Woman's Path from Spiritual Bypassing to Sacred Presence",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Embodied Soul — A Woman's Path from Spiritual Bypassing to Sacred Presence.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ethics-of-god",
+      "fullBookId": "d180e1bb-989f-4b39-add8-b2cc7a8e80dd_gpt-5.4-mini_1780222406",
+      "title": "The Ethics of God",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 38893,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Ethics of God.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-prayerful-life-building-a-transformative-prayer-practice",
+      "fullBookId": "dba17a2a-d2b1-48fa-b7ef-de90e02dc548_gpt-4o-2024-08-06",
+      "title": "The Prayerful Life: Building a Transformative Prayer Practice",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Prayerful Life — Building a Transformative Prayer Practice.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "the-spirit-of-adventure-embracing-life-s-journey-with-courag",
+      "fullBookId": "11049aea-4b7f-4d85-8433-1e77d36e34ac_gpt-4o-2024-08-06",
+      "title": "The Spirit of Adventure: Embracing Life's Journey with Courage and Joy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Spirit of Adventure — Embracing Life's Journey with Courage and Joy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "unbreakable-spirit-strengthening-your-faith-in-times-of-tria",
+      "fullBookId": "385e3f96-227c-4c30-804f-89ca65c8cefa_gpt-4o-2024-08-06",
+      "title": "Unbreakable Spirit: Strengthening Your Faith in Times of Trial",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Unbreakable Spirit — Strengthening Your Faith in Times of Trial.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "unshakable-faith-standing-strong-in-a-shifting-world",
+      "fullBookId": "94480976-c575-4129-9604-22bd7f2a7a39_gpt-4o-2024-08-06",
+      "title": "Unshakable Faith: Standing Strong in a Shifting World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Unshakable Faith — Standing Strong in a Shifting World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "unshaken-a-christian-s-guide-to-breaking-free-from-anxiety-a",
+      "fullBookId": "d49ec60a-0576-4d3e-9f24-6adb241291f5_gpt-4.1-2025-04-14_1776860025",
+      "title": "Unshaken: A Christian's Guide to Breaking Free from Anxiety and Walking in the Peace God Promised",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 80043,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Unshaken — A Christian's Guide to Breaking Free from Anxiety and Walking in the Peace God Promised.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "walking-with-jesus-becoming-more-like-christ-daily",
+      "fullBookId": "91da1ee0-4608-4cbe-8837-961823804ac2_gpt-4o-2024-08-06",
+      "title": "Walking with Jesus: Becoming More Like Christ Daily",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Walking with Jesus — Becoming More Like Christ Daily.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "when-god-is-a-rebel-woman-the-mah-vidy-s-and-the-new-goddess",
+      "fullBookId": "4465556d-f1e1-4612-bb8d-187f37c084f5_gpt-4.1-2025-04-14",
+      "title": "When God Is a Rebel Woman: The Mahāvidyās and the New Goddess Renaissance",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 78638,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "When God Is a Rebel Woman — The Mahāvidyās and the New Goddess Renaissance.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "words-of-wisdom-52-biblical-truths-for-every-christian-descr",
+      "fullBookId": "7c17ea06-811a-40c3-be72-27e2040d9bab_gpt-4o-2024-08-06",
+      "title": "Words of Wisdom: 52 Biblical Truths for Every Christian Description",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Words of Wisdom — 52 Biblical Truths for Every Christian Description.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    }
+  ]
+}

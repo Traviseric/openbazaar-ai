@@ -20,13 +20,22 @@
       "url": "http://localhost:3001/?brand=teneo",
       "api": "http://localhost:3001/api",
       "brand": "teneo",
-      "specialties": ["AI", "consciousness", "paradigm-shifts", "hidden-patterns"],
+      "specialties": [
+        "AI",
+        "consciousness",
+        "paradigm-shifts",
+        "hidden-patterns"
+      ],
       "verified": true,
       "featured": true,
       "joined": "2024-01-01",
       "owner": "OpenBazaar AI",
       "contact": "network@openbazaar.ai",
-      "features": ["digital-delivery", "ai-powered", "pattern-recognition"],
+      "features": [
+        "digital-delivery",
+        "ai-powered",
+        "pattern-recognition"
+      ],
       "status": "active",
       "color": "#7C3AED"
     },
@@ -37,12 +46,21 @@
       "url": "http://localhost:3001/?brand=true-earth",
       "api": "http://localhost:3001/api",
       "brand": "true-earth",
-      "specialties": ["conspiracy", "forbidden-knowledge", "alternative-history", "suppressed-tech"],
+      "specialties": [
+        "conspiracy",
+        "forbidden-knowledge",
+        "alternative-history",
+        "suppressed-tech"
+      ],
       "verified": true,
       "joined": "2024-01-05",
       "owner": "Truth Seekers LLC",
       "contact": "truth@true-earth.com",
-      "features": ["uncensored-content", "underground-network", "banned-books"],
+      "features": [
+        "uncensored-content",
+        "underground-network",
+        "banned-books"
+      ],
       "status": "active",
       "color": "#d4af37"
     },
@@ -53,19 +71,52 @@
       "url": "http://localhost:3001/?brand=wealth-wise",
       "api": "http://localhost:3001/api",
       "brand": "wealth-wise",
-      "specialties": ["finance", "wealth-building", "investing", "tax-strategies"],
+      "specialties": [
+        "finance",
+        "wealth-building",
+        "investing",
+        "tax-strategies"
+      ],
       "verified": true,
       "joined": "2024-01-10",
       "owner": "Elite Financial Publishing",
       "contact": "concierge@wealthwise.com",
-      "features": ["institutional-grade", "elite-strategies", "wealth-protection"],
+      "features": [
+        "institutional-grade",
+        "elite-strategies",
+        "wealth-protection"
+      ],
       "status": "active",
       "color": "#FFD700"
+    },
+    {
+      "id": "faith",
+      "name": "Cornerstone",
+      "tagline": "Faith for everyday life.",
+      "url": "http://localhost:3001/?brand=faith",
+      "api": "http://localhost:3001/api",
+      "brand": "faith",
+      "specialties": [
+        "christian-living",
+        "prayer",
+        "faith",
+        "hope"
+      ],
+      "verified": true,
+      "joined": "2026-06-07",
+      "owner": "Cornerstone",
+      "contact": "hello@cornerstone.example",
+      "features": [
+        "digital-delivery",
+        "made-to-order"
+      ],
+      "status": "active",
+      "color": "#2C3E50"
     }
   ],
   "networkStats": {
-    "totalStores": 3,
-    "activeStores": 3,
+    "totalStores": 4,
+    "activeStores": 4,
     "totalBooks": 18,
     "totalCategories": 9,
     "networkSavings": "40%",

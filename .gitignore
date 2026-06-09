@@ -111,3 +111,7 @@ RENDER_ENV_VARS.txt
 .network-private-key.pem
 **/.network-private-key.pem
 frontend/brands/*/.network-private-key.pem
+
+# Mock catalog backups (old placeholder data) — keep local, never publish
+catalog.mock.json
+**/catalog.mock.json

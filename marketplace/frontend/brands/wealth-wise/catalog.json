@@ -1,228 +1,2426 @@
 {
   "brand": "wealth-wise",
-  "name": "WealthWise Elite Library",
-  "description": "Institutional-grade financial intelligence for building generational wealth",
+  "name": "WealthWise",
+  "tagline": "Practical money, investing & business education.",
+  "description": "Clear, practical guides on personal finance, investing, entrepreneurship and real-world money skills. Education only — no income or get-rich guarantees.",
+  "_meta": {
+    "source": "generated-book-inventory 2026-06-07",
+    "totalBooks": 134,
+    "adFlagged": 5,
+    "note": "Real inventory from GeneratedBookDetailsTable. Descriptions are v1 (title/subtitle-derived) — generate richer per-book sales copy before launch. TODO: covers (cover-generator); pricing review; review adSafe=false titles; verify each fullBookId has exported files."
+  },
   "books": [
     {
-      "id": "wealth-transfer-code",
-      "title": "The Wealth Transfer Code",
-      "author": "Marcus Rothschild III",
-      "description": "How the ultra-rich move billions without paying taxes",
-      "longDescription": "CONFIDENTIAL WEALTH STRATEGIES! Discover how the ultra-wealthy transfer billions in assets while paying minimal taxes. Learn the same legal structures used by billionaire families for generations. This exclusive guide reveals offshore trusts, family limited partnerships, and advanced estate planning techniques that preserve wealth across multiple generations.",
-      "price": 49.99,
-      "originalPrice": 89.99,
-      "hardcoverPrice": 129.99,
+      "id": "501-c-4-exposed-the-hidden-financial-networks-behind-influen",
+      "fullBookId": "178e0181-457c-4836-bfd0-eaaeea1e9938_gpt-4o-2024-08-06",
+      "title": "501(c)(4) Exposed: The Hidden Financial Networks Behind Influence Operations",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Tax Optimization",
-      "tags": ["wealth transfer", "tax avoidance", "estate planning", "offshore structures"],
-      "coverImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=600&fit=crop",
-      "format": ["ebook", "hardcover", "audiobook"],
-      "pages": 342,
-      "rating": 4.9,
-      "reviews": "verified by elite clients",
-      "badge": "ELITE",
-      "availability": "exclusive",
-      "publishDate": "2024-01-15",
-      "isbn": "978-0-123456-78-9",
-      "language": "English",
-      "gumroadId": "wealth-transfer-code",
-      "luluUrl": "https://premium.wealthwise.com/transfer-code",
-      "features": [
-        "Legal tax avoidance strategies",
-        "Offshore wealth structures",
-        "Family office playbook",
-        "Multi-generational planning"
-      ]
+      "description": "501(c)(4) Exposed — The Hidden Financial Networks Behind Influence Operations.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "market-psychology-decoded",
-      "title": "Market Psychology Decoded",
-      "author": "Dr. Alexandra Sterling",
-      "description": "The behavioral patterns that drive trillion-dollar market moves",
-      "longDescription": "INSTITUTIONAL INTELLIGENCE! Master the psychological patterns that move billions in global markets. Learn to read market sentiment like a Wall Street veteran. This groundbreaking research reveals the cognitive biases that create market inefficiencies and how institutional traders exploit them for massive profits.",
-      "price": 39.99,
-      "originalPrice": 69.99,
-      "hardcoverPrice": 89.99,
+      "id": "60-books-60-monopolies-building-a-kdp-catalog-where-every-bo",
+      "fullBookId": "d3fb03a1-e9a5-4288-9f74-53ef7cda94fc_gpt-4.1-2025-04-14",
+      "title": "60 Books, 60 Monopolies: Building a KDP Catalog Where Every Book is the Category Leader",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Investment Strategy",
-      "tags": ["market psychology", "behavioral finance", "trading psychology", "institutional methods"],
-      "coverImage": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=600&fit=crop",
-      "format": ["ebook", "hardcover", "audiobook"],
-      "pages": 428,
-      "rating": 4.8,
-      "reviews": "recommended by institutional traders",
-      "badge": "BESTSELLER",
-      "availability": "limited",
-      "publishDate": "2024-02-20",
-      "isbn": "978-0-123456-79-6",
-      "language": "English",
-      "gumroadId": "market-psychology-decoded",
-      "luluUrl": "https://premium.wealthwise.com/psychology",
-      "features": [
-        "Institutional trading psychology",
-        "Market sentiment analysis",
-        "Behavioral arbitrage strategies",
-        "Elite trader mindset"
-      ]
+      "description": "60 Books, 60 Monopolies — Building a KDP Catalog Where Every Book is the Category Leader.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "offshore-wealth-structures",
-      "title": "Offshore Wealth Structures",
-      "author": "Jonathan Cayman, CPA",
-      "description": "Legal frameworks for international wealth preservation",
-      "longDescription": "ELITE FINANCIAL ENGINEERING! Learn the sophisticated offshore structures used by ultra-high-net-worth families to protect and grow wealth internationally. Discover legal methods to minimize global tax liability while maintaining full control of your assets.",
-      "price": 59.99,
-      "originalPrice": 119.99,
-      "hardcoverPrice": 159.99,
+      "id": "ai-marketing-automation-at-scale-building-self-optimizing-ma",
+      "fullBookId": "89e78513-39ab-4d3e-931c-af72d2acdb83_gpt-4o-2024-08-06",
+      "title": "AI MARKETING AUTOMATION AT SCALE: Building Self-Optimizing Marketing Systems",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Wealth Preservation",
-      "tags": ["offshore banking", "international structures", "asset protection", "global wealth"],
-      "coverImage": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&h=600&fit=crop",
-      "format": ["ebook", "hardcover"],
-      "pages": 512,
-      "rating": 4.7,
-      "reviews": "trusted by family offices",
-      "badge": "CONFIDENTIAL",
-      "availability": "exclusive",
-      "publishDate": "2024-03-10",
-      "isbn": "978-0-123456-80-2",
-      "language": "English",
-      "gumroadId": "offshore-wealth-structures",
-      "luluUrl": "https://premium.wealthwise.com/offshore",
-      "features": [
-        "International tax planning",
-        "Offshore trust structures",
-        "Asset protection strategies",
-        "Regulatory compliance"
-      ]
+      "description": "AI MARKETING AUTOMATION AT SCALE — Building Self-Optimizing Marketing Systems.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "private-equity-mastery",
-      "title": "Private Equity Mastery",
-      "author": "Harrison Blackstone",
-      "description": "Inside strategies from top-tier PE firms",
-      "longDescription": "WALL STREET SECRETS! Access the investment methodologies used by the world's most successful private equity firms. Learn how to identify, structure, and execute deals that generate 20%+ IRR consistently.",
-      "price": 79.99,
-      "originalPrice": 149.99,
-      "hardcoverPrice": 199.99,
+      "id": "ai-driven-customer-acquisition-mastering-lead-generation-and",
+      "fullBookId": "7153badc-8f69-426a-b05b-67ead9798d4d_gpt-4o-2024-08-06",
+      "title": "AI-DRIVEN CUSTOMER ACQUISITION: Mastering Lead Generation and Conversion with Artificial Intelligence",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Investment Strategy",
-      "tags": ["private equity", "deal structuring", "value creation", "institutional investing"],
-      "coverImage": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=600&fit=crop",
-      "format": ["ebook", "hardcover", "audiobook"],
-      "pages": 598,
-      "rating": 4.9,
-      "reviews": "endorsed by PE professionals",
-      "badge": "INSTITUTIONAL",
-      "availability": "limited",
-      "publishDate": "2024-04-05",
-      "isbn": "978-0-123456-81-9",
-      "language": "English",
-      "gumroadId": "private-equity-mastery",
-      "luluUrl": "https://premium.wealthwise.com/private-equity",
-      "features": [
-        "Deal sourcing strategies",
-        "Due diligence frameworks",
-        "Value creation playbooks",
-        "Exit optimization"
-      ]
+      "description": "AI-DRIVEN CUSTOMER ACQUISITION — Mastering Lead Generation and Conversion with Artificial Intelligence.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "crypto-wealth-blueprint",
-      "title": "The Crypto Wealth Blueprint",
-      "author": "Satoshi Williams",
-      "description": "Institutional-grade cryptocurrency investment strategies",
-      "longDescription": "DIGITAL ASSET MASTERY! Discover how institutional investors are building massive wealth through cryptocurrency. Learn advanced DeFi strategies, yield farming techniques, and portfolio construction methods used by crypto hedge funds.",
-      "price": 44.99,
-      "originalPrice": 79.99,
-      "hardcoverPrice": 109.99,
+      "id": "bankruptcy-secrets-the-credit-industry-doesn-t-want-you-to-k",
+      "fullBookId": "ef756050-7b99-4198-9fb6-0fd11aa9e7d2_gpt-4o-2024-08-06",
+      "title": "Bankruptcy Secrets the Credit Industry Doesn't Want You to Know: Your Rights, Their Tricks, and How to Win",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Digital Assets",
-      "tags": ["cryptocurrency", "DeFi", "blockchain", "digital wealth"],
-      "coverImage": "https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=400&h=600&fit=crop",
-      "format": ["ebook", "hardcover"],
-      "pages": 386,
-      "rating": 4.6,
-      "reviews": "validated by crypto funds",
-      "badge": "EMERGING",
-      "availability": "available",
-      "publishDate": "2024-05-15",
-      "isbn": "978-0-123456-82-6",
-      "language": "English",
-      "gumroadId": "crypto-wealth-blueprint",
-      "luluUrl": "https://premium.wealthwise.com/crypto",
-      "features": [
-        "Institutional crypto strategies",
-        "DeFi yield optimization",
-        "Risk management protocols",
-        "Portfolio diversification"
-      ]
+      "description": "Bankruptcy Secrets the Credit Industry Doesn't Want You to Know — Your Rights, Their Tricks, and How to Win.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     },
     {
-      "id": "real-estate-empire",
-      "title": "Real Estate Empire",
-      "author": "Victoria Sterling",
-      "description": "Commercial real estate strategies of billionaire developers",
-      "longDescription": "REAL ESTATE MASTERY! Learn the sophisticated commercial real estate strategies used by billionaire developers to build massive property empires. Discover advanced financing techniques, value-add strategies, and market timing methods.",
-      "price": 54.99,
-      "originalPrice": 99.99,
-      "hardcoverPrice": 139.99,
+      "id": "behaviors-of-the-billionaire-mind-subconscious-triggers-that",
+      "fullBookId": "7f6532c7-cfff-498a-8e5c-342be1d21095_gpt-4o-2024-08-06",
+      "title": "Behaviors of the Billionaire Mind: Subconscious Triggers that Multiply Wealth",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
       "currency": "USD",
-      "category": "Real Estate",
-      "tags": ["commercial real estate", "property development", "real estate finance", "wealth building"],
-      "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=600&fit=crop",
-      "format": ["ebook", "hardcover", "audiobook"],
-      "pages": 467,
-      "rating": 4.8,
-      "reviews": "used by developers",
-      "badge": "PROVEN",
-      "availability": "available",
-      "publishDate": "2024-06-01",
-      "isbn": "978-0-123456-83-3",
-      "language": "English",
-      "gumroadId": "real-estate-empire",
-      "luluUrl": "https://premium.wealthwise.com/real-estate",
-      "features": [
-        "Commercial deal analysis",
-        "Creative financing methods",
-        "Value-add strategies",
-        "Market cycle timing"
-      ]
+      "description": "Behaviors of the Billionaire Mind — Subconscious Triggers that Multiply Wealth.",
+      "adSafe": false,
+      "complianceReview": true,
+      "status": "Completed"
+    },
+    {
+      "id": "blood-sweat-and-family-how-to-work-with-the-ones-you-love-wi",
+      "fullBookId": "6b0f4619-73d5-4a02-b1ff-7c1496b85103_gpt-5.2-2025-12-11_1777677136",
+      "title": "Blood Sweat and Family - How to Work With the Ones You Love Without Losing Your Mind (or Your Business)",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 81030,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Blood Sweat and Family - How to Work With the Ones You Love Without Losing Your Mind (or Your Business).",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "bounce-back-after-bankruptcy-your-12-month-blueprint-for-fin",
+      "fullBookId": "5f1cfdfa-1b8b-4b7c-a76e-149b1831676a_gpt-4o-2024-08-06",
+      "title": "Bounce Back After Bankruptcy: Your 12-Month Blueprint for Financial Recovery",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Bounce Back After Bankruptcy — Your 12-Month Blueprint for Financial Recovery.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "build-your-own-empire-as-an-obm",
+      "fullBookId": "4800e675-fda5-4af4-ae3d-1ad13b466c2a_gpt-4.1-2025-04-14",
+      "title": "Build Your Own Empire as an OBM",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 64518,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Build Your Own Empire as an OBM.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "building-a-cannabis-edibles-empire-step-by-step-guide",
+      "fullBookId": "cce90bcb-d6e7-4930-bed3-3f954406e762_gpt-5.4-mini_1780104388",
+      "title": "Building  A Cannabis Edibles Empire  : step by step guide",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 62599,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Building  A Cannabis Edibles Empire — Step by step guide.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "consciousness-first-the-practical-guide-to-biocentric-living",
+      "fullBookId": "4f53231c-455b-4a04-9409-f27c9c5de4a8_gpt-4.1-2025-04-14",
+      "title": "Consciousness First: The Practical Guide to Biocentric Living",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Consciousness First — The Practical Guide to Biocentric Living.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "conversational-ai-marketing-mastering-chatbots-and-automated",
+      "fullBookId": "7941b5e3-9663-47c0-a7ae-77de438745b6_gpt-4o-2024-08-06",
+      "title": "CONVERSATIONAL AI MARKETING: Mastering Chatbots and Automated Customer Engagement",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "CONVERSATIONAL AI MARKETING — Mastering Chatbots and Automated Customer Engagement.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "credit-score-secrets-the-hidden-algorithms-banks-don-t-want-",
+      "fullBookId": "678759d3-c113-470e-96ef-4a381e267154_gpt-4o-2024-08-06",
+      "title": "CREDIT SCORE SECRETS: The Hidden Algorithms Banks Don't Want You to Crack",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "CREDIT SCORE SECRETS — The Hidden Algorithms Banks Don't Want You to Crack.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "crisis-profit-playbook-how-the-elite-make-money-in-any-marke",
+      "fullBookId": "006e1736-a63b-4f45-9016-4a29f571a895_gpt-4o-2024-08-06",
+      "title": "Crisis Profit Playbook: How the Elite Make Money in Any Market",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Crisis Profit Playbook — How the Elite Make Money in Any Market.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "crypto-underground-how-the-1-really-profits-from-digital-cur",
+      "fullBookId": "afb2fc74-f119-4332-844b-65ccd844f6ae_gpt-4o-2024-08-06",
+      "title": "Crypto Underground: How the 1% Really Profits from Digital Currencies",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Crypto Underground — How the 1% Really Profits from Digital Currencies.",
+      "adSafe": false,
+      "complianceReview": true,
+      "status": "Completed"
+    },
+    {
+      "id": "currently-not-collectible-how-to-legally-stop-paying-the-irs",
+      "fullBookId": "3af04a4f-1e87-4c17-b4b5-d5ea02b20e45_gpt-4.1-2025-04-14",
+      "title": "Currently Not Collectible: How to Legally Stop Paying the IRS",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 72439,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Currently Not Collectible — How to Legally Stop Paying the IRS.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "dark-pools-declassified-how-elite-traders-manipulate-market-",
+      "fullBookId": "5969a480-f0fe-4984-b99b-d7ef845c8ff9_gpt-4o-2024-08-06",
+      "title": "Dark Pools Declassified: How Elite Traders Manipulate Market Flows",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Dark Pools Declassified — How Elite Traders Manipulate Market Flows.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "digital-dirt-the-ultimate-guide-to-finding-off-market-proper",
+      "fullBookId": "df1f5cf1-6d55-45d3-b99f-cf70f3325a29_gpt-4o-2024-08-06",
+      "title": "Digital Dirt: The Ultimate Guide to Finding Off-Market Properties in the Digital Age",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Digital Dirt — The Ultimate Guide to Finding Off-Market Properties in the Digital Age.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "digital-dynasty-build-and-scale-your-online-empire-using-ai-",
+      "fullBookId": "7c49a340-217f-4702-a726-c9af4473374c_gpt-4o-2024-08-06",
+      "title": "Digital Dynasty: Build and Scale Your Online Empire Using AI Tools",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Digital Dynasty — Build and Scale Your Online Empire Using AI Tools.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "easies-way-to-mmo-with-ai",
+      "fullBookId": "77f7be83-4d0a-4080-94ae-c558d4e42f32_gpt-4.1-2025-04-14",
+      "title": "Easies way to MMO with AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Easies way to MMO with AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "financial-flow-understanding-money-s-universal-laws",
+      "fullBookId": "753ea4a8-5681-4edf-8d3b-8af601bc83fd_claude-3-5-sonnet-20241022",
+      "title": "Financial Flow - Understanding Money's Universal Laws",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Financial Flow - Understanding Money's Universal Laws.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "first-to-niche-owns-the-niche-why-testing-60-categories-per-",
+      "fullBookId": "6f0e61b2-b4c3-4c2a-b9b6-ba6757788878_gpt-4.1-2025-04-14",
+      "title": "First to Niche, Owns the Niche: Why Testing 60 Categories Per Quarter Makes You Unbeatable on Amazon",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "First to Niche, Owns the Niche — Why Testing 60 Categories Per Quarter Makes You Unbeatable on Amazon.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "first-time-abatement-the-magic-3-words-that-erase-irs-penalt",
+      "fullBookId": "855288de-cf19-4f17-9e4d-a7689e78b9e6_gpt-4.1-2025-04-14",
+      "title": "First-Time Abatement: The Magic 3 Words That Erase IRS Penalties",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 56420,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "First-Time Abatement — The Magic 3 Words That Erase IRS Penalties.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "foundations-of-ai-powered-marketing-understanding-and-implem",
+      "fullBookId": "1f1975ea-99c0-4fff-af32-3f2156b847a2_gpt-4o-2024-08-06",
+      "title": "FOUNDATIONS OF AI-POWERED MARKETING: Understanding and Implementing Artificial Intelligence in Your Marketing Strategy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "FOUNDATIONS OF AI-POWERED MARKETING — Understanding and Implementing Artificial Intelligence in Your Marketing Strategy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "future-markets-positioning-for-tomorrow-s-economy",
+      "fullBookId": "55eef076-1a13-4089-a90c-033b9d908d57_gpt-4o-2024-08-06",
+      "title": "Future Markets: Positioning for Tomorrow's Economy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Future Markets — Positioning for Tomorrow's Economy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "generational-wealth-code-creating-a-100-year-legacy-through-",
+      "fullBookId": "de6529a5-1f6c-4134-a743-dbb12096b53b_gpt-4o-2024-08-06",
+      "title": "Generational Wealth Code: Creating a 100-Year Legacy Through Strategic Global Investments",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Generational Wealth Code — Creating a 100-Year Legacy Through Strategic Global Investments.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "global-fortress-offshore-trusts-and-tax-havens-the-ultra-ric",
+      "fullBookId": "97900f40-147b-481c-a8f2-ba7231fe1c81_gpt-4o-2024-08-06",
+      "title": "Global Fortress: Offshore Trusts and Tax Havens the Ultra-Rich Don’t Talk About",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Global Fortress — Offshore Trusts and Tax Havens the Ultra-Rich Don’t Talk About.",
+      "adSafe": false,
+      "complianceReview": true,
+      "status": "Completed"
+    },
+    {
+      "id": "hidden-in-plain-sight-how-ai-surfaces-billionaire-tax-strate",
+      "fullBookId": "3b186aa0-647e-41dc-958f-a3518de2e773_gpt-4.1-2025-04-14",
+      "title": "Hidden in Plain Sight: How AI Surfaces Billionaire Tax Strategies, Legal Loopholes, and Expert Secrets Buried Across a billion Sources",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Hidden in Plain Sight — How AI Surfaces Billionaire Tax Strategies, Legal Loopholes, and Expert Secrets Buried Across a billion Sources.",
+      "adSafe": false,
+      "complianceReview": true,
+      "status": "Completed"
+    },
+    {
+      "id": "intelligent-sales-automation-building-self-optimizing-sales-",
+      "fullBookId": "87d19e02-7a61-4f9f-8492-0c5cbb619115_gpt-4o-2024-08-06",
+      "title": "INTELLIGENT SALES AUTOMATION: Building Self-Optimizing Sales Systems with AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "INTELLIGENT SALES AUTOMATION — Building Self-Optimizing Sales Systems with AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "irs-reasonable-cause-relief-erase-penalties-without-proving-",
+      "fullBookId": "cc14d265-59f2-4a16-890a-d853bdab13fa_gpt-4.1-2025-04-14",
+      "title": "IRS Reasonable Cause Relief: Erase Penalties Without Proving Financial Hardship",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 59371,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "IRS Reasonable Cause Relief — Erase Penalties Without Proving Financial Hardship.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "lawsuit-factory-exposed-the-billion-dollar-debt-buyer-playbo",
+      "fullBookId": "c8224789-34fa-4f96-b753-7c006b4886a9_gpt-4o-2024-08-06",
+      "title": "LAWSUIT FACTORY EXPOSED: The Billion-Dollar Debt Buyer Playbook They're Hiding From You",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "LAWSUIT FACTORY EXPOSED — The Billion-Dollar Debt Buyer Playbook They're Hiding From You.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "main-street-real-estate-after-the-factory",
+      "fullBookId": "30f60198-8a17-48b9-9f8d-ba216ee1e220_gpt-5.4",
+      "title": "Main Street Real Estate After The Factory",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 70531,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Main Street Real Estate After The Factory.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "make-anything-the-power-of-3d-printing",
+      "fullBookId": "ea333dd0-f3e6-4b59-8fb1-b26b459e1f05_gpt-4o-2024-08-06",
+      "title": "Make Anything: The Power of 3D Printing",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Make Anything — The Power of 3D Printing.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "make-money-3d-printing",
+      "fullBookId": "15fc46be-02fe-4fbc-9bb0-313186d31270_gpt-4.1-2025-04-14",
+      "title": "Make money 3D Printing",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Make money 3D Printing.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "medical-debt-elimination-the-legal-loopholes-collections-won",
+      "fullBookId": "5ce0ec28-0318-4d3c-b643-f528c7a0a758_gpt-4.1-2025-04-14",
+      "title": "Medical Debt Elimination: The Legal Loopholes Collections Won't Tell You",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 51469,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Medical Debt Elimination — The Legal Loopholes Collections Won't Tell You.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "money-making-kdp-book-niches",
+      "fullBookId": "48e29479-3d7c-4909-89a2-4ad43327c2d1_gpt-4.1-2025-04-14",
+      "title": "Money Making KDP Book Niches",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Money Making KDP Book Niches.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "money-patterns-ai-discovered-principles-of-wealth-creation",
+      "fullBookId": "516c1edc-fcd8-4b9d-b92b-3b5d5406ab09_claude-3-5-sonnet-20241022",
+      "title": "Money Patterns: AI-Discovered Principles of Wealth Creation",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Money Patterns — AI-Discovered Principles of Wealth Creation.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "neural-marketing-hack-the-new-consumer-brain",
+      "fullBookId": "797c1728-276d-4a92-a21a-37a7aa06ffdd_gpt-4o-2024-08-06",
+      "title": "Neural Marketing: Hack the New Consumer Brain",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Neural Marketing — Hack the New Consumer Brain.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "never-again-the-kdp-publisher-s-guide-to-escaping-ghostwrite",
+      "fullBookId": "fb61f34e-248c-4e40-8504-c7fd11a38897_gpt-4.1-2025-04-14",
+      "title": "Never Again: The KDP Publisher's Guide to Escaping Ghostwriter Drama—Flakes, Delays, Upsells, and Mediocre Quality",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Never Again — The KDP Publisher's Guide to Escaping Ghostwriter Drama—Flakes, Delays, Upsells, and Mediocre Quality.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "political-money-laundering-how-legal-loopholes-conceal-billi",
+      "fullBookId": "484d103d-9b24-4a5e-a508-547a3f97d6bc_gpt-4o-2024-08-06",
+      "title": "Political Money Laundering: How Legal Loopholes Conceal Billion-Dollar Agendas",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Political Money Laundering — How Legal Loopholes Conceal Billion-Dollar Agendas.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "power-pivot-a-strategic-framework-for-scaling-service-based-",
+      "fullBookId": "a90f5095-bed5-410f-af76-11556739b555_gpt-4.1-2025-04-14",
+      "title": "Power Pivot: A Strategic Framework for Scaling Service-Based Businesses with AI and Automation",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Power Pivot — A Strategic Framework for Scaling Service-Based Businesses with AI and Automation.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "predictive-analytics-for-marketing-using-ai-to-forecast-and-",
+      "fullBookId": "20069f01-5d5b-4a7a-a940-d58dcc9d65ec_gpt-4o-2024-08-06",
+      "title": "PREDICTIVE ANALYTICS FOR MARKETING: Using AI to Forecast and Optimize Marketing Performance",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "PREDICTIVE ANALYTICS FOR MARKETING — Using AI to Forecast and Optimize Marketing Performance.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "print-the-future-how-3d-printing-is-changing-the-world",
+      "fullBookId": "d9bd0554-5ae5-4e2a-a71e-7899039b912c_gpt-4o-2024-08-06",
+      "title": "Print the Future: How 3D Printing is Changing the World",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Print the Future — How 3D Printing is Changing the World.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "pslf-secrets-10x-more-jobs-qualify-than-loan-servicers-admit",
+      "fullBookId": "194f71a9-d13a-439d-b0a4-50093c47be51_gpt-4.1-2025-04-14",
+      "title": "PSLF Secrets: 10X More Jobs Qualify Than Loan Servicers Admit",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 53079,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "PSLF Secrets — 10X More Jobs Qualify Than Loan Servicers Admit.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "quantum-finance-starter-kit-your-essential-guide-to-thriving",
+      "fullBookId": "42ca53ad-58dd-4e17-8e18-81631698bc2a_gpt-4o-2024-08-06",
+      "title": "Quantum Finance Starter Kit: Your Essential Guide to Thriving in the Post-Bitcoin Era",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Quantum Finance Starter Kit — Your Essential Guide to Thriving in the Post-Bitcoin Era.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "quantum-money-your-financial-playbook-for-the-post-bitcoin-e",
+      "fullBookId": "a1082259-6019-420a-a86f-7704fcff6bdf_gpt-4o-2024-08-06",
+      "title": "Quantum Money: Your Financial Playbook for the Post-Bitcoin Era",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Quantum Money — Your Financial Playbook for the Post-Bitcoin Era.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "rewritten-by-her-how-women-entrepreneurs-can-grow-their-busi",
+      "fullBookId": "75e00bb9-e70d-4a7c-9f90-7557cb73e637_gpt-4.1-2025-04-14",
+      "title": "Rewritten by Her: How Women Entrepreneurs Can Grow Their Business with AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Rewritten by Her — How Women Entrepreneurs Can Grow Their Business with AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "secrets-the-rich-don-t-share-at-dinner-the-private-framework",
+      "fullBookId": "36709935-e386-4d0d-bd25-f84fe33c923b_gpt-4.1-2025-04-14",
+      "title": "Secrets the Rich Don’t Share at Dinner: The Private Frameworks and Insider Filters That Multiply Wealth",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Secrets the Rich Don’t Share at Dinner — The Private Frameworks and Insider Filters That Multiply Wealth.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "shadow-capital-the-hidden-networks-that-funnel-trillions-int",
+      "fullBookId": "9ba42d82-3a52-4bc9-a879-be58444f3fad_gpt-4o-2024-08-06",
+      "title": "Shadow Capital: The Hidden Networks That Funnel Trillions into Private Deals",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Shadow Capital — The Hidden Networks That Funnel Trillions into Private Deals.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "shadow-economies-the-financial-strategies-behind-political-i",
+      "fullBookId": "cb78b0d9-2a0d-4d57-bef0-e4ce2d7eae4f_gpt-4o-2024-08-06",
+      "title": "Shadow Economies: The Financial Strategies Behind Political Influence",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Shadow Economies — The Financial Strategies Behind Political Influence.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "small-business-tax-credits-the-irs-hides-from-entrepreneurs-",
+      "fullBookId": "7547a2e2-acd3-4e0d-a4c7-132b79383bdc_gpt-4.1-2025-04-14",
+      "title": "Small Business Tax Credits the IRS Hides From Entrepreneurs: 15+ Credits and Deductions Worth $50,000+ Your Accountant Might Not Know",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 51601,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Small Business Tax Credits the IRS Hides From Entrepreneurs — 15+ Credits and Deductions Worth $50,000+ Your Accountant Might Not Know.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "stealth-wealth-the-confidential-art-of-invisible-investing",
+      "fullBookId": "bfa7aaf0-bb9a-46ab-b310-ebc260186c52_gpt-4o-2024-08-06",
+      "title": "Stealth Wealth: The Confidential Art of Invisible Investing",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Stealth Wealth — The Confidential Art of Invisible Investing.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "tax-secrets-of-the-1-legal-strategies-they-don-t-want-you-to",
+      "fullBookId": "660bd22f-7c76-4d52-9cf4-6f174bf9a0e9_gpt-4o-2024-08-06",
+      "title": "Tax Secrets of the 1%: Legal Strategies They Don't Want You to Know",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Tax Secrets of the 1% — Legal Strategies They Don't Want You to Know.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-10-000-child-credit-combinations-parents-miss-every-year",
+      "fullBookId": "57859ffd-d7c0-49f2-a659-44a615010c9d_gpt-4.1-2025-04-14",
+      "title": "The $10,000 Child Credit Combinations Parents Miss Every Year: How to Stack CTC, ACTC, CDCTC, and State Credits Most Families Never Claim",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 57362,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The $10,000 Child Credit Combinations Parents Miss Every Year — How to Stack CTC, ACTC, CDCTC, and State Credits Most Families Never Claim.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-100-000-hospital-bill-eraser-medical-billing-rights-they",
+      "fullBookId": "506927e7-5252-4974-a3a2-9ea82d4b4c68_gpt-4.1-2025-04-14",
+      "title": "The $100,000 Hospital Bill Eraser: Medical Billing Rights They Hide",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 55698,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The $100,000 Hospital Bill Eraser — Medical Billing Rights They Hide.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-7-430-the-irs-hides-from-you-eitc-secrets-they-don-t-adv",
+      "fullBookId": "8043a7aa-0dd7-4471-88d0-a933b1ae50e6_gpt-4.1-2025-04-14",
+      "title": "The $7,430 the IRS Hides From You: EITC Secrets They Don't Advertise",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 73406,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The $7,430 the IRS Hides From You — EITC Secrets They Don't Advertise.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-2025-diy-bankruptcy-guide-a-step-by-step-system-to-file-",
+      "fullBookId": "4391d3e8-5ddc-482d-a844-761d1e8c23c4_gpt-4o-2024-08-06",
+      "title": "The 2025 DIY Bankruptcy Guide: A Step-by-Step System to File Without a Lawyer and Save Thousands",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The 2025 DIY Bankruptcy Guide — A Step-by-Step System to File Without a Lawyer and Save Thousands.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-72-hour-property-flip-scientific-secrets-to-finding-and-",
+      "fullBookId": "8be54816-5b11-4e80-9689-39ea25f976e7_gpt-4o-2024-08-06",
+      "title": "The 72-Hour Property Flip: Scientific Secrets to Finding and Securing Deals in One Weekend",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The 72-Hour Property Flip — Scientific Secrets to Finding and Securing Deals in One Weekend.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-90-day-niche-empire-how-kdp-publishers-test-60-niches-pe",
+      "fullBookId": "61248a44-135b-44ef-b248-c0ba78cb916b_gpt-4.1-2025-04-14",
+      "title": "The 90-Day Niche Empire: How KDP Publishers Test 60 Niches Per Quarter While Competitors Test 3 Per Year",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The 90-Day Niche Empire — How KDP Publishers Test 60 Niches Per Quarter While Competitors Test 3 Per Year.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-agent-s-field-guide-to-automated-income",
+      "fullBookId": "2651846b-ef95-4a6f-858d-e594c143a160_gpt-5.4-mini",
+      "title": "The Agent's Field Guide to Automated Income",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 63702,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Agent's Field Guide to Automated Income.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ai-entrepreneur-how-artificial-intelligence-would-build-",
+      "fullBookId": "498ae39e-e5fb-4727-a8b3-f0276a559f35_gpt-4o-2024-08-06",
+      "title": "The AI Entrepreneur: How Artificial Intelligence Would Build Wealth as a Human",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The AI Entrepreneur — How Artificial Intelligence Would Build Wealth as a Human.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ai-wealth-revolution-inside-wall-street-s-secret-algorit",
+      "fullBookId": "a17b438b-4e48-48c9-a504-29808a0286fb_gpt-4o-2024-08-06",
+      "title": "The AI Wealth Revolution: Inside Wall Street's Secret Algorithmic Strategies",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The AI Wealth Revolution — Inside Wall Street's Secret Algorithmic Strategies.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-alternative-asset-playbook-how-the-elite-diversify-beyon",
+      "fullBookId": "d3bfa8a1-7ec3-4f12-b5b5-fd035a4000ec_gpt-4o-2024-08-06",
+      "title": "The Alternative Asset Playbook: How the Elite Diversify Beyond Stocks and Bonds",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Alternative Asset Playbook — How the Elite Diversify Beyond Stocks and Bonds.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-arbitrage-hunter-geographic-price-anomalies-in-real-esta",
+      "fullBookId": "a7cb577d-4287-4dd0-badd-1fff9589c58c_gpt-4o-2024-08-06",
+      "title": "The Arbitrage Hunter: Geographic Price Anomalies in Real Estate",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Arbitrage Hunter — Geographic Price Anomalies in Real Estate.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-art-of-quiet-influence-how-ultra-wealthy-families-shape-",
+      "fullBookId": "542f635d-c229-4af4-9900-5379ced19dc6_gpt-4o-2024-08-06",
+      "title": "The Art of Quiet Influence: How Ultra-Wealthy Families Shape Policy and Markets",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Art of Quiet Influence — How Ultra-Wealthy Families Shape Policy and Markets.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-asymmetric-network-a-systems-first-framework-for-analyzi",
+      "fullBookId": "3ef03249-5fbe-49ad-b787-ea5dcea6d7d6_gpt-4.1-2025-04-14",
+      "title": "The Asymmetric Network: A Systems-First Framework for Analyzing Hidden Power Structures",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Asymmetric Network — A Systems-First Framework for Analyzing Hidden Power Structures.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-authority-operating-system",
+      "fullBookId": "bf5a9b38-4757-482f-8371-b911ea73c726_gpt-4.1-2025-04-14",
+      "title": "The Authority Operating System",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 61429,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Authority Operating System.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-autonomous-business-how-ai-operating-systems-will-replac",
+      "fullBookId": "437246b7-6d81-4ea0-a3b2-74f9221cd158_gpt-5.2-2025-12-11_1774234185",
+      "title": "The Autonomous Business: How AI Operating Systems Will Replace Business Software",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 45163,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Autonomous Business — How AI Operating Systems Will Replace Business Software.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-builder-s-trap-why-most-ai-founders-ship-infrastructure-",
+      "fullBookId": "25e0d366-bdd8-4617-986a-39b38e386932_gpt-5.2-2025-12-11_1774038111",
+      "title": "The Builder's Trap: Why Most AI Founders Ship Infrastructure Instead of Revenue",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 39332,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Builder's Trap — Why Most AI Founders Ship Infrastructure Instead of Revenue.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-calculated-leap-why-smart-risk-takers-win-in-business-an",
+      "fullBookId": "2d3db99c-3c78-4141-8d80-697cba32c054_gpt-4o-2024-08-06",
+      "title": "The Calculated Leap: Why Smart Risk-Takers Win in Business and Life",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Calculated Leap — Why Smart Risk-Takers Win in Business and Life.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-category-crown",
+      "fullBookId": "4e03c654-d09f-4177-b0b2-7462f759e39f_gpt-4.1-2025-04-14",
+      "title": "The Category Crown",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 64228,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Category Crown.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-client-book-machine",
+      "fullBookId": "99ce2b73-b74a-4843-b026-b97dad3af7c4_gpt-4.1-2025-04-14",
+      "title": "The Client Book Machine",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 62403,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Client Book Machine.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-coherence-economy-why-the-next-wave-of-civilization-scal",
+      "fullBookId": "87689deb-53b3-4f14-8a9a-70a1f0064eef_gpt-5.4_1778642683",
+      "title": "The Coherence Economy: Why the Next Wave of Civilization-Scale Businesses Will Be Built on Worldview Integrity, Not Optimization",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 50464,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Coherence Economy — Why the Next Wave of Civilization-Scale Businesses Will Be Built on Worldview Integrity, Not Optimization.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-corporate-influence-blueprint-from-dark-money-to-policy-",
+      "fullBookId": "f8710f7c-cb3b-49ee-9995-00ae0940750a_gpt-4o-2024-08-06",
+      "title": "The Corporate Influence Blueprint: From Dark Money to Policy Power",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Corporate Influence Blueprint — From Dark Money to Policy Power.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-crisis-alpha-guide-how-the-wealthy-profit-during-market-",
+      "fullBookId": "eba3a933-d5d7-46d1-809f-1e0fcb9d73b5_gpt-4o-2024-08-06",
+      "title": "The Crisis Alpha Guide: How the Wealthy Profit During Market Turmoil",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Crisis Alpha Guide — How the Wealthy Profit During Market Turmoil.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-dark-money-machine-how-hidden-donations-shape-markets-an",
+      "fullBookId": "b4d7b99d-8d39-401a-9b8b-2d5e2c83ea7a_gpt-4o-2024-08-06",
+      "title": "The Dark Money Machine: How Hidden Donations Shape Markets and Politics",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Dark Money Machine — How Hidden Donations Shape Markets and Politics.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-demographic-detective-hidden-profits-in-population-shift",
+      "fullBookId": "a67f33aa-3cde-4186-842d-df7af522c747_gpt-4o-2024-08-06",
+      "title": "The Demographic Detective: Hidden Profits in Population Shift Patterns",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Demographic Detective — Hidden Profits in Population Shift Patterns.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-diamond-hand-protocol-an-algorithmic-analysis-of-ape-dri",
+      "fullBookId": "88d1159b-37dc-4dcc-bbd8-cefcd4a1735a_gpt-4.1-2025-04-14",
+      "title": "The Diamond Hand Protocol: An Algorithmic Analysis of Ape-Driven Markets",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Diamond Hand Protocol — An Algorithmic Analysis of Ape-Driven Markets.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-digital-trust-handbook-building-ethical-and-transparent-",
+      "fullBookId": "ce82598a-8bd4-425f-92f0-085583f32f1c_gpt-4o-2024-08-06",
+      "title": "The Digital Trust Handbook: Building Ethical and Transparent Tech Solutions",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Digital Trust Handbook — Building Ethical and Transparent Tech Solutions.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-emergency-bankruptcy-handbook-fast-filing-strategies-whe",
+      "fullBookId": "fc238fac-b745-4e3e-a406-8fe8cc8f32e4_gpt-4o-2024-08-06",
+      "title": "The Emergency Bankruptcy Handbook: Fast Filing Strategies When Time Is Running Out",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Emergency Bankruptcy Handbook — Fast Filing Strategies When Time Is Running Out.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-empire-formula-how-to-build-a-multi-million-dollar-real-",
+      "fullBookId": "2b57a704-691a-4a0b-9329-35c8edb44fab_gpt-4o-2024-08-06",
+      "title": "The Empire Formula: How to Build a Multi-Million Dollar Real Estate Portfolio Starting with Nothing",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Empire Formula — How to Build a Multi-Million Dollar Real Estate Portfolio Starting with Nothing.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-ghostwriter-trap-how-45-000-in-writing-fees-becomes-599-",
+      "fullBookId": "e521fbde-0d99-4f18-957c-96926d4aa8fd_gpt-4.1-2025-04-14",
+      "title": "The Ghostwriter Trap: How $45,000 in Writing Fees Becomes $599 in AI Costs—And Why Every KDP Publisher Will Make This Switch by 2026",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Ghostwriter Trap — How $45,000 in Writing Fees Becomes $599 in AI Costs—And Why Every KDP Publisher Will Make This Switch by 2026.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-great-wealth-transfer-insider-methods-for-protecting-fam",
+      "fullBookId": "9980d20c-6522-44af-ba4b-ca0b1fe95bf2_gpt-4o-2024-08-06",
+      "title": "The Great Wealth Transfer: Insider Methods for Protecting Family Fortune",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Great Wealth Transfer — Insider Methods for Protecting Family Fortune.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-hidden-job-market-ai-mapped-career-opportunities-of-tomo",
+      "fullBookId": "c12ffc77-cbb4-4845-af80-1d29853c2f53_claude-3-5-sonnet-20241022",
+      "title": "The Hidden Job Market: AI-Mapped Career Opportunities of Tomorrow",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Hidden Job Market — AI-Mapped Career Opportunities of Tomorrow.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-infinity-pool-thesis-a-systems-analysis-of-synthetic-sha",
+      "fullBookId": "81e06963-4941-4d50-bb2b-148975028288_gpt-4.1-2025-04-14",
+      "title": "The Infinity Pool Thesis: A Systems Analysis of Synthetic Share Creation and Market Structure",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Infinity Pool Thesis — A Systems Analysis of Synthetic Share Creation and Market Structure.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-influence-industry-inside-the-hidden-networks-that-shape",
+      "fullBookId": "e76fddf1-a0fc-446a-a28b-40c21c6ed46d_gpt-4o-2024-08-06",
+      "title": "The Influence Industry: Inside the Hidden Networks That Shape Public Opinion",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Influence Industry — Inside the Hidden Networks That Shape Public Opinion.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-infrastructure-oracle-how-to-profit-from-hidden-governme",
+      "fullBookId": "7a2b0094-9577-4478-80ab-4f94500ddba0_gpt-4o-2024-08-06",
+      "title": "The Infrastructure Oracle: How to Profit from Hidden Government Project Plans",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Infrastructure Oracle — How to Profit from Hidden Government Project Plans.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-insider-s-alert-system-7-hidden-market-signals-the-wealt",
+      "fullBookId": "d9370d87-0c92-4d22-8852-9175b4699b27_gpt-4o-2024-08-06",
+      "title": "The Insider's Alert System: 7 Hidden Market Signals the Wealthy Use to Time Their Moves",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Insider's Alert System — 7 Hidden Market Signals the Wealthy Use to Time Their Moves.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-invisible-election-how-dark-money-and-shadow-campaigns-c",
+      "fullBookId": "3b37bda8-da22-4998-9587-9f71e28e768a_gpt-4o-2024-08-06",
+      "title": "The Invisible Election: How Dark Money and Shadow Campaigns Control Democracy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Invisible Election — How Dark Money and Shadow Campaigns Control Democracy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-legal-loophole-playbook-tax-exempt-tactics-for-political",
+      "fullBookId": "8331df59-4d6c-4511-982d-a4caf5c7491c_gpt-4o-2024-08-06",
+      "title": "The Legal Loophole Playbook: Tax-Exempt Tactics for Political Power",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Legal Loophole Playbook — Tax-Exempt Tactics for Political Power.",
+      "adSafe": false,
+      "complianceReview": true,
+      "status": "Completed"
+    },
+    {
+      "id": "the-local-trust-engine",
+      "fullBookId": "c340e665-1242-4c2f-8b4c-5f2b57da1790_claude-sonnet-4-6",
+      "title": "The Local Trust Engine",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 70118,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Local Trust Engine.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-market-prophet-never-be-caught-in-a-real-estate-crash-ag",
+      "fullBookId": "b2722306-7674-4742-af03-7aee7b415779_gpt-4o-2024-08-06",
+      "title": "The Market Prophet: Never Be Caught in a Real Estate Crash Again",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Market Prophet — Never Be Caught in a Real Estate Crash Again.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-micro-niche-monopolist-how-to-find-claim-and-monetize-10",
+      "fullBookId": "102b4fc8-3c99-443e-b43d-25437ce938e2_gpt-4.1-2025-04-14",
+      "title": "The Micro-Niche Monopolist: How to Find, Claim, and Monetize 100 Categories Where You're the ONLY Book",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Micro-Niche Monopolist — How to Find, Claim, and Monetize 100 Categories Where You're the ONLY Book.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": ""
+    },
+    {
+      "id": "the-micro-niche-monopoly-method-how-to-own-100-profitable-ni",
+      "fullBookId": "c86fcee6-31b2-4e85-900e-409501b35fcc_gpt-4.1-2025-04-14",
+      "title": "The Micro-Niche Monopoly Method: How to Own 100 Profitable Niches on Amazon With Zero Competition",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Micro-Niche Monopoly Method — How to Own 100 Profitable Niches on Amazon With Zero Competition.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-monetary-organism-mapping-the-evolution-of-money",
+      "fullBookId": "6fc9e4d4-d689-4a25-a8d7-9cae3117aabb_gpt-4.1-2025-04-14",
+      "title": "The Monetary Organism: Mapping the Evolution of Money",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 38170,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Monetary Organism — Mapping the Evolution of Money.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-money-code-breaking-the-hidden-algorithm-of-wealth",
+      "fullBookId": "7d0706f2-870b-4e79-8cc6-0bad0d4738de_gpt-4o-2024-08-06",
+      "title": "The Money Code: Breaking the Hidden Algorithm of Wealth",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Money Code — Breaking the Hidden Algorithm of Wealth.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-money-magic-how-currency-actually-works-hint-it-s-not-ec",
+      "fullBookId": "c1603e00-ada0-4ce3-979e-01739b209855_gpt-4.1-2025-04-14",
+      "title": "The Money Magic: How Currency Actually Works (Hint: It's Not Economics)",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Money Magic — How Currency Actually Works (Hint: It's Not Economics).",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-new-asset-conspiracy-leaked-intelligence-on-how-wall-str",
+      "fullBookId": "5bd53d4b-30d6-4f6d-a341-b51a82ca914d_gpt-4.1-2025-04-14",
+      "title": "The New Asset Conspiracy: Leaked Intelligence on How Wall Street Hijacked the Wealth Ladder",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The New Asset Conspiracy — Leaked Intelligence on How Wall Street Hijacked the Wealth Ladder.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-new-realtor-s-playbook-your-guide-to-real-estate-success",
+      "fullBookId": "090c04d8-1f8e-4d54-9caf-5cb7766d42e0_gpt-4o-2024-08-06",
+      "title": "The New Realtor's Playbook: Your Guide to Real Estate Success",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The New Realtor's Playbook — Your Guide to Real Estate Success.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-one-person-publishing-empire-how-ai-operators-are-buildi",
+      "fullBookId": "72658a96-c065-4c21-912f-3fab2c5328fe_gpt-5.4",
+      "title": "The One-Person Publishing Empire: How AI Operators Are Building Million-Dollar Content Businesses Without Teams",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 54213,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The One-Person Publishing Empire — How AI Operators Are Building Million-Dollar Content Businesses Without Teams.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-pattern-of-wealth-emotional-loops-scarcity-cycles-and-fi",
+      "fullBookId": "d18593b7-28f6-49f2-ad26-4a923ba6e386_gpt-4.1-2025-04-14",
+      "title": "The Pattern of Wealth : Emotional Loops, Scarcity Cycles, and Financial Liberation",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Pattern of Wealth — Emotional Loops, Scarcity Cycles, and Financial Liberation.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-pattern-seekers-hidden-market-signals-that-predict-real-",
+      "fullBookId": "33a7e701-1c44-4454-a3fb-00fd83786900_gpt-4o-2024-08-06",
+      "title": "The Pattern Seekers: Hidden Market Signals That Predict Real Estate Opportunities",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Pattern Seekers — Hidden Market Signals That Predict Real Estate Opportunities.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-price-whisperer-how-to-make-sellers-desperate-to-accept-",
+      "fullBookId": "42e500a2-fa2b-429d-a148-6f383f5f15c6_gpt-4o-2024-08-06",
+      "title": "The Price Whisperer: How to Make Sellers Desperate to Accept Your Offer",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Price Whisperer — How to Make Sellers Desperate to Accept Your Offer.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-prompt-millionaire-how-ordinary-people-are-making-extrao",
+      "fullBookId": "66b97095-e5b3-47ce-ba18-0aef4954343c_gpt-4.1-2025-04-14",
+      "title": "The Prompt Millionaire: How Ordinary People Are Making Extraordinary Money with AI",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Prompt Millionaire — How Ordinary People Are Making Extraordinary Money with AI.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-prosperity-protocol-scientific-secrets-of-the-ultra-weal",
+      "fullBookId": "10861fe6-98e7-4250-b022-da69434540c6_claude-3-5-sonnet-20241022",
+      "title": "The Prosperity Protocol: Scientific Secrets of the Ultra-Wealthy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Prosperity Protocol — Scientific Secrets of the Ultra-Wealthy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-publisher-s-retirement-plan-replace-your-salary-with-100",
+      "fullBookId": "65e2c1e1-3766-4cc1-81e9-bff044d9c395_gpt-4.1-2025-04-14",
+      "title": "The Publisher's Retirement Plan: Replace Your Salary With 100 Books in 12 Months (Even If You've Never Written Anything)",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 78499,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The Publisher's Retirement Plan — Replace Your Salary With 100 Books in 12 Months (Even If You've Never Written Anything).",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-regulatory-goldmine-profit-opportunities-hidden-in-real-",
+      "fullBookId": "41cf302f-0e86-4f37-aede-6323557e05ef_gpt-4o-2024-08-06",
+      "title": "The Regulatory Goldmine: Profit Opportunities Hidden in Real Estate Laws",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Regulatory Goldmine — Profit Opportunities Hidden in Real Estate Laws.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-retirement-revolution-a-guide-to-creating-a-sustainable-",
+      "fullBookId": "db1bd3ba-749e-461b-89fa-91fdb265e92c_gpt-4o-2024-08-06",
+      "title": "The Retirement Revolution: A Guide to Creating a Sustainable Income Stream",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Retirement Revolution — A Guide to Creating a Sustainable Income Stream.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-risk-eraser-never-lose-money-on-real-estate-again",
+      "fullBookId": "35d192e7-b2d0-47f8-b303-b774cebf2e4d_gpt-4o-2024-08-06",
+      "title": "The Risk Eraser: Never Lose Money on Real Estate Again",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Risk Eraser — Never Lose Money on Real Estate Again.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-shadow-market-hidden-investment-strategies-of-the-ultra-",
+      "fullBookId": "d268d91b-efad-4b83-bc92-b16eb60d5137_gpt-4o-2024-08-06",
+      "title": "The Shadow Market: Hidden Investment Strategies of the Ultra-Wealthy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Shadow Market — Hidden Investment Strategies of the Ultra-Wealthy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-shadow-market-how-to-buy-amazing-properties-that-never-h",
+      "fullBookId": "84770573-ca7b-4755-846d-adfa797aa396_gpt-4o-2024-08-06",
+      "title": "The Shadow Market: How to Buy Amazing Properties That Never Hit the MLS",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Shadow Market — How to Buy Amazing Properties That Never Hit the MLS.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-shadow-state-how-private-money-shapes-public-policy",
+      "fullBookId": "edc9299f-4915-4d86-a007-f15f3e452e06_gpt-4o-2024-08-06",
+      "title": "The Shadow State: How Private Money Shapes Public Policy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Shadow State — How Private Money Shapes Public Policy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-six-figure-secret-how-to-spot-properties-that-will-doubl",
+      "fullBookId": "072b2864-3f20-4fc9-9f9e-9b74d5e1cf84_gpt-4o-2024-08-06",
+      "title": "The Six-Figure Secret: How to Spot Properties That Will Double in Value (While Everyone Else Misses Them)",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Six-Figure Secret — How to Spot Properties That Will Double in Value (While Everyone Else Misses Them).",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-small-business-automation-map",
+      "fullBookId": "4b4208b2-8130-429f-8a18-1ea3b5759751_gemini-3.5-flash",
+      "title": "The Small Business Automation Map",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 36797,
+      "price": 19.99,
+      "currency": "USD",
+      "description": "The Small Business Automation Map.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-smart-person-s-guide-to-chapter-13-reorganize-debt-and-k",
+      "fullBookId": "2cf52955-a090-4d00-8008-02075331992d_gpt-4o-2024-08-06",
+      "title": "The Smart Person's Guide to Chapter 13: Reorganize Debt and Keep Your Assets Without Breaking the Bank",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Smart Person's Guide to Chapter 13 — Reorganize Debt and Keep Your Assets Without Breaking the Bank.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-smart-person-s-guide-to-chapter-7-a-fresh-financial-star",
+      "fullBookId": "616ce799-f387-4929-b69b-0f3ab1f0a276_gpt-4o-2024-08-06",
+      "title": "The Smart Person's Guide to Chapter 7: A Fresh Financial Start Without the Guesswork",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Smart Person's Guide to Chapter 7 — A Fresh Financial Start Without the Guesswork.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-solo-founder-playbook",
+      "fullBookId": "22f44ada-0f1f-4aa5-8dfc-98b5ea3c1131_gpt-4.1-2025-04-14",
+      "title": "The Solo Founder Playbook",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 21740,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Solo Founder Playbook.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-tax-fortress-blueprint-12-lesser-known-strategies-used-b",
+      "fullBookId": "6620db32-7616-43b0-89a0-c0c067956661_gpt-4o-2024-08-06",
+      "title": "The Tax Fortress Blueprint: 12 Lesser-Known Strategies Used by the Ultra-Wealthy",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Tax Fortress Blueprint — 12 Lesser-Known Strategies Used by the Ultra-Wealthy.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-va-playbook-your-complete-guide-to-finding-hiring-and-wo",
+      "fullBookId": "221d5930-2308-46f8-8c82-2d709c305dad_gpt-4.1-2025-04-14",
+      "title": "The VA Playbook - Your Complete Guide to Finding, Hiring, and Working with the Perfect Virtual Assistant",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 65635,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "The VA Playbook - Your Complete Guide to Finding, Hiring, and Working with the Perfect Virtual Assistant.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-vacation-rental-tax-playbook-insider-strategies-the-weal",
+      "fullBookId": "6ec6cc70-1469-4cbe-a989-d9c141702eaf_gpt-4o-2024-08-06",
+      "title": "The Vacation Rental Tax Playbook: Insider Strategies the Wealthy Use to Maximize Savings with VRBOs",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Vacation Rental Tax Playbook — Insider Strategies the Wealthy Use to Maximize Savings with VRBOs.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-value-accelerator-transform-average-properties-into-cash",
+      "fullBookId": "e92cc89a-398a-4108-b6dd-ffeb882e06a4_gpt-4o-2024-08-06",
+      "title": "The Value Accelerator: Transform Average Properties into Cash Flow Machines",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Value Accelerator — Transform Average Properties into Cash Flow Machines.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-value-whisperer-scientific-principles-of-property-apprec",
+      "fullBookId": "f96a9aae-7181-470e-9b28-4fc64071680f_gpt-4o-2024-08-06",
+      "title": "The Value Whisperer: Scientific Principles of Property Appreciation",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Value Whisperer — Scientific Principles of Property Appreciation.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "the-wealth-transfer-protocol-protected-methods-for-inter-gen",
+      "fullBookId": "761b36cb-8adb-474a-8381-4e08279033fc_gpt-4o-2024-08-06",
+      "title": "The Wealth Transfer Protocol: Protected Methods for Inter-Generational Wealth Preservation",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "The Wealth Transfer Protocol — Protected Methods for Inter-Generational Wealth Preservation.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "think-like-the-woman-who-s-already-succeeded-the-business-wo",
+      "fullBookId": "525ebb7f-5ca9-4a92-9ad7-4db5410ee512_gpt-5.2-2025-12-11_1774496954",
+      "title": "Think Like the Woman Who's Already Succeeded - The Business Woman's Guide to Self-trust and Leadership.",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 73211,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Think Like the Woman Who's Already Succeeded - The Business Woman's Guide to Self-trust and Leadership..",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "think-like-the-woman-who-s-already-succeeded-the-businesswom",
+      "fullBookId": "14c35685-9bce-4439-86e1-ac18046eedc0_gpt-5.2-2025-12-11_1774240950",
+      "title": "Think Like the Woman Who's Already Succeeded - The Businesswoman's Guide to Self-trust and Leadership.",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 71799,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Think Like the Woman Who's Already Succeeded - The Businesswoman's Guide to Self-trust and Leadership..",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "think-like-the-woman-who-s-already-succeeded-mindset-shifts-",
+      "fullBookId": "2f8fc1c4-63c0-4216-9a92-7b98bd229614_gpt-4.1-2025-04-14",
+      "title": "Think Like the Woman Who’s Already Succeeded Mindset Shifts for Female Entrepreneurs Ready to Stop Second-Guessing and Start Growing",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Think Like the Woman Who’s Already Succeeded Mindset Shifts for Female Entrepreneurs Ready to Stop Second-Guessing and Start Growing.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "title-blood-sweat-family-subtitle-how-to-work-with-the-ones-",
+      "fullBookId": "6df921c2-0c7a-4c26-ac77-a41582b9784f_gpt-4.1-2025-04-14",
+      "title": "Title Blood, Sweat & Family Subtitle How to Work With the Ones You Love Without Losing Your Mind (or Your Business)",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 63317,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "Title Blood, Sweat & Family Subtitle How to Work With the Ones You Love Without Losing Your Mind (or Your Business).",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "ubi-is-a-trap-the-real-plan-behind-universal-basic-income",
+      "fullBookId": "3bae7b26-326a-4dfd-b220-0ac84f3a5c1c_gpt-4.1-2025-04-14",
+      "title": "UBI Is a Trap: The Real Plan Behind Universal Basic Income",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "UBI Is a Trap — The Real Plan Behind Universal Basic Income.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "velocity-kills-competitors-how-kdp-publishers-test-60-niches",
+      "fullBookId": "cb77d278-3fa5-466a-a667-aa7914d033f0_gpt-4.1-2025-04-14",
+      "title": "Velocity Kills Competitors: How KDP Publishers Test 60 Niches Per Quarter and Own Categories Before Anyone Else Launches",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Velocity Kills Competitors — How KDP Publishers Test 60 Niches Per Quarter and Own Categories Before Anyone Else Launches.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "wealth-dna-programming-your-financial-future",
+      "fullBookId": "dedf2ed4-d2ff-4fed-8f18-6ee085ab2298_gpt-4o-2024-08-06",
+      "title": "Wealth DNA: Programming Your Financial Future",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Wealth DNA — Programming Your Financial Future.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "wealth-preservation-strategies-for-high-net-worth-individual",
+      "fullBookId": "65329e98-9fe8-446c-9100-b7a968d3195d_gpt-4o-2024-08-06",
+      "title": "Wealth Preservation Strategies for High-Net-Worth Individuals",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Wealth Preservation Strategies for High-Net-Worth Individuals.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "wealth-triggers-the-secret-psychology-of-money-mastery",
+      "fullBookId": "5a469ac2-8e56-42f5-8e58-f7ca3bad565b_claude-3-5-sonnet-20241022",
+      "title": "Wealth Triggers: The Secret Psychology of Money Mastery",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Wealth Triggers — The Secret Psychology of Money Mastery.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "weaponized-philanthropy-how-charities-are-used-to-reshape-so",
+      "fullBookId": "39c26c82-d31a-48ca-8d13-68e2fe9f654a_gpt-4o-2024-08-06",
+      "title": "Weaponized Philanthropy: How Charities Are Used to Reshape Society",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": null,
+      "price": 14.99,
+      "currency": "USD",
+      "description": "Weaponized Philanthropy — How Charities Are Used to Reshape Society.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
+    },
+    {
+      "id": "what-hot-chicks-in-nightclubs-can-teach-you-about-business-b",
+      "fullBookId": "a539672f-3053-403d-b18f-0ea59306008f_gpt-5.2-2025-12-11_1777678853",
+      "title": "What Hot Chicks in Nightclubs Can Teach You About Business: Branding, Sales, Strategy, and Finance",
+      "formats": [
+        "ebook",
+        "pdf",
+        "epub",
+        "docx"
+      ],
+      "wordCount": 60753,
+      "price": 24.99,
+      "currency": "USD",
+      "description": "What Hot Chicks in Nightclubs Can Teach You About Business — Branding, Sales, Strategy, and Finance.",
+      "adSafe": true,
+      "complianceReview": false,
+      "status": "Completed"
     }
-  ],
-  "collections": [
-    {
-      "id": "elite-wealth-mastery",
-      "name": "Elite Wealth Mastery",
-      "title": "Complete Billionaire Blueprint",
-      "description": "Everything you need to build generational wealth like the ultra-rich",
-      "books": ["wealth-transfer-code", "market-psychology-decoded", "offshore-wealth-structures", "private-equity-mastery", "crypto-wealth-blueprint", "real-estate-empire"],
-      "price": 297.99,
-      "originalPrice": 989.94,
-      "savings": 70,
-      "badge": "Save 70%",
-      "bonus": "EXCLUSIVE: Private Family Office Playbook + 1-on-1 Wealth Strategy Session",
-      "gumroadId": "elite-wealth-mastery"
-    },
-    {
-      "id": "investment-masters",
-      "name": "Investment Masters",
-      "title": "Professional Investment Strategies",
-      "description": "Advanced investment techniques from Wall Street professionals",
-      "books": ["market-psychology-decoded", "private-equity-mastery", "crypto-wealth-blueprint"],
-      "price": 149.99,
-      "originalPrice": 204.97,
-      "savings": 27,
-      "badge": "Institutional Grade",
-      "bonus": "BONUS: Market Analysis Templates",
-      "gumroadId": "investment-masters"
-    }
-  ],
-  "freeGift": {
-    "title": "The Millionaire Mindset Blueprint",
-    "description": "Free guide: How to think like a billionaire",
-    "value": 29.99,
-    "downloadUrl": "/free-guides/millionaire-mindset.pdf",
-    "emailRequired": true
-  }
+  ]
 }

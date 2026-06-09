@@ -26,7 +26,8 @@
       "description": "100 Moments — An AI’s Journey Through the Human Experience.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/100-moments-an-ai-s-journey-through-the-human-experience.png"
     },
     {
       "id": "ageless-the-quest-for-immortality-in-the-age-of-ai-and-biote",
@@ -44,7 +45,8 @@
       "description": "Ageless — The Quest for Immortality in the Age of AI and Biotechnology.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ageless-the-quest-for-immortality-in-the-age-of-ai-and-biote.png"
     },
     {
       "id": "ai-by-design-crafting-intelligent-systems-with-human-values",
@@ -62,7 +64,8 @@
       "description": "AI by Design — Crafting Intelligent Systems with Human Values.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-by-design-crafting-intelligent-systems-with-human-values.png"
     },
     {
       "id": "ai-essentials-for-leaders-making-data-driven-decisions-in-a-",
@@ -80,7 +83,8 @@
       "description": "AI Essentials for Leaders — Making Data-Driven Decisions in a Digital World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-essentials-for-leaders-making-data-driven-decisions-in-a-.png"
     },
     {
       "id": "ai-manifesto-a-vision-for-humanity-s-future",
@@ -98,7 +102,8 @@
       "description": "AI Manifesto — A Vision for Humanity's Future.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-manifesto-a-vision-for-humanity-s-future.png"
     },
     {
       "id": "ai-powered-brand-storytelling-how-ai-creates-personalized-co",

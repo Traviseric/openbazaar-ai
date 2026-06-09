@@ -26,7 +26,8 @@
       "description": "Anchored in Christ — Finding Stability in an Unstable World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/anchored-in-christ-finding-stability-in-an-unstable-world.png"
     },
     {
       "id": "attached-to-the-divine-the-spiritual-blueprint-behind-your-b",
@@ -44,7 +45,8 @@
       "description": "Attached to the Divine — The Spiritual Blueprint Behind Your Bonding Patterns.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/attached-to-the-divine-the-spiritual-blueprint-behind-your-b.png"
     },
     {
       "id": "balancing-life-finding-intimacy-with-god-amidst-busyness",
@@ -62,7 +64,8 @@
       "description": "Balancing Life — Finding Intimacy with God Amidst Busyness.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/balancing-life-finding-intimacy-with-god-amidst-busyness.png"
     },
     {
       "id": "breath-of-heaven-overcoming-anxiety-with-spiritual-practices",
@@ -80,7 +83,8 @@
       "description": "Breath of Heaven — Overcoming Anxiety with Spiritual Practices.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/breath-of-heaven-overcoming-anxiety-with-spiritual-practices.png"
     },
     {
       "id": "courageous-faith-overcoming-fear-and-embracing-god-s-promise",
@@ -98,7 +102,8 @@
       "description": "Courageous Faith — Overcoming Fear and Embracing God's Promises.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/courageous-faith-overcoming-fear-and-embracing-god-s-promise.png"
     },
     {
       "id": "divine-guidance-trusting-god-s-plan-for-your-life",

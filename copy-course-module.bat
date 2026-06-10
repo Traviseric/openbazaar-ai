@@ -6,7 +6,7 @@ if "%~1"=="" (
   echo Usage: copy-course-module.bat "C:\path\to\target-project"
   echo.
   echo Example:
-  echo   copy-course-module.bat "D:\Travis Eric\TE Code\teneo-production"
+  echo   copy-course-module.bat "E:\TE-Code\teneo-production"
   exit /b 1
 )
 

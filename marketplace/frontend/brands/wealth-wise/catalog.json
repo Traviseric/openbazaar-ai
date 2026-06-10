@@ -27,7 +27,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/501-c-4-exposed-the-hidden-financial-networks-behind-influen.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/501-c-4-exposed-the-hidden-financial-networks-behind-influen.png",
+      "author": "WealthWise"
     },
     {
       "id": "60-books-60-monopolies-building-a-kdp-catalog-where-every-bo",
@@ -46,7 +47,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/60-books-60-monopolies-building-a-kdp-catalog-where-every-bo.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/60-books-60-monopolies-building-a-kdp-catalog-where-every-bo.png",
+      "author": "WealthWise"
     },
     {
       "id": "ai-marketing-automation-at-scale-building-self-optimizing-ma",
@@ -65,7 +67,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/ai-marketing-automation-at-scale-building-self-optimizing-ma.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/ai-marketing-automation-at-scale-building-self-optimizing-ma.png",
+      "author": "WealthWise"
     },
     {
       "id": "ai-driven-customer-acquisition-mastering-lead-generation-and",
@@ -84,7 +87,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/ai-driven-customer-acquisition-mastering-lead-generation-and.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/ai-driven-customer-acquisition-mastering-lead-generation-and.png",
+      "author": "WealthWise"
     },
     {
       "id": "bankruptcy-secrets-the-credit-industry-doesn-t-want-you-to-k",
@@ -103,7 +107,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/bankruptcy-secrets-the-credit-industry-doesn-t-want-you-to-k.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/bankruptcy-secrets-the-credit-industry-doesn-t-want-you-to-k.png",
+      "author": "WealthWise"
     },
     {
       "id": "behaviors-of-the-billionaire-mind-subconscious-triggers-that",
@@ -122,7 +127,8 @@
       "adSafe": false,
       "complianceReview": true,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/behaviors-of-the-billionaire-mind-subconscious-triggers-that.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/behaviors-of-the-billionaire-mind-subconscious-triggers-that.png",
+      "author": "WealthWise"
     },
     {
       "id": "blood-sweat-and-family-how-to-work-with-the-ones-you-love-wi",
@@ -141,7 +147,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/blood-sweat-and-family-how-to-work-with-the-ones-you-love-wi.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/blood-sweat-and-family-how-to-work-with-the-ones-you-love-wi.png",
+      "author": "WealthWise"
     },
     {
       "id": "bounce-back-after-bankruptcy-your-12-month-blueprint-for-fin",
@@ -160,7 +167,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/bounce-back-after-bankruptcy-your-12-month-blueprint-for-fin.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/bounce-back-after-bankruptcy-your-12-month-blueprint-for-fin.png",
+      "author": "WealthWise"
     },
     {
       "id": "build-your-own-empire-as-an-obm",
@@ -179,7 +187,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/build-your-own-empire-as-an-obm.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/build-your-own-empire-as-an-obm.png",
+      "author": "WealthWise"
     },
     {
       "id": "building-a-cannabis-edibles-empire-step-by-step-guide",
@@ -198,7 +207,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/building-a-cannabis-edibles-empire-step-by-step-guide.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/building-a-cannabis-edibles-empire-step-by-step-guide.png",
+      "author": "WealthWise"
     },
     {
       "id": "consciousness-first-the-practical-guide-to-biocentric-living",
@@ -216,7 +226,9 @@
       "description": "Consciousness First — The Practical Guide to Biocentric Living.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/consciousness-first-the-practical-guide-to-biocentric-living.png",
+      "author": "WealthWise"
     },
     {
       "id": "conversational-ai-marketing-mastering-chatbots-and-automated",
@@ -234,7 +246,9 @@
       "description": "CONVERSATIONAL AI MARKETING — Mastering Chatbots and Automated Customer Engagement.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/conversational-ai-marketing-mastering-chatbots-and-automated.png",
+      "author": "WealthWise"
     },
     {
       "id": "credit-score-secrets-the-hidden-algorithms-banks-don-t-want-",
@@ -252,7 +266,9 @@
       "description": "CREDIT SCORE SECRETS — The Hidden Algorithms Banks Don't Want You to Crack.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/credit-score-secrets-the-hidden-algorithms-banks-don-t-want-.png",
+      "author": "WealthWise"
     },
     {
       "id": "crisis-profit-playbook-how-the-elite-make-money-in-any-marke",
@@ -270,7 +286,9 @@
       "description": "Crisis Profit Playbook — How the Elite Make Money in Any Market.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/crisis-profit-playbook-how-the-elite-make-money-in-any-marke.png",
+      "author": "WealthWise"
     },
     {
       "id": "crypto-underground-how-the-1-really-profits-from-digital-cur",
@@ -288,7 +306,9 @@
       "description": "Crypto Underground — How the 1% Really Profits from Digital Currencies.",
       "adSafe": false,
       "complianceReview": true,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/crypto-underground-how-the-1-really-profits-from-digital-cur.png",
+      "author": "WealthWise"
     },
     {
       "id": "currently-not-collectible-how-to-legally-stop-paying-the-irs",
@@ -306,7 +326,9 @@
       "description": "Currently Not Collectible — How to Legally Stop Paying the IRS.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/currently-not-collectible-how-to-legally-stop-paying-the-irs.png",
+      "author": "WealthWise"
     },
     {
       "id": "dark-pools-declassified-how-elite-traders-manipulate-market-",
@@ -324,7 +346,9 @@
       "description": "Dark Pools Declassified — How Elite Traders Manipulate Market Flows.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/dark-pools-declassified-how-elite-traders-manipulate-market-.png",
+      "author": "WealthWise"
     },
     {
       "id": "digital-dirt-the-ultimate-guide-to-finding-off-market-proper",
@@ -342,7 +366,9 @@
       "description": "Digital Dirt — The Ultimate Guide to Finding Off-Market Properties in the Digital Age.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/digital-dirt-the-ultimate-guide-to-finding-off-market-proper.png",
+      "author": "WealthWise"
     },
     {
       "id": "digital-dynasty-build-and-scale-your-online-empire-using-ai-",
@@ -360,7 +386,9 @@
       "description": "Digital Dynasty — Build and Scale Your Online Empire Using AI Tools.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/digital-dynasty-build-and-scale-your-online-empire-using-ai-.png",
+      "author": "WealthWise"
     },
     {
       "id": "easies-way-to-mmo-with-ai",
@@ -378,7 +406,9 @@
       "description": "Easies way to MMO with AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/easies-way-to-mmo-with-ai.png",
+      "author": "WealthWise"
     },
     {
       "id": "financial-flow-understanding-money-s-universal-laws",
@@ -396,7 +426,9 @@
       "description": "Financial Flow - Understanding Money's Universal Laws.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/financial-flow-understanding-money-s-universal-laws.png",
+      "author": "WealthWise"
     },
     {
       "id": "first-to-niche-owns-the-niche-why-testing-60-categories-per-",
@@ -414,7 +446,9 @@
       "description": "First to Niche, Owns the Niche — Why Testing 60 Categories Per Quarter Makes You Unbeatable on Amazon.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/first-to-niche-owns-the-niche-why-testing-60-categories-per-.png",
+      "author": "WealthWise"
     },
     {
       "id": "first-time-abatement-the-magic-3-words-that-erase-irs-penalt",
@@ -432,7 +466,9 @@
       "description": "First-Time Abatement — The Magic 3 Words That Erase IRS Penalties.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/first-time-abatement-the-magic-3-words-that-erase-irs-penalt.png",
+      "author": "WealthWise"
     },
     {
       "id": "foundations-of-ai-powered-marketing-understanding-and-implem",
@@ -450,7 +486,9 @@
       "description": "FOUNDATIONS OF AI-POWERED MARKETING — Understanding and Implementing Artificial Intelligence in Your Marketing Strategy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/foundations-of-ai-powered-marketing-understanding-and-implem.png",
+      "author": "WealthWise"
     },
     {
       "id": "future-markets-positioning-for-tomorrow-s-economy",
@@ -468,7 +506,9 @@
       "description": "Future Markets — Positioning for Tomorrow's Economy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/future-markets-positioning-for-tomorrow-s-economy.png",
+      "author": "WealthWise"
     },
     {
       "id": "generational-wealth-code-creating-a-100-year-legacy-through-",
@@ -486,7 +526,9 @@
       "description": "Generational Wealth Code — Creating a 100-Year Legacy Through Strategic Global Investments.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/generational-wealth-code-creating-a-100-year-legacy-through-.png",
+      "author": "WealthWise"
     },
     {
       "id": "global-fortress-offshore-trusts-and-tax-havens-the-ultra-ric",
@@ -504,7 +546,9 @@
       "description": "Global Fortress — Offshore Trusts and Tax Havens the Ultra-Rich Don’t Talk About.",
       "adSafe": false,
       "complianceReview": true,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/global-fortress-offshore-trusts-and-tax-havens-the-ultra-ric.png",
+      "author": "WealthWise"
     },
     {
       "id": "hidden-in-plain-sight-how-ai-surfaces-billionaire-tax-strate",
@@ -522,7 +566,9 @@
       "description": "Hidden in Plain Sight — How AI Surfaces Billionaire Tax Strategies, Legal Loopholes, and Expert Secrets Buried Across a billion Sources.",
       "adSafe": false,
       "complianceReview": true,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/hidden-in-plain-sight-how-ai-surfaces-billionaire-tax-strate.png",
+      "author": "WealthWise"
     },
     {
       "id": "intelligent-sales-automation-building-self-optimizing-sales-",
@@ -540,7 +586,9 @@
       "description": "INTELLIGENT SALES AUTOMATION — Building Self-Optimizing Sales Systems with AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/intelligent-sales-automation-building-self-optimizing-sales-.png",
+      "author": "WealthWise"
     },
     {
       "id": "irs-reasonable-cause-relief-erase-penalties-without-proving-",
@@ -558,7 +606,9 @@
       "description": "IRS Reasonable Cause Relief — Erase Penalties Without Proving Financial Hardship.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/irs-reasonable-cause-relief-erase-penalties-without-proving-.png",
+      "author": "WealthWise"
     },
     {
       "id": "lawsuit-factory-exposed-the-billion-dollar-debt-buyer-playbo",
@@ -576,7 +626,9 @@
       "description": "LAWSUIT FACTORY EXPOSED — The Billion-Dollar Debt Buyer Playbook They're Hiding From You.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/lawsuit-factory-exposed-the-billion-dollar-debt-buyer-playbo.png",
+      "author": "WealthWise"
     },
     {
       "id": "main-street-real-estate-after-the-factory",
@@ -594,7 +646,9 @@
       "description": "Main Street Real Estate After The Factory.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/main-street-real-estate-after-the-factory.png",
+      "author": "WealthWise"
     },
     {
       "id": "make-anything-the-power-of-3d-printing",
@@ -612,7 +666,9 @@
       "description": "Make Anything — The Power of 3D Printing.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/make-anything-the-power-of-3d-printing.png",
+      "author": "WealthWise"
     },
     {
       "id": "make-money-3d-printing",
@@ -630,7 +686,9 @@
       "description": "Make money 3D Printing.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/make-money-3d-printing.png",
+      "author": "WealthWise"
     },
     {
       "id": "medical-debt-elimination-the-legal-loopholes-collections-won",
@@ -648,7 +706,9 @@
       "description": "Medical Debt Elimination — The Legal Loopholes Collections Won't Tell You.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/medical-debt-elimination-the-legal-loopholes-collections-won.png",
+      "author": "WealthWise"
     },
     {
       "id": "money-making-kdp-book-niches",
@@ -666,7 +726,9 @@
       "description": "Money Making KDP Book Niches.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/money-making-kdp-book-niches.png",
+      "author": "WealthWise"
     },
     {
       "id": "money-patterns-ai-discovered-principles-of-wealth-creation",
@@ -684,7 +746,9 @@
       "description": "Money Patterns — AI-Discovered Principles of Wealth Creation.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/money-patterns-ai-discovered-principles-of-wealth-creation.png",
+      "author": "WealthWise"
     },
     {
       "id": "neural-marketing-hack-the-new-consumer-brain",
@@ -702,7 +766,9 @@
       "description": "Neural Marketing — Hack the New Consumer Brain.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/neural-marketing-hack-the-new-consumer-brain.png",
+      "author": "WealthWise"
     },
     {
       "id": "never-again-the-kdp-publisher-s-guide-to-escaping-ghostwrite",
@@ -720,7 +786,9 @@
       "description": "Never Again — The KDP Publisher's Guide to Escaping Ghostwriter Drama—Flakes, Delays, Upsells, and Mediocre Quality.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/never-again-the-kdp-publisher-s-guide-to-escaping-ghostwrite.png",
+      "author": "WealthWise"
     },
     {
       "id": "political-money-laundering-how-legal-loopholes-conceal-billi",
@@ -738,7 +806,9 @@
       "description": "Political Money Laundering — How Legal Loopholes Conceal Billion-Dollar Agendas.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/political-money-laundering-how-legal-loopholes-conceal-billi.png",
+      "author": "WealthWise"
     },
     {
       "id": "power-pivot-a-strategic-framework-for-scaling-service-based-",
@@ -756,7 +826,9 @@
       "description": "Power Pivot — A Strategic Framework for Scaling Service-Based Businesses with AI and Automation.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/power-pivot-a-strategic-framework-for-scaling-service-based-.png",
+      "author": "WealthWise"
     },
     {
       "id": "predictive-analytics-for-marketing-using-ai-to-forecast-and-",
@@ -774,7 +846,9 @@
       "description": "PREDICTIVE ANALYTICS FOR MARKETING — Using AI to Forecast and Optimize Marketing Performance.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/predictive-analytics-for-marketing-using-ai-to-forecast-and-.png",
+      "author": "WealthWise"
     },
     {
       "id": "print-the-future-how-3d-printing-is-changing-the-world",
@@ -792,7 +866,9 @@
       "description": "Print the Future — How 3D Printing is Changing the World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/print-the-future-how-3d-printing-is-changing-the-world.png",
+      "author": "WealthWise"
     },
     {
       "id": "pslf-secrets-10x-more-jobs-qualify-than-loan-servicers-admit",
@@ -810,7 +886,9 @@
       "description": "PSLF Secrets — 10X More Jobs Qualify Than Loan Servicers Admit.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/pslf-secrets-10x-more-jobs-qualify-than-loan-servicers-admit.png",
+      "author": "WealthWise"
     },
     {
       "id": "quantum-finance-starter-kit-your-essential-guide-to-thriving",
@@ -828,7 +906,9 @@
       "description": "Quantum Finance Starter Kit — Your Essential Guide to Thriving in the Post-Bitcoin Era.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/quantum-finance-starter-kit-your-essential-guide-to-thriving.png",
+      "author": "WealthWise"
     },
     {
       "id": "quantum-money-your-financial-playbook-for-the-post-bitcoin-e",
@@ -846,7 +926,9 @@
       "description": "Quantum Money — Your Financial Playbook for the Post-Bitcoin Era.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/quantum-money-your-financial-playbook-for-the-post-bitcoin-e.png",
+      "author": "WealthWise"
     },
     {
       "id": "rewritten-by-her-how-women-entrepreneurs-can-grow-their-busi",
@@ -864,7 +946,9 @@
       "description": "Rewritten by Her — How Women Entrepreneurs Can Grow Their Business with AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/rewritten-by-her-how-women-entrepreneurs-can-grow-their-busi.png",
+      "author": "WealthWise"
     },
     {
       "id": "secrets-the-rich-don-t-share-at-dinner-the-private-framework",
@@ -882,7 +966,9 @@
       "description": "Secrets the Rich Don’t Share at Dinner — The Private Frameworks and Insider Filters That Multiply Wealth.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/secrets-the-rich-don-t-share-at-dinner-the-private-framework.png",
+      "author": "WealthWise"
     },
     {
       "id": "shadow-capital-the-hidden-networks-that-funnel-trillions-int",
@@ -900,7 +986,9 @@
       "description": "Shadow Capital — The Hidden Networks That Funnel Trillions into Private Deals.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/shadow-capital-the-hidden-networks-that-funnel-trillions-int.png",
+      "author": "WealthWise"
     },
     {
       "id": "shadow-economies-the-financial-strategies-behind-political-i",
@@ -918,7 +1006,9 @@
       "description": "Shadow Economies — The Financial Strategies Behind Political Influence.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/shadow-economies-the-financial-strategies-behind-political-i.png",
+      "author": "WealthWise"
     },
     {
       "id": "small-business-tax-credits-the-irs-hides-from-entrepreneurs-",
@@ -936,7 +1026,9 @@
       "description": "Small Business Tax Credits the IRS Hides From Entrepreneurs — 15+ Credits and Deductions Worth $50,000+ Your Accountant Might Not Know.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/small-business-tax-credits-the-irs-hides-from-entrepreneurs-.png",
+      "author": "WealthWise"
     },
     {
       "id": "stealth-wealth-the-confidential-art-of-invisible-investing",
@@ -954,7 +1046,9 @@
       "description": "Stealth Wealth — The Confidential Art of Invisible Investing.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/stealth-wealth-the-confidential-art-of-invisible-investing.png",
+      "author": "WealthWise"
     },
     {
       "id": "tax-secrets-of-the-1-legal-strategies-they-don-t-want-you-to",
@@ -972,7 +1066,9 @@
       "description": "Tax Secrets of the 1% — Legal Strategies They Don't Want You to Know.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/tax-secrets-of-the-1-legal-strategies-they-don-t-want-you-to.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-10-000-child-credit-combinations-parents-miss-every-year",
@@ -990,7 +1086,9 @@
       "description": "The $10,000 Child Credit Combinations Parents Miss Every Year — How to Stack CTC, ACTC, CDCTC, and State Credits Most Families Never Claim.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-10-000-child-credit-combinations-parents-miss-every-year.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-100-000-hospital-bill-eraser-medical-billing-rights-they",
@@ -1008,7 +1106,9 @@
       "description": "The $100,000 Hospital Bill Eraser — Medical Billing Rights They Hide.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-100-000-hospital-bill-eraser-medical-billing-rights-they.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-7-430-the-irs-hides-from-you-eitc-secrets-they-don-t-adv",
@@ -1026,7 +1126,9 @@
       "description": "The $7,430 the IRS Hides From You — EITC Secrets They Don't Advertise.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-7-430-the-irs-hides-from-you-eitc-secrets-they-don-t-adv.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-2025-diy-bankruptcy-guide-a-step-by-step-system-to-file-",
@@ -1044,7 +1146,9 @@
       "description": "The 2025 DIY Bankruptcy Guide — A Step-by-Step System to File Without a Lawyer and Save Thousands.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-2025-diy-bankruptcy-guide-a-step-by-step-system-to-file-.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-72-hour-property-flip-scientific-secrets-to-finding-and-",
@@ -1062,7 +1166,9 @@
       "description": "The 72-Hour Property Flip — Scientific Secrets to Finding and Securing Deals in One Weekend.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-72-hour-property-flip-scientific-secrets-to-finding-and-.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-90-day-niche-empire-how-kdp-publishers-test-60-niches-pe",
@@ -1080,7 +1186,9 @@
       "description": "The 90-Day Niche Empire — How KDP Publishers Test 60 Niches Per Quarter While Competitors Test 3 Per Year.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-90-day-niche-empire-how-kdp-publishers-test-60-niches-pe.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-agent-s-field-guide-to-automated-income",
@@ -1098,7 +1206,9 @@
       "description": "The Agent's Field Guide to Automated Income.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-agent-s-field-guide-to-automated-income.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-ai-entrepreneur-how-artificial-intelligence-would-build-",
@@ -1116,7 +1226,9 @@
       "description": "The AI Entrepreneur — How Artificial Intelligence Would Build Wealth as a Human.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-ai-entrepreneur-how-artificial-intelligence-would-build-.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-ai-wealth-revolution-inside-wall-street-s-secret-algorit",
@@ -1134,7 +1246,9 @@
       "description": "The AI Wealth Revolution — Inside Wall Street's Secret Algorithmic Strategies.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-ai-wealth-revolution-inside-wall-street-s-secret-algorit.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-alternative-asset-playbook-how-the-elite-diversify-beyon",
@@ -1152,7 +1266,9 @@
       "description": "The Alternative Asset Playbook — How the Elite Diversify Beyond Stocks and Bonds.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-alternative-asset-playbook-how-the-elite-diversify-beyon.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-arbitrage-hunter-geographic-price-anomalies-in-real-esta",
@@ -1170,7 +1286,9 @@
       "description": "The Arbitrage Hunter — Geographic Price Anomalies in Real Estate.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-arbitrage-hunter-geographic-price-anomalies-in-real-esta.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-art-of-quiet-influence-how-ultra-wealthy-families-shape-",
@@ -1188,7 +1306,9 @@
       "description": "The Art of Quiet Influence — How Ultra-Wealthy Families Shape Policy and Markets.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-art-of-quiet-influence-how-ultra-wealthy-families-shape-.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-asymmetric-network-a-systems-first-framework-for-analyzi",
@@ -1206,7 +1326,9 @@
       "description": "The Asymmetric Network — A Systems-First Framework for Analyzing Hidden Power Structures.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/wealth-wise/the-asymmetric-network-a-systems-first-framework-for-analyzi.png",
+      "author": "WealthWise"
     },
     {
       "id": "the-authority-operating-system",
@@ -1224,7 +1346,8 @@
       "description": "The Authority Operating System.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-autonomous-business-how-ai-operating-systems-will-replac",
@@ -1242,7 +1365,8 @@
       "description": "The Autonomous Business — How AI Operating Systems Will Replace Business Software.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-builder-s-trap-why-most-ai-founders-ship-infrastructure-",
@@ -1260,7 +1384,8 @@
       "description": "The Builder's Trap — Why Most AI Founders Ship Infrastructure Instead of Revenue.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-calculated-leap-why-smart-risk-takers-win-in-business-an",
@@ -1278,7 +1403,8 @@
       "description": "The Calculated Leap — Why Smart Risk-Takers Win in Business and Life.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-category-crown",
@@ -1296,7 +1422,8 @@
       "description": "The Category Crown.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-client-book-machine",
@@ -1314,7 +1441,8 @@
       "description": "The Client Book Machine.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-coherence-economy-why-the-next-wave-of-civilization-scal",
@@ -1332,7 +1460,8 @@
       "description": "The Coherence Economy — Why the Next Wave of Civilization-Scale Businesses Will Be Built on Worldview Integrity, Not Optimization.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-corporate-influence-blueprint-from-dark-money-to-policy-",
@@ -1350,7 +1479,8 @@
       "description": "The Corporate Influence Blueprint — From Dark Money to Policy Power.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-crisis-alpha-guide-how-the-wealthy-profit-during-market-",
@@ -1368,7 +1498,8 @@
       "description": "The Crisis Alpha Guide — How the Wealthy Profit During Market Turmoil.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-dark-money-machine-how-hidden-donations-shape-markets-an",
@@ -1386,7 +1517,8 @@
       "description": "The Dark Money Machine — How Hidden Donations Shape Markets and Politics.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-demographic-detective-hidden-profits-in-population-shift",
@@ -1404,7 +1536,8 @@
       "description": "The Demographic Detective — Hidden Profits in Population Shift Patterns.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-diamond-hand-protocol-an-algorithmic-analysis-of-ape-dri",
@@ -1422,7 +1555,8 @@
       "description": "The Diamond Hand Protocol — An Algorithmic Analysis of Ape-Driven Markets.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-digital-trust-handbook-building-ethical-and-transparent-",
@@ -1440,7 +1574,8 @@
       "description": "The Digital Trust Handbook — Building Ethical and Transparent Tech Solutions.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-emergency-bankruptcy-handbook-fast-filing-strategies-whe",
@@ -1458,7 +1593,8 @@
       "description": "The Emergency Bankruptcy Handbook — Fast Filing Strategies When Time Is Running Out.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-empire-formula-how-to-build-a-multi-million-dollar-real-",
@@ -1476,7 +1612,8 @@
       "description": "The Empire Formula — How to Build a Multi-Million Dollar Real Estate Portfolio Starting with Nothing.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-ghostwriter-trap-how-45-000-in-writing-fees-becomes-599-",
@@ -1494,7 +1631,8 @@
       "description": "The Ghostwriter Trap — How $45,000 in Writing Fees Becomes $599 in AI Costs—And Why Every KDP Publisher Will Make This Switch by 2026.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-great-wealth-transfer-insider-methods-for-protecting-fam",
@@ -1512,7 +1650,8 @@
       "description": "The Great Wealth Transfer — Insider Methods for Protecting Family Fortune.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-hidden-job-market-ai-mapped-career-opportunities-of-tomo",
@@ -1530,7 +1669,8 @@
       "description": "The Hidden Job Market — AI-Mapped Career Opportunities of Tomorrow.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-infinity-pool-thesis-a-systems-analysis-of-synthetic-sha",
@@ -1548,7 +1688,8 @@
       "description": "The Infinity Pool Thesis — A Systems Analysis of Synthetic Share Creation and Market Structure.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-influence-industry-inside-the-hidden-networks-that-shape",
@@ -1566,7 +1707,8 @@
       "description": "The Influence Industry — Inside the Hidden Networks That Shape Public Opinion.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-infrastructure-oracle-how-to-profit-from-hidden-governme",
@@ -1584,7 +1726,8 @@
       "description": "The Infrastructure Oracle — How to Profit from Hidden Government Project Plans.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-insider-s-alert-system-7-hidden-market-signals-the-wealt",
@@ -1602,7 +1745,8 @@
       "description": "The Insider's Alert System — 7 Hidden Market Signals the Wealthy Use to Time Their Moves.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-invisible-election-how-dark-money-and-shadow-campaigns-c",
@@ -1620,7 +1764,8 @@
       "description": "The Invisible Election — How Dark Money and Shadow Campaigns Control Democracy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-legal-loophole-playbook-tax-exempt-tactics-for-political",
@@ -1638,7 +1783,8 @@
       "description": "The Legal Loophole Playbook — Tax-Exempt Tactics for Political Power.",
       "adSafe": false,
       "complianceReview": true,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-local-trust-engine",
@@ -1656,7 +1802,8 @@
       "description": "The Local Trust Engine.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-market-prophet-never-be-caught-in-a-real-estate-crash-ag",
@@ -1674,7 +1821,8 @@
       "description": "The Market Prophet — Never Be Caught in a Real Estate Crash Again.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-micro-niche-monopolist-how-to-find-claim-and-monetize-10",
@@ -1692,7 +1840,8 @@
       "description": "The Micro-Niche Monopolist — How to Find, Claim, and Monetize 100 Categories Where You're the ONLY Book.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "WealthWise"
     },
     {
       "id": "the-micro-niche-monopoly-method-how-to-own-100-profitable-ni",
@@ -1710,7 +1859,8 @@
       "description": "The Micro-Niche Monopoly Method — How to Own 100 Profitable Niches on Amazon With Zero Competition.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-monetary-organism-mapping-the-evolution-of-money",
@@ -1728,7 +1878,8 @@
       "description": "The Monetary Organism — Mapping the Evolution of Money.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-money-code-breaking-the-hidden-algorithm-of-wealth",
@@ -1746,7 +1897,8 @@
       "description": "The Money Code — Breaking the Hidden Algorithm of Wealth.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-money-magic-how-currency-actually-works-hint-it-s-not-ec",
@@ -1764,7 +1916,8 @@
       "description": "The Money Magic — How Currency Actually Works (Hint: It's Not Economics).",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-new-asset-conspiracy-leaked-intelligence-on-how-wall-str",
@@ -1782,7 +1935,8 @@
       "description": "The New Asset Conspiracy — Leaked Intelligence on How Wall Street Hijacked the Wealth Ladder.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-new-realtor-s-playbook-your-guide-to-real-estate-success",
@@ -1800,7 +1954,8 @@
       "description": "The New Realtor's Playbook — Your Guide to Real Estate Success.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-one-person-publishing-empire-how-ai-operators-are-buildi",
@@ -1818,7 +1973,8 @@
       "description": "The One-Person Publishing Empire — How AI Operators Are Building Million-Dollar Content Businesses Without Teams.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-pattern-of-wealth-emotional-loops-scarcity-cycles-and-fi",
@@ -1836,7 +1992,8 @@
       "description": "The Pattern of Wealth — Emotional Loops, Scarcity Cycles, and Financial Liberation.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-pattern-seekers-hidden-market-signals-that-predict-real-",
@@ -1854,7 +2011,8 @@
       "description": "The Pattern Seekers — Hidden Market Signals That Predict Real Estate Opportunities.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-price-whisperer-how-to-make-sellers-desperate-to-accept-",
@@ -1872,7 +2030,8 @@
       "description": "The Price Whisperer — How to Make Sellers Desperate to Accept Your Offer.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-prompt-millionaire-how-ordinary-people-are-making-extrao",
@@ -1890,7 +2049,8 @@
       "description": "The Prompt Millionaire — How Ordinary People Are Making Extraordinary Money with AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-prosperity-protocol-scientific-secrets-of-the-ultra-weal",
@@ -1908,7 +2068,8 @@
       "description": "The Prosperity Protocol — Scientific Secrets of the Ultra-Wealthy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-publisher-s-retirement-plan-replace-your-salary-with-100",
@@ -1926,7 +2087,8 @@
       "description": "The Publisher's Retirement Plan — Replace Your Salary With 100 Books in 12 Months (Even If You've Never Written Anything).",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-regulatory-goldmine-profit-opportunities-hidden-in-real-",
@@ -1944,7 +2106,8 @@
       "description": "The Regulatory Goldmine — Profit Opportunities Hidden in Real Estate Laws.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-retirement-revolution-a-guide-to-creating-a-sustainable-",
@@ -1962,7 +2125,8 @@
       "description": "The Retirement Revolution — A Guide to Creating a Sustainable Income Stream.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-risk-eraser-never-lose-money-on-real-estate-again",
@@ -1980,7 +2144,8 @@
       "description": "The Risk Eraser — Never Lose Money on Real Estate Again.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-shadow-market-hidden-investment-strategies-of-the-ultra-",
@@ -1998,7 +2163,8 @@
       "description": "The Shadow Market — Hidden Investment Strategies of the Ultra-Wealthy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-shadow-market-how-to-buy-amazing-properties-that-never-h",
@@ -2016,7 +2182,8 @@
       "description": "The Shadow Market — How to Buy Amazing Properties That Never Hit the MLS.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-shadow-state-how-private-money-shapes-public-policy",
@@ -2034,7 +2201,8 @@
       "description": "The Shadow State — How Private Money Shapes Public Policy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-six-figure-secret-how-to-spot-properties-that-will-doubl",
@@ -2052,7 +2220,8 @@
       "description": "The Six-Figure Secret — How to Spot Properties That Will Double in Value (While Everyone Else Misses Them).",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-small-business-automation-map",
@@ -2070,7 +2239,8 @@
       "description": "The Small Business Automation Map.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-smart-person-s-guide-to-chapter-13-reorganize-debt-and-k",
@@ -2088,7 +2258,8 @@
       "description": "The Smart Person's Guide to Chapter 13 — Reorganize Debt and Keep Your Assets Without Breaking the Bank.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-smart-person-s-guide-to-chapter-7-a-fresh-financial-star",
@@ -2106,7 +2277,8 @@
       "description": "The Smart Person's Guide to Chapter 7 — A Fresh Financial Start Without the Guesswork.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-solo-founder-playbook",
@@ -2124,7 +2296,8 @@
       "description": "The Solo Founder Playbook.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-tax-fortress-blueprint-12-lesser-known-strategies-used-b",
@@ -2142,7 +2315,8 @@
       "description": "The Tax Fortress Blueprint — 12 Lesser-Known Strategies Used by the Ultra-Wealthy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-va-playbook-your-complete-guide-to-finding-hiring-and-wo",
@@ -2160,7 +2334,8 @@
       "description": "The VA Playbook - Your Complete Guide to Finding, Hiring, and Working with the Perfect Virtual Assistant.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-vacation-rental-tax-playbook-insider-strategies-the-weal",
@@ -2178,7 +2353,8 @@
       "description": "The Vacation Rental Tax Playbook — Insider Strategies the Wealthy Use to Maximize Savings with VRBOs.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-value-accelerator-transform-average-properties-into-cash",
@@ -2196,7 +2372,8 @@
       "description": "The Value Accelerator — Transform Average Properties into Cash Flow Machines.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-value-whisperer-scientific-principles-of-property-apprec",
@@ -2214,7 +2391,8 @@
       "description": "The Value Whisperer — Scientific Principles of Property Appreciation.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "the-wealth-transfer-protocol-protected-methods-for-inter-gen",
@@ -2232,7 +2410,8 @@
       "description": "The Wealth Transfer Protocol — Protected Methods for Inter-Generational Wealth Preservation.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "think-like-the-woman-who-s-already-succeeded-the-business-wo",
@@ -2250,7 +2429,8 @@
       "description": "Think Like the Woman Who's Already Succeeded - The Business Woman's Guide to Self-trust and Leadership..",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "think-like-the-woman-who-s-already-succeeded-the-businesswom",
@@ -2268,7 +2448,8 @@
       "description": "Think Like the Woman Who's Already Succeeded - The Businesswoman's Guide to Self-trust and Leadership..",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "think-like-the-woman-who-s-already-succeeded-mindset-shifts-",
@@ -2286,7 +2467,8 @@
       "description": "Think Like the Woman Who’s Already Succeeded Mindset Shifts for Female Entrepreneurs Ready to Stop Second-Guessing and Start Growing.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "title-blood-sweat-family-subtitle-how-to-work-with-the-ones-",
@@ -2304,7 +2486,8 @@
       "description": "Title Blood, Sweat & Family Subtitle How to Work With the Ones You Love Without Losing Your Mind (or Your Business).",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "ubi-is-a-trap-the-real-plan-behind-universal-basic-income",
@@ -2322,7 +2505,8 @@
       "description": "UBI Is a Trap — The Real Plan Behind Universal Basic Income.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "velocity-kills-competitors-how-kdp-publishers-test-60-niches",
@@ -2340,7 +2524,8 @@
       "description": "Velocity Kills Competitors — How KDP Publishers Test 60 Niches Per Quarter and Own Categories Before Anyone Else Launches.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "wealth-dna-programming-your-financial-future",
@@ -2358,7 +2543,8 @@
       "description": "Wealth DNA — Programming Your Financial Future.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "wealth-preservation-strategies-for-high-net-worth-individual",
@@ -2376,7 +2562,8 @@
       "description": "Wealth Preservation Strategies for High-Net-Worth Individuals.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "wealth-triggers-the-secret-psychology-of-money-mastery",
@@ -2394,7 +2581,8 @@
       "description": "Wealth Triggers — The Secret Psychology of Money Mastery.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "weaponized-philanthropy-how-charities-are-used-to-reshape-so",
@@ -2412,7 +2600,8 @@
       "description": "Weaponized Philanthropy — How Charities Are Used to Reshape Society.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     },
     {
       "id": "what-hot-chicks-in-nightclubs-can-teach-you-about-business-b",
@@ -2430,7 +2619,8 @@
       "description": "What Hot Chicks in Nightclubs Can Teach You About Business — Branding, Sales, Strategy, and Finance.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "WealthWise"
     }
   ]
 }

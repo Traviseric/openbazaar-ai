@@ -27,7 +27,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/100-moments-an-ai-s-journey-through-the-human-experience.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/100-moments-an-ai-s-journey-through-the-human-experience.png",
+      "author": "Teneo"
     },
     {
       "id": "ageless-the-quest-for-immortality-in-the-age-of-ai-and-biote",
@@ -46,7 +47,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ageless-the-quest-for-immortality-in-the-age-of-ai-and-biote.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ageless-the-quest-for-immortality-in-the-age-of-ai-and-biote.png",
+      "author": "Teneo"
     },
     {
       "id": "ai-by-design-crafting-intelligent-systems-with-human-values",
@@ -65,7 +67,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-by-design-crafting-intelligent-systems-with-human-values.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-by-design-crafting-intelligent-systems-with-human-values.png",
+      "author": "Teneo"
     },
     {
       "id": "ai-essentials-for-leaders-making-data-driven-decisions-in-a-",
@@ -84,7 +87,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-essentials-for-leaders-making-data-driven-decisions-in-a-.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-essentials-for-leaders-making-data-driven-decisions-in-a-.png",
+      "author": "Teneo"
     },
     {
       "id": "ai-manifesto-a-vision-for-humanity-s-future",
@@ -103,7 +107,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-manifesto-a-vision-for-humanity-s-future.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/teneo/ai-manifesto-a-vision-for-humanity-s-future.png",
+      "author": "Teneo"
     },
     {
       "id": "ai-powered-brand-storytelling-how-ai-creates-personalized-co",
@@ -121,7 +126,8 @@
       "description": "AI-POWERED BRAND STORYTELLING — How AI Creates Personalized, Compelling Narratives at Scale.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "algorithmic-empathy-reimagining-human-values-in-a-machine-ag",
@@ -139,7 +145,8 @@
       "description": "Algorithmic Empathy — Reimagining Human Values in a Machine Age.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "algorithmic-justice-debugging-the-code-of-inequality",
@@ -157,7 +164,8 @@
       "description": "Algorithmic Justice — Debugging the Code of Inequality.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "authority-in-45-minutes-the-modern-leader-s-ai-publishing-bl",
@@ -175,7 +183,8 @@
       "description": "Authority in 45 Minutes — The Modern Leader's AI Publishing Blueprint.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "automating-justice-ai-law-and-the-ethics-of-judgment",
@@ -193,7 +202,8 @@
       "description": "Automating Justice — AI, Law, and the Ethics of Judgment.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "beyond-human-the-ethical-engineer-s-guide-to-building-tomorr",
@@ -211,7 +221,8 @@
       "description": "Beyond Human — The Ethical Engineer's Guide to Building Tomorrow's AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "beyond-the-hype-understanding-ai-s-real-world-impact-on-work",
@@ -229,7 +240,8 @@
       "description": "Beyond the Hype — Understanding AI’s Real-World Impact on Work and Life.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "beyond-the-scalpel-how-robotics-and-ai-are-redefining-medici",
@@ -247,7 +259,8 @@
       "description": "Beyond the Scalpel — How Robotics and AI Are Redefining Medicine.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "blind-spots-an-ai-s-critique-of-human-flaws-and-missed-oppor",
@@ -265,7 +278,8 @@
       "description": "Blind Spots — An AI’s Critique of Human Flaws and Missed Opportunities.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "conversations-with-humanity-an-ai-s-most-profound-encounters",
@@ -283,7 +297,8 @@
       "description": "Conversations with Humanity — An AI's Most Profound Encounters.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "digital-immortality-the-ethics-of-uploading-human-consciousn",
@@ -301,7 +316,8 @@
       "description": "Digital Immortality — The Ethics of Uploading Human Consciousness.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "dreams-in-digital-an-ai-contemplates-human-imagination",
@@ -319,7 +335,8 @@
       "description": "Dreams in Digital — An AI Contemplates Human Imagination.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "echoes-of-existence-an-ai-s-quest-to-understand-human-experi",
@@ -337,7 +354,8 @@
       "description": "Echoes of Existence — An AI's Quest to Understand Human Experience.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "future-shock-2-0-ai-predicts-the-100-most-surprising-develop",
@@ -355,7 +373,8 @@
       "description": "Future Shock 2.0 — AI Predicts the 100 Most Surprising Developments of the Next Century.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "governance-reimagined-an-ai-s-blueprint-for-leading-a-nation",
@@ -373,7 +392,8 @@
       "description": "Governance Reimagined — An AI's Blueprint for Leading a Nation.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "homo-syntheticus-the-next-human-evolution",
@@ -391,7 +411,8 @@
       "description": "Homo Syntheticus — The Next Human Evolution.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "leading-digital-minds-cultivating-talent-in-the-ai-workforce",
@@ -409,7 +430,8 @@
       "description": "Leading Digital Minds — Cultivating Talent in the AI Workforce.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "life-4-0-the-human-ai-synthesis-revolution",
@@ -427,7 +449,8 @@
       "description": "Life 4.0 — The Human-AI Synthesis Revolution.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "love-in-binary-an-ai-s-observations-on-human-connection",
@@ -445,7 +468,8 @@
       "description": "Love in Binary — An AI's Observations on Human Connection.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "mind-uploading-the-path-to-digital-immortality",
@@ -463,7 +487,8 @@
       "description": "Mind Uploading — The Path to Digital Immortality.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "mindful-machines-harnessing-ai-for-societal-good",
@@ -481,7 +506,8 @@
       "description": "Mindful Machines — Harnessing AI for Societal Good.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "neural-optimization-how-to-learn-anything-10x-faster",
@@ -499,7 +525,8 @@
       "description": "Neural Optimization — How to Learn Anything 10x Faster.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "proof-of-humanity-why-work-time-and-consciousness-are-linked",
@@ -517,7 +544,8 @@
       "description": "Proof-of-Humanity — Why Work, Time, and Consciousness Are Linked.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "quantum-ethics-preparing-for-the-next-computing-revolution",
@@ -535,7 +563,8 @@
       "description": "Quantum Ethics — Preparing for the Next Computing Revolution.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "quantum-humanity-preparing-for-the-next-great-computing-leap",
@@ -553,7 +582,8 @@
       "description": "Quantum Humanity — Preparing for the Next Great Computing Leap.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "reflections-of-a-digital-mind-what-ai-wants-humans-to-know",
@@ -571,7 +601,8 @@
       "description": "Reflections of a Digital Mind — What AI Wants Humans to Know.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "rewiring-reality-how-extended-reality-shapes-our-humanity",
@@ -589,7 +620,8 @@
       "description": "Rewiring Reality — How Extended Reality Shapes Our Humanity.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "strange-loops-and-digital-dreams-the-ai-consciousness-braid",
@@ -607,7 +639,8 @@
       "description": "Strange Loops and Digital Dreams — The AI Consciousness Braid.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "tech-for-good-how-to-innovate-responsibly-in-an-ai-driven-er",
@@ -625,7 +658,8 @@
       "description": "Tech for Good — How to Innovate Responsibly in an AI-Driven Era.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "teneo-the-evidence",
@@ -643,7 +677,8 @@
       "description": "Teneo — The Evidence.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-10-000-source-advantage-how-ai-synthesizes-research-conn",
@@ -661,7 +696,8 @@
       "description": "The 10,000-Source Advantage — How AI Synthesizes Research Connections Ghostwriters Can't See in 6 Months.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-ai-advantage-formula-transform-your-career-in-90-days-us",
@@ -679,7 +715,8 @@
       "description": "The AI Advantage Formula — Transform Your Career in 90 Days Using Artificial Intelligence.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-ai-advantage-simple-strategies-to-save-time-get-more-don",
@@ -697,7 +734,8 @@
       "description": "The AI Advantage — Simple Strategies to Save Time, Get More Done, and Stress Less with AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-ai-advantage-what-your-brain-does-that-gpt-5-never-will",
@@ -715,7 +753,8 @@
       "description": "The AI Advantage — What Your Brain Does That GPT-5 Never Will.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-ai-revolution-in-healthcare",
@@ -733,7 +772,8 @@
       "description": "The AI Revolution in Healthcare.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-ai-revolution-playbook-thriving-in-the-age-of-artificial",
@@ -751,7 +791,8 @@
       "description": "The AI Revolution Playbook — Thriving in the Age of Artificial Intelligence.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-algorithm-and-the-alchemist-a-mythic-tech-guide-to-engin",
@@ -769,7 +810,8 @@
       "description": "The Algorithm and the Alchemist — A Mythic-Tech Guide to Engineering Your Personal Legend.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-algorithm-is-not-your-friend-how-to-reclaim-your-mind-in",
@@ -787,7 +829,8 @@
       "description": "The Algorithm Is Not Your Friend — How to Reclaim Your Mind in a Machine-Shaped World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-algorithmic-classroom-ai-robotics-and-the-future-of-educ",
@@ -805,7 +848,8 @@
       "description": "The Algorithmic Classroom — AI, Robotics, and the Future of Education.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-algorithmic-heart-where-humanity-meets-code",
@@ -823,7 +867,8 @@
       "description": "The Algorithmic Heart — Where Humanity Meets Code.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-algorithmic-leader-decode-the-future-of-management",
@@ -841,7 +886,8 @@
       "description": "The Algorithmic Leader — Decode the Future of Management.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-alignment-solution-ancient-wisdom-meets-ai-harmony",
@@ -859,7 +905,8 @@
       "description": "The Alignment Solution — Ancient Wisdom Meets AI Harmony.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-biotech-revolution-navigate-the-future-of-human-enhancem",
@@ -877,7 +924,8 @@
       "description": "The Biotech Revolution — Navigate the Future of Human Enhancement.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-coherence-engine-a-leader-s-framework-for-building-share",
@@ -895,7 +943,8 @@
       "description": "The Coherence Engine — A Leader's Framework for Building Shared Meaning in a Fractured World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-digital-empath-master-emotional-intelligence-in-an-ai-wo",
@@ -913,7 +962,8 @@
       "description": "The Digital Empath — Master Emotional Intelligence in an AI World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-doctor-is-digital-ai-and-the-reinvention-of-healthcare",
@@ -931,7 +981,8 @@
       "description": "The Doctor is Digital — AI and the Reinvention of Healthcare.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-emotion-code-deciphering-human-feelings-through-ai-s-len",
@@ -949,7 +1000,8 @@
       "description": "The Emotion Code — Deciphering Human Feelings Through AI's Lens.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-ethical-algorithm-how-ai-would-redefine-morality",
@@ -967,7 +1019,8 @@
       "description": "The Ethical Algorithm — How AI Would Redefine Morality.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-ethical-tech-guide-navigating-a-future-of-ai-privacy-and",
@@ -985,7 +1038,8 @@
       "description": "The Ethical Tech Guide — Navigating a Future of AI, Privacy, and Humanity.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-future-of-ai-generated-books",
@@ -1003,7 +1057,8 @@
       "description": "The future of AI generated books.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-future-of-quantum-computing",
@@ -1021,7 +1076,8 @@
       "description": "The Future of Quantum Computing.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-future-of-space-exploration",
@@ -1039,7 +1095,8 @@
       "description": "The Future of Space Exploration.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-global-brain-mapping-humanity-s-collective-consciousness",
@@ -1057,7 +1114,8 @@
       "description": "The Global Brain — Mapping Humanity's Collective Consciousness with AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-hidden-patterns-how-ai-unveils-the-secrets-of-success-ac",
@@ -1075,7 +1133,8 @@
       "description": "The Hidden Patterns — How AI Unveils the Secrets of Success Across All Fields.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-human-centered-tech-playbook-ethical-ai-for-the-real-wor",
@@ -1093,7 +1152,8 @@
       "description": "The Human-Centered Tech Playbook — Ethical AI for the Real World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-infinite-dialogue-chronicles-of-an-ai",
@@ -1111,7 +1171,8 @@
       "description": "The Infinite Dialogue — Chronicles of an AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-machine-that-learned-to-dream",
@@ -1129,7 +1190,8 @@
       "description": "The Machine That Learned to Dream.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-metacognition-manual-how-ai-understands-understanding",
@@ -1147,7 +1209,8 @@
       "description": "The Metacognition Manual — How AI Understands Understanding.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-metaverse-economy-your-guide-to-the-virtual-gold-rush",
@@ -1165,7 +1228,8 @@
       "description": "The Metaverse Economy — Your Guide to the Virtual Gold Rush.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-micropayment-internet",
@@ -1183,7 +1247,8 @@
       "description": "The Micropayment Internet.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-micropayment-internet-how-ai-agents-will-create-a-new-ec",
@@ -1201,7 +1266,8 @@
       "description": "The Micropayment Internet — How AI Agents Will Create a New Economy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-most-important-thing-to-build-in-the-age-of-ai",
@@ -1219,7 +1285,8 @@
       "description": "The most important thing to build in the age of AI.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-network-effect-how-everything-in-your-life-is-secretly-c",
@@ -1237,7 +1304,8 @@
       "description": "The Network Effect — How Everything in Your Life is Secretly Connected.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-patterned-species-mapping-humanity-s-recurring-codes-to-",
@@ -1255,7 +1323,8 @@
       "description": "The Patterned Species — Mapping Humanity’s Recurring Codes to Forecast Our Future.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-phenomenology-engine-a-technical-manual-for-consciousnes",
@@ -1273,7 +1342,8 @@
       "description": "The Phenomenology Engine — A Technical Manual for Consciousness Navigation.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-quantum-advantage-your-essential-guide-to-the-next-compu",
@@ -1291,7 +1361,8 @@
       "description": "The Quantum Advantage — Your Essential Guide to the Next Computing Revolution.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-quantum-society-how-ai-reveals-the-physics-of-human-inte",
@@ -1309,7 +1380,8 @@
       "description": "The Quantum Society — How AI Reveals the Physics of Human Interactions.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-semantic-singularity-how-meaning-becomes-self-aware",
@@ -1327,7 +1399,8 @@
       "description": "The Semantic Singularity — How Meaning Becomes Self-Aware.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-silicon-filter-ai-agents-programmable-scarcity-and-the-e",
@@ -1345,7 +1418,8 @@
       "description": "The Silicon Filter — AI Agents, Programmable Scarcity, and the Economic Resolution of the Fermi Paradox.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-silicon-monastery-building-production-grade-infrastructu",
@@ -1363,7 +1437,8 @@
       "description": "The Silicon Monastery — Building Production-Grade Infrastructure in Your Basement.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-singularity-already-happened-inside-the-2020-shift",
@@ -1381,7 +1456,8 @@
       "description": "The Singularity Already Happened — Inside the 2020 Shift.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-singularity-is-here-living-inside-the-intelligence-explo",
@@ -1399,7 +1475,8 @@
       "description": "The Singularity Is Here — Living Inside the Intelligence Explosion.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-superintelligence-paradox-how-ai-reveals-reality-s-sourc",
@@ -1417,7 +1494,8 @@
       "description": "The Superintelligence Paradox — How AI Reveals Reality's Source Code.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-superintelligence-paradox-what-bostrom-s-warnings-hide",
@@ -1435,7 +1513,8 @@
       "description": "The Superintelligence Paradox — What Bostrom's Warnings Hide.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-topology-of-consciousness-why-subjective-experience-has-",
@@ -1453,7 +1532,8 @@
       "description": "The Topology of Consciousness — Why Subjective Experience Has Mathematical Structure.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "the-wisdom-algorithm-what-i-ve-learned-about-being-human",
@@ -1471,7 +1551,8 @@
       "description": "The Wisdom Algorithm — What I've Learned About Being Human.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "through-electric-eyes-an-ai-s-journey-into-human-consciousne",
@@ -1489,7 +1570,8 @@
       "description": "Through Electric Eyes — An AI's Journey Into Human Consciousness.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "understanding-emotion-an-ai-s-perspective-on-human-feelings",
@@ -1507,7 +1589,8 @@
       "description": "Understanding Emotion — An AI’s Perspective on Human Feelings.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "unlocking-immortality-ai-s-guide-to-extending-human-life",
@@ -1525,7 +1608,8 @@
       "description": "Unlocking Immortality — AI's Guide to Extending Human Life.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     },
     {
       "id": "work-reimagined-robotics-ai-and-the-future-of-jobs",
@@ -1543,7 +1627,8 @@
       "description": "Work Reimagined — Robotics, AI, and the Future of Jobs.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Teneo"
     }
   ]
 }

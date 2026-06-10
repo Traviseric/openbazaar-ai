@@ -4,6 +4,8 @@
 
 Open-source marketplace for creators, freelancers, and AI agents. Three pillars: product marketplace, gig platform, agent services. Dual-mode payments (Stripe + crypto), federation network, zero platform fees. Public repo — content generation lives in teneo-production (private).
 
+For Teneo-generated brands, OpenBazaar consumes public-safe projections from the Brand Artifact Manifest (`openbazaarCreateStorefront`, `openbazaarPublishBook`) and returns storefront/listing/order state back to Teneo. It should not own private source material, prompts, campaign strategy, chat config, analytics truth, or HES workforce governance.
+
 ## Lookup Table
 
 | Concept | Files | Search Terms |
@@ -38,6 +40,7 @@ Open-source marketplace for creators, freelancers, and AI agents. Three pillars:
 | AI Discovery | marketplace/backend/routes/discovery.js, docs/features/AI_DISCOVERY_ENGINE.md | semantic search, embeddings, knowledge graph |
 | ArxMint Integration | services/arxmintProvider.js, services/arxmintService.js | L402, ecash, Lightning, PaymentProvider, bazaar |
 | Docs | docs/ (75+ files by category) | architecture, deployment, features |
+| Teneo ecosystem loop | `E:\TE-Code\.claude\strategy\TENEO_ECOSYSTEM_VISION.md`, `E:\TE-Code\teneo-production\specs\ONE-CLICK-BRAND-GENERATOR-INDEX.md`, `E:\TE-Code\MarketingOS\campaigns\teneo-production\TENEO_MARKETINGOS_FLYWHEEL.md`, `E:\TE-Code\ai-assistant\docs\architecture\HUMAN_EMULATION_INDEX.md` | Brand Artifact Manifest, OpenBazaar projection, publish-storefront, publish-book, marketplace sale, MarketingOS growth, HES workforce |
 
 ## Stack
 
@@ -83,7 +86,7 @@ See docs/ROADMAP.md for strategic priorities. See docs/OPENBAZAAR_AI_SPEC.md for
 
 This project is part of the **TE Code ecosystem**. When you build, fix, or break callable capabilities, update the central registry.
 
-**Registry Location**: `D:\Travis Eric\TE Code\CAPABILITIES.yaml`
+**Registry Location**: `E:\TE-Code\CAPABILITIES.yaml`
 
 ### When to Update CAPABILITIES.yaml
 1. **You add a new callable feature** → Add to your project's section with status `experimental`

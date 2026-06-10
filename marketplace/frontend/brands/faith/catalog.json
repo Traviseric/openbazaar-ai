@@ -27,7 +27,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/anchored-in-christ-finding-stability-in-an-unstable-world.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/anchored-in-christ-finding-stability-in-an-unstable-world.png",
+      "author": "Cornerstone"
     },
     {
       "id": "attached-to-the-divine-the-spiritual-blueprint-behind-your-b",
@@ -46,7 +47,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "Completed",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/attached-to-the-divine-the-spiritual-blueprint-behind-your-b.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/attached-to-the-divine-the-spiritual-blueprint-behind-your-b.png",
+      "author": "Cornerstone"
     },
     {
       "id": "balancing-life-finding-intimacy-with-god-amidst-busyness",
@@ -65,7 +67,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/balancing-life-finding-intimacy-with-god-amidst-busyness.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/balancing-life-finding-intimacy-with-god-amidst-busyness.png",
+      "author": "Cornerstone"
     },
     {
       "id": "breath-of-heaven-overcoming-anxiety-with-spiritual-practices",
@@ -84,7 +87,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/breath-of-heaven-overcoming-anxiety-with-spiritual-practices.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/breath-of-heaven-overcoming-anxiety-with-spiritual-practices.png",
+      "author": "Cornerstone"
     },
     {
       "id": "courageous-faith-overcoming-fear-and-embracing-god-s-promise",
@@ -103,7 +107,8 @@
       "adSafe": true,
       "complianceReview": false,
       "status": "",
-      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/courageous-faith-overcoming-fear-and-embracing-god-s-promise.png"
+      "coverImage": "https://prod-teneo-cover-images.s3.amazonaws.com/store-covers/faith/courageous-faith-overcoming-fear-and-embracing-god-s-promise.png",
+      "author": "Cornerstone"
     },
     {
       "id": "divine-guidance-trusting-god-s-plan-for-your-life",
@@ -121,7 +126,8 @@
       "description": "Divine Guidance — Trusting God's Plan for Your Life.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "embracing-grace-finding-peace-and-purpose-in-god-s-love",
@@ -139,7 +145,8 @@
       "description": "Embracing Grace — Finding Peace and Purpose in God's Love.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "faithful-families-building-strong-christian-homes",
@@ -157,7 +164,8 @@
       "description": "Faithful Families — Building Strong Christian Homes.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "finding-god-in-the-ordinary-embracing-the-sacred-in-everyday",
@@ -175,7 +183,8 @@
       "description": "Finding God in the Ordinary — Embracing the Sacred in Everyday Life.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "forgiveness-unleashed-healing-and-moving-forward-in-christ",
@@ -193,7 +202,8 @@
       "description": "Forgiveness Unleashed — Healing and Moving Forward in Christ.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "god-s-goodness-finding-purpose-in-life-s-challenges",
@@ -211,7 +221,8 @@
       "description": "God's Goodness — Finding Purpose in Life's Challenges.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "grace-for-today-daily-devotions-to-start-your-day-right",
@@ -229,7 +240,8 @@
       "description": "Grace for Today — Daily Devotions to Start Your Day Right.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "guarding-your-mind-winning-spiritual-battles-with-faith",
@@ -247,7 +259,8 @@
       "description": "Guarding Your Mind — Winning Spiritual Battles with Faith.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "hearing-god-s-voice-discernment-and-direction-for-modern-bel",
@@ -265,7 +278,8 @@
       "description": "Hearing God's Voice — Discernment and Direction for Modern Believers.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "holy-habits-developing-spiritual-disciplines-for-a-deeper-fa",
@@ -283,7 +297,8 @@
       "description": "Holy Habits — Developing Spiritual Disciplines for a Deeper Faith.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "joyful-surrender-embracing-god-s-will-with-a-willing-heart",
@@ -301,7 +316,8 @@
       "description": "Joyful Surrender — Embracing God's Will with a Willing Heart.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "living-faithfully-practical-steps-for-daily-devotion",
@@ -319,7 +335,8 @@
       "description": "Living Faithfully — Practical Steps for Daily Devotion.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "purpose-unveiled-discovering-your-god-given-mission",
@@ -337,7 +354,8 @@
       "description": "Purpose Unveiled — Discovering Your God-Given Mission.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "rooted-in-faith-growing-spiritually-in-every-season",
@@ -355,7 +373,8 @@
       "description": "Rooted in Faith — Growing Spiritually in Every Season.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "scars-that-speak-how-god-uses-our-wounds-to-reveal-his-glory",
@@ -373,7 +392,8 @@
       "description": "Scars That Speak — How God Uses Our Wounds to Reveal His Glory.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "scripture-insights-the-art-of-reading-and-understanding-the-",
@@ -391,7 +411,8 @@
       "description": "Scripture Insights — The Art of Reading and Understanding the Bible.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "soul-refresh-spiritual-practices-for-renewed-vitality",
@@ -409,7 +430,8 @@
       "description": "Soul Refresh — Spiritual Practices for Renewed Vitality.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "soulmates-and-twin-flames-understanding-and-nurturing-spirit",
@@ -427,7 +449,8 @@
       "description": "Soulmates and Twin Flames — Understanding and Nurturing Spiritual Connections.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "spiritual-resilience-thriving-in-the-midst-of-adversity",
@@ -445,7 +468,8 @@
       "description": "Spiritual Resilience — Thriving in the Midst of Adversity.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "the-battlefield-of-the-mind-strategies-for-spiritual-victory",
@@ -463,7 +487,8 @@
       "description": "The Battlefield of the Mind — Strategies for Spiritual Victory.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "the-embodied-soul-a-woman-s-path-from-spiritual-bypassing-to",
@@ -481,7 +506,8 @@
       "description": "The Embodied Soul — A Woman's Path from Spiritual Bypassing to Sacred Presence.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "the-ethics-of-god",
@@ -499,7 +525,8 @@
       "description": "The Ethics of God.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "the-prayerful-life-building-a-transformative-prayer-practice",
@@ -517,7 +544,8 @@
       "description": "The Prayerful Life — Building a Transformative Prayer Practice.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "the-spirit-of-adventure-embracing-life-s-journey-with-courag",
@@ -535,7 +563,8 @@
       "description": "The Spirit of Adventure — Embracing Life's Journey with Courage and Joy.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "unbreakable-spirit-strengthening-your-faith-in-times-of-tria",
@@ -553,7 +582,8 @@
       "description": "Unbreakable Spirit — Strengthening Your Faith in Times of Trial.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "unshakable-faith-standing-strong-in-a-shifting-world",
@@ -571,7 +601,8 @@
       "description": "Unshakable Faith — Standing Strong in a Shifting World.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "unshaken-a-christian-s-guide-to-breaking-free-from-anxiety-a",
@@ -589,7 +620,8 @@
       "description": "Unshaken — A Christian's Guide to Breaking Free from Anxiety and Walking in the Peace God Promised.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "walking-with-jesus-becoming-more-like-christ-daily",
@@ -607,7 +639,8 @@
       "description": "Walking with Jesus — Becoming More Like Christ Daily.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     },
     {
       "id": "when-god-is-a-rebel-woman-the-mah-vidy-s-and-the-new-goddess",
@@ -625,7 +658,8 @@
       "description": "When God Is a Rebel Woman — The Mahāvidyās and the New Goddess Renaissance.",
       "adSafe": true,
       "complianceReview": false,
-      "status": "Completed"
+      "status": "Completed",
+      "author": "Cornerstone"
     },
     {
       "id": "words-of-wisdom-52-biblical-truths-for-every-christian-descr",
@@ -643,7 +677,8 @@
       "description": "Words of Wisdom — 52 Biblical Truths for Every Christian Description.",
       "adSafe": true,
       "complianceReview": false,
-      "status": ""
+      "status": "",
+      "author": "Cornerstone"
     }
   ]
 }
